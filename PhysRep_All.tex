@@ -1,0 +1,125 @@
+\documentclass[3p,sort&compress]{elsarticle}
+\usepackage{amsfonts,amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{color}
+
+\journal{Physics Reports}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Complex network approaches to nonlinear time series analysis}
+
+\author[PIK]{Reik V. Donner\corref{corrauthor}}
+\cortext[corrauthor]{Corresponding author}
+\ead{reik.donner@pik-potsdam.de}
+\address[PIK]{Potsdam Institute for Climate Impact Research, P.\,O.~Box
+60\,12\,03, 14412 Potsdam, Germany}
+
+\author[ECNU]{Yong Zou\corref{corrauthor}}
+\ead{yzou@phy.ecnu.edu.cn}
+\address[ECNU]{Department of Physics, East China Normal University, Shanghai 200062, China}
+
+\author[PIK]{Norbert Marwan}
+\ead{marwan@pik-potsdam.de}
+
+\author[PIK]{Jonathan F. Donges}
+\ead{donges@pik-potsdam.de}
+
+\author[PIK,UK,HU,RU1,RU2]{J\"urgen Kurths}
+\ead{kurths@pik-potsdam.de}
+ \address[UK]{Institute for Complex Systems and Mathematical Biology, University
+ of Aberdeen, Aberdeen AB243UE, United Kingdom}
+ \address[HU]{Department of Physics, Humboldt University Berlin,
+ Newtonstra{\ss}e 15, 12489 Berlin, Germany}
+\address[RU1]{Department of Control Theory, Nizhny Novgorod State University,
+Gagarin Avenue 23, 606950 Nizhny Novgorod, Russia} 
+\address[RU2]{Institute of Applied Physics of the Russian Academy of Sciences,
+603950 Nizhny Novgorod, Russia}
+
+
+\begin{abstract}
+
+In the last about 10 years, there has been a growing body of literature aiming
+at the utilization of complex network methods for the characterization of
+dynamical systems based on time series. While both nonlinear time series
+analysis and complex network theory are widely considered to be established
+fields of complex systems sciences with strong links to Nonlinear Dynamics and
+Statistical Physics, the thorough combination of both approaches has become an
+active field of research during the last decade, which has allowed addressing
+fundamental questions regarding the structural organization of nonlinear
+dynamics as well as the successful treatment of a variety of applications from a
+broad range of disciplines.
+
+With its three main concepts, phase space / recurrence networks, visibility
+graphs and transition / Markov chain networks having made their way from
+abstract concepts to widely used methodologies, the field of time series
+networks has become mature. These three concepts, as well as several variants
+thereof, have been studied in great detail regarding their specific properties,
+potentials and limitations and provided fundamental new insights into the
+dynamics of complex systems. In addition, these approaches have already found a
+wide range of applications from such diverse fields as climatology,
+neurophysiology and economics, to mention only a few examples, demonstrating the
+great potentials of time series networks to tackling real-world contemporary
+scientific problems.
+
+To this end, there exists no thorough overview paper covering all existing
+approaches of time series networks. Consequently, we believe that the time is
+ripe to deliver such a review covering the methodological foundations,
+interpretation and (potential) applications of the existing zoo of methods from
+this field. We are confident that Physics Reports would be an excellent forum
+for the first review that integrates the state of research on all corresponding
+concepts that exist so far.
+\end{abstract}
+
+\begin{keyword}
+%\MSC[2010] 00-01\sep  99-00
+\end{keyword}
+
+\end{frontmatter}
+\tableofcontents
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%*****************************CHAPTER/SECTION 1: INTRODUCTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Chapter01_Introduction/Chapter01_Introduction.tex}
+
+\input{Chapter02_CompNetworkT/Chapter02_CompNetworkT.tex}
+
+\input{Chapter03_RecurrenceNt/Chapter03_RecurrenceNt.tex}
+
+\input{Chapter04_VisibilityGt/Chapter04_VisibilityGt.tex}
+
+\input{Chapter05_TransitionNt/Chapter05_TransitionNt.tex}
+
+\input{Chapter06_OtherMethods/Chapter06_OtherMethods.tex}
+
+\input{Chapter07_Applications/Chapter07_Applications.tex}
+
+
+\input{Chapter08_Software/Chapter08_Software.tex}
+
+
+\input{Chapter09_Discussion/Chapter09_Discussion.tex}
+
+
+\input{Chapter10_Summary/Chapter10_Summary.tex}
+
+
+\section*{Acknowledgements}
+
+
+\bibliography{references}
+
+
+
+
+\end{document}

@@ -1,0 +1,82 @@
+\section{Recurrence networks in phase space {\bf{(Reik)}}}
+	\subsection{Theoretical background}
+
+\begin{table}[t]%[H] add [H] placement to break table across pages
+\caption{Summary of the definitions of vertices and the criteria for the
+existence of edges in existing complex network approaches to time series analysis.}{
+%\begin{ruledtabular}
+\small
+\begin{tabular}{llll}
+\hline
+Method & Vertex & Edge & Directedness \\
+\hline
+Proximity networks & & \\
+\textit{Cycle networks} & Cycle & Correlation or phase space distance between cycles & undirected \\
+\textit{Correlation networks} & State vector & Correlation coefficient between state vectors & undirected \\
+\textit{Recurrence networks} & & & \\
+\quad \textit{$k$-nearest neighbor networks}& State (vector) & Recurrence of states (fixed neighborhood mass) & directed \\
+\quad \textit{adaptive nearest neighbor networks}& State (vector)  & Recurrence of states (fixed number of edges) & undirected \\
+\quad \textit{$\varepsilon$-recurrence networks} & State (vector) & Recurrence of states (fixed neighborhood volume) & undirected \\
+\hline
+Visibility graphs & Scalar state & Mutual visibility of states & undirected \\
+\hline
+Transition networks & Discrete state & Transitions between states & directed \\
+\hline
+\end{tabular}
+%\end{ruledtabular}
+\normalsize
+\label{tab:methods}}
+\end{table}
+
+
+		\subsubsection{Phase space and attractor reconstruction}
+		\subsubsection{Recurrences and recurrence plots}
+		\subsubsection{Related approaches to time series analysis}
+
+	\subsection{Types of recurrence networks}
+		\subsubsection{epsilon-recurrence networks}
+		\subsubsection{k-nearest neighbor networks}
+		\subsubsection{Adaptive neighbor networks}
+
+briefly mention the results by Hui Yang on the "embeddability" of different
+times using force-directed placement algorithms (Chaos paper) - discussion of
+advantages and disadvantages of different neighborhood definitions  
+
+	\subsection{Analytical theory}
+		\subsubsection{Foundations: random geometric graphs}
+		\subsubsection{Analytical description of epsilon-recurrence networks}
+
+	\subsection{Practical considerations}
+		\subsubsection{Dependence on embedding parameters}
+		\subsubsection{Choice of recurrence rate or threshold}
+		\subsubsection{Application to stochastic systems}
+
+maybe switch 3.4 and 3.5 ?
+
+re-organize according to common stylized network facts: scale-free degree
+distributions, small-world behavior, assortativity 
+
+	\subsection{General properties of recurrence networks}
+		\subsubsection{Degree distributions}
+		\subsubsection{Transitivity and fractal dimension}
+		\subsubsection{Path-based characteristics}
+		\subsubsection{Stability and robustness against noise}
+
+	\subsection{Inter-system recurrence networks}
+		\subsubsection{Cross-recurrence plots}
+		\subsubsection{Coupled networks framework}
+		\subsubsection{Analytical description}
+		\subsubsection{Geometric signatures of coupling}
+
+		\subsubsection{{\color{red}Relationships with multi-layer / multiplex
+		recurrence networks}}
+
+	\subsection{Joint recurrence networks}
+		\subsubsection{Joint recurrence plots}
+		\subsubsection{Network interpretation}
+		\subsubsection{Network properties and synchronization}
+		\subsubsection{Algorithmic variants}
+
+	\subsection{Other proximity-based time series networks}
+		\subsubsection{Correlation networks}
+		\subsubsection{Cycle networks}

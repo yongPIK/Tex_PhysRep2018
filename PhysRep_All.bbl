@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Donner2010NJP}
+R.~V. Donner, Y.~Zou, J.~F. Donges, N.~Marwan, J.~Kurths, {Recurrence networks
+  -- A novel paradigm for nonlinear time series analysis}, New J. Phys. 12~(3)
+  (2010) 033025.
+\newblock \href {http://dx.doi.org/10.1088/1367-2630/12/3/033025}
+  {\path{doi:10.1088/1367-2630/12/3/033025}}.
+
+\bibitem{marwan2007}
+N.~Marwan, M.~C. Romano, M.~Thiel, J.~Kurths, Recurrence plots for the analysis
+  of complex systems, Phys. Rep. 438~(5--6) (2007) 237--329.
+\newblock \href {http://dx.doi.org/10.1016/j.physrep.2006.11.001}
+  {\path{doi:10.1016/j.physrep.2006.11.001}}.
+
+\end{thebibliography}
