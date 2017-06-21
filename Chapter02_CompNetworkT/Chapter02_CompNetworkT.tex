@@ -5,8 +5,116 @@
     Reik to add content from RN book chapter, then Jona to revise/update
 
 		\subsubsection{Vertex characteristics}
+        
+The conceptually simplest measure characterizing the connectivity properties of a single vertex in a complex network is the \textit{degree} or \textit{degree centrality}
+\begin{equation}
+\hat{k}_v(\varepsilon)=\sum_{i=1}^N A_{iv}(\varepsilon),
+\label{eq:degree}
+\end{equation}
+\noindent
+which simply counts the number of edges associated with a given vertex $v$. From the perspective of recurrences, it is reasonable to replace the degree by a normalized characteristic, the \textit{degree density}
+\begin{equation}
+\hat{\rho}_v(\varepsilon)=\frac{\hat{k}_v(\varepsilon)}{N-1}=\frac{1}{N-1} \sum_{i=1}^N A_{iv}(\varepsilon),
+\label{eq:locrho}
+\end{equation}
+\noindent
+which corresponds to the definition of the local recurrence rate of the state $x_v$. $\hat{\rho}_v(\varepsilon)$ quantifies the density of states in the $\varepsilon$-ball around $x_v$, i.e., the probability that a randomly chosen member of the available sample of state vectors is $\varepsilon$-close to $x_v$. An illustration of this fact for the R\"ossler system is presented in Fig.~\ref{fig:local}A; here, phase space regions with a high density of points (i.e., a high residence probability of the sampled trajectory) are characterized by a high degree density.
+
+In order to characterize the density of connections among the neighbors of a given vertex $v$, we can utilize the \textit{local clustering coefficient}
+\begin{equation}
+\hat{\mathcal{C}}_v(\varepsilon)=\frac{1}{\hat{k}_v(\varepsilon)(\hat{k}_v(\varepsilon)-1)} \sum_{i,j=1}^N A_{vi}(\varepsilon) A_{ij}(\varepsilon) A_{jv}(\varepsilon),
+\label{eq:locclustering}
+\end{equation}
+\noindent
+which measures the fraction of pairs of vertices in the $\varepsilon$-ball around $x_v$ that are
+mutually $\varepsilon$-close. For vertices with $\hat{k}_v(\varepsilon)<2$, we define $\hat{\mathcal{C}}_v(\varepsilon)=0$. It can be shown (see Section~\ref{sec:transitivity}) that the local clustering coefficient in a RN is associated with the geometric alignment of state vectors. Specifically, close to dynamically invariant objects such as unstable periodic orbits (UPOs) of low period, the dynamics of the system is effectively lower-dimensional, which results in a locally enhanced fraction of closed paths of length 3 (``triangles'') and, thus, a higher local clustering coefficicent. The latter behavior is exemplified in Fig.~\ref{fig:local}B for the R\"ossler system, where we recognize certain bands with higher values of $\hat{\mathcal{C}}_v$ corresponding to the positions of known low-periodic UPOs~\cite{Donner2010NJP}.
+
+While degree and local clustering coefficient characterize network structures on the local and meso-scale, there are further vertex characteristics that make explicit use of the concept of shortest paths and, thus, provide measures relying on the connectivity of the entire network. Two specific properties of this kind are the \textit{closeness} or \textit{closeness centrality}
+\begin{equation}
+\hat{c}_v(\varepsilon)=\left(\frac{1}{N-1}\sum_{i=1}^N \hat{d}_{vi}(\varepsilon) \right)^{-1},
+\label{eq:closeness}
+\end{equation}
+\noindent
+which gives the inverse arithmetic mean of the shortest path lengths between vertex $v$ and all other vertices, and the \textit{local efficiency}
+\begin{equation}
+\hat{e}_v(\varepsilon)=\frac{1}{N-1}\sum_{i=1}^N \hat{d}_{vi}(\varepsilon)^{-1},
+\label{eq:locefficiency}
+\end{equation}
+\noindent
+which gives the inverse harmonic mean of these shortest path lengths. Notably, the latter quantity has the advantage of being well-behaved in the case of disconnected network components, where there are no paths between certain pairs of vertices (i.e., $\hat{d}_{ij}=\infty$). In order to circumvent divergences of the closeness due to the existence of disconnected components, it is convenient to always set $\hat{d}_{ij}$ to the highest possible value of $N-1$ for pairs of vertices that cannot be mutually reached. Both $\hat{c}_v(\varepsilon)$ and $\hat{e}_v(\varepsilon)$ characterize the geometric centrality of vertex $v$ in the network, i.e., closeness and local efficiency exhibit the highest values for such vertices which are situated in the center of the RN (see Fig.~\ref{fig:local}C for an illustration for the R\"ossler system).
+
+Another frequently studied path-based vertex characteristic is the so-called \textit{betweenness} or \textit{betweenness centrality}, which measures the fraction of shortest paths in a network traversing a given vertex $v$. Let $\hat{\sigma}_{ij}$ denote the total number of shortest paths between two vertices $i$ and $j$ and $\hat{\sigma}_{ij}(v)$ the multiplicity of these paths that include a given vertex $v$, betweenness centrality is defined as
+\begin{equation}
+\hat{b}_v(\varepsilon)=\sum_{i,j=1; i,j\neq v}^M \frac{\hat{\sigma}_{ij}(v)}{\hat{\sigma}_{ij}}.
+\label{eq:betweenness}
+\end{equation}
+\noindent
+Betweenness centrality is commonly used for characterizing the importance of vertices for information propagation in networks. In the RN context, it can be interpreted as indicating the local degree of fragmentation of the underlying attractor~\cite{Donner2010NJP}. To see this, consider two densely populated regions of phase space that are separated by a poorly populated one. Vertices in the latter will ``bundle'' the shortest paths between vertices in the former ones, thus forming geometric bottlenecks in the RN. In this spirit, we may understand the spatial distribution of betweenness centrality for the R\"ossler system (Fig.~\ref{fig:local}D) which includes certain bands with higher and lower residence probability reflected in lower and higher betweenness values.
+           
+        
   		\subsubsection{Edge characteristics}
+        
+In contrast to vertices, whose properties can be characterized by a multitude of graph characteristics, there are fewer measures that explicitly relate to the properties of edges or, more general, pairs of vertices. One such measure is the \textit{matching index}, which quantifies the overlap of the network neighborhoods of two vertices $v$ and $w$:
+\begin{equation}
+\hat{m}_{vw}(\varepsilon)=\frac{\sum_{i=1}^N A_{vi}(\varepsilon) A_{wi}(\varepsilon)}{\hat{k}_v(\varepsilon)+\hat{k}_w(\varepsilon)-\sum_{i=1}^N A_{vi}(\varepsilon) A_{wi}(\varepsilon)}.
+\label{eq:matching}
+\end{equation}
+\noindent
+From the above definition, it follows that $\hat{m}_{vw}(\varepsilon)=0$ if $\|x_v-x_w\|\geq 2\varepsilon$. In turn, there can be mutually unconnected vertices $v$ and $w$ ($A_{vw}=0$) with $\varepsilon\leq \|x_v-x_w\|< 2\varepsilon$ that have some common neighbors and, thus, non-zero matching index. In the context of recurrences in phase space, $\hat{m}_{vw}(\varepsilon)=1$ implies that the states $x_v$ and $x_w$ are twins, i.e., share the same neighborhood in phase space. In this spirit, we interpret $\hat{m}_{vw}(\varepsilon)$ as the degree of twinness of two state vectors. Note that twins have important applications in creating surrogates for testing for the presence of complex synchronization~\cite{Thiel2006,Romano2009}.
+
+While the concept of matching index does not require the presence of an edge between two vertices $v$ and $w$, there are other characteristics that are explicitly edge-based. To this end, we only mention that the concept of betweenness centrality can also be transfered to edges, leading to the \textit{edge betweenness} measuring the fraction of shortest paths on the graph traversing through a specific edge $(v,w)$:
+\begin{equation}
+\hat{b}_{vw}(\varepsilon)=\sum_{i,j=1; i,j\neq v,w}^M \frac{\hat{\sigma}_{ij}(v,w)}{\hat{\sigma}_{ij}},
+\label{eq:edgebetweenness}
+\end{equation}
+\noindent
+where $\hat{\sigma}_{ij}(v,w)$ gives the total number of shortest paths between two vertices $i$ and $j$ that include the edge $(v,w)$. If there is no edge between two vertices $v$ and $w$, we set $\hat{b}_{vw}=0$ for convenience. As the (vertex-based) betweenness centrality, in a RN edge betweenness characterizes the local fragmentation of the studied dynamical system in its phase space.
+        
+For the specific case of $\varepsilon$-recurrence networks, we emphasize that there is no simple correspondence between matching index and edge betweenness, since both quantify distinctively different aspects of phase space geometry. Specifically, there are more pairs of vertices with non-zero matching index than edges, even though there are also pairs of vertices with $\hat{b}_{vw}(\varepsilon)>0$ but $\hat{m}_{vw}(\varepsilon)=0$ (i.e., there is an edge between $v$ and $w$, but both have no common neighbors). However, for those pairs of vertices for which both characteristics are non-zero, we find a clear anti-correlation. One interpretation of this finding is that a large matching index typically corresponds to very close vertices in phase space; such pairs of vertices can in turn be easily exchanged as members of shortest paths on the network, which implies lower edge betweenness values. A similar argument may explain the coincidence of high edge betweenness and low non-zero matching index values.
+        
+        
+        
 		\subsubsection{Global network characteristics}
+
+Some, but not all useful global network characteristics can be derived by averaging certain local-scale (vertex) properties. Prominently, the \textit{edge density}
+\begin{equation}
+\hat{\rho}(\varepsilon)=\frac{1}{N}\sum_{v=1}^N \hat{\rho}_v(\varepsilon)=\frac{1}{N(N-1)} \sum_{i,j=1}^N A_{ij}(\varepsilon)
+\label{eq:edgedensity}
+\end{equation}
+\noindent
+is defined as the arithmetic mean of the degree densities of all verticies and characterizes the fraction of possible edges that are present in the network. Notably, for a RN the edge density equals the recurrence rate $RR(\varepsilon)$ of the underlying RP\footnote{Strictly speaking, this is only true if the recurrence rate is defined such as the main diagonal in the RP is excluded in the same way as potential self-loops from the RN's adjacency matrix.}. It is trivial to show that $\hat{\rho}(\varepsilon)$ is a monotonically increasing function of the recurrence threshold $\varepsilon$: the larger the threshold, the more neighbors can be found, and the higher the edge density.
+
+In a similar way, we can consider the arithmetic mean of the local clustering coefficients $\hat{\mathcal{C}}_v(\varepsilon)$ of all vertices, resulting in the (Watts-Strogatz) \textit{global clustering coefficient}~\cite{Watts1998}
+\begin{equation}
+\hat{\mathcal{C}}(\varepsilon)=\frac{1}{N}\sum_{v=1}^N \hat{\mathcal{C}}_v(\varepsilon)
+= \frac{1}{N}\sum_{v=1}^N \frac{\sum_{i,j=1}^N A_{vi}(\varepsilon) A_{ij}(\varepsilon) A_{jv}(\varepsilon)}{\hat{k}_v(\varepsilon)(\hat{k}_v(\varepsilon)-1)}.
+\label{eq:globclustering}
+\end{equation}
+\noindent
+The global clustering coefficient measures the mean fraction of triangles that include the different vertices of the network. Given our interpretation of the local clustering coefficient in a RN, $\hat{\mathcal{C}}(\varepsilon)$ can be interpreted as a proxy for the average local dimensionality of the dynamical system in phase space.
+
+Notably, in the case of a very heterogeneous degree distribution, the global clustering coefficient will be dominated by contributions from the most abundant type of vertices. For example, for a scale-free network with $p(k)\sim k^{-\gamma}$, vertices with small degree will contribute predominantly, which can lead to an underestimation of the actual fraction of triangles in the network, since $\hat{\mathcal{C}}_v(\varepsilon)=0$ if $\hat{k}_v(\varepsilon)<2$ by definition. In order to correct for such effects, Barrat and Weigt~\cite{Barrat2000} proposed an alternative definition of the clustering coefficient, which is nowadays frequently refered to as \textit{network transitivity}~\cite{Boccaletti2006} and is defined as
+\begin{equation}
+\hat{\mathcal{T}}(\varepsilon)= \frac{\sum_{v,i,j=1}^N A_{vi}(\varepsilon) A_{ij}(\varepsilon) A_{jv}(\varepsilon)}{\sum_{v,i,j=1}^N A_{vi}(\varepsilon) A_{jv}(\varepsilon)}.
+\label{eq:transitivity}
+\end{equation}
+\noindent
+When interpreting $\hat{\mathcal{C}}(\varepsilon)$ as a proxy for the average local dimensionality, $\hat{\mathcal{T}}(\varepsilon)$ characterizes the effective global dimensionality of the system.
+
+Finally, turning to shortest path-based characteristics, we define the \textit{average path length}
+\begin{equation}
+\hat{\mathcal{L}}(\varepsilon)=\frac{1}{N(N-1)} \sum_{i,j=1}^N \hat{d}_{ij}(\varepsilon) = \frac{1}{N} \sum_{v=1}^N \hat{c}_v(\varepsilon)^{-1}
+\label{eq:apl}
+\end{equation}
+\noindent
+as the arithmetic mean of the shortest path lengths between all pairs of vertices, and the \textit{global efficiency}
+\begin{equation}
+\hat{\mathcal{E}}(\varepsilon)=\left(\frac{1}{N(N-1)} \sum_{i,j=1}^N \hat{d}_{ij}(\varepsilon)^{-1} \right)^{-1} = \left( \frac{1}{N} \sum_{v=1}^N \hat{e}_v(\varepsilon) \right)^{-1}
+\label{eq:globefficiency}
+\end{equation}
+\noindent
+as the associated harmonic mean. Notably, the average path length can be rewritten as the arithmetic mean of the inverse closeness, and the global efficiency as the inverse arithmetic mean of the local efficiency. We can easily convince ourselves that the average path length must exhibit an inverse relationship with the recurrence threshold, since it approximates (constant) distances in phase space in units of $\varepsilon$~\cite{Donner2010NJP}.
+
 
 	\subsection{Stylized facts of complex networks}
 		\subsubsection{Random network models}
@@ -18,8 +126,119 @@
 	New subsection, given the emerging literature on this topic (also in conjunction with recurrence networks, cf. Zhongke Gao), this appears reasonable
 
 	\subsection{Coupled networks}
-    Reik to add content from RN book chapter, then Jona to revise/update
+    
+In order to define characteristics that are specifically tailored for analyzing the interdependence structure between two or more complex networks (also called interacting, interdependent, or networks of networks)~\cite{Buldyrev2010}, we utilize a recently introduced general framework~\cite{Donges2011EPJB,Wiedermann2013}. For this purpose, let us consider an arbitrary undirected and unweighted simple graph $G=(V,E)$ with adjacency matrix $\textbf{A}=\{A_{ij}\}_{i,j=1}^N$. Furthermore, let us assume that there is a given partition of $G$ with the following properties:
+\begin{enumerate}
+\item The vertex set $V$ is decomposed into $K$ disjunct subsets $V_k \subseteq V$ such that $\bigcup_{k=1}^K V_k = V$ and $V_k \cap V_l = \emptyset$ for all $k \neq l$. The cardinality of $V_k$ will be denoted as $N_k$. 
+\item The edge set $E$ consists of mutually disjoint sets $E_{kl} \subseteq E$ with $\bigcup_{k,l=1}^K E_{kl} = E$ and $E_{kl} \cap E_{mn}=\empty$ for all $(k,l) \neq (m,n)$.
+\item Let $E_{kl}\subseteq V_k\times V_l$. Specifically, for all $k=1,\dots,K$, $G_k=(V_k,E_{kk})$ is the induced subgraph of the vertex set $V_k$ with respect to the full graph $G$.
+\end{enumerate}
+\noindent
+Under these conditions, $E_{kk}$ comprises the (internal) edges within $G_k$, whereas $E_{kl}$ contains all (cross-) edges connecting $G_k$ and $G_l$. Specifically, for the ``natural'' partition of an IRN, the $G_k$ correspond to the single-system RNs constructed from the systems $X_k$, whereas the cross-recurrence structure is encoded in $E_{kl}$ for $k \neq l$.
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=.50\columnwidth]{interacting_networks.pdf} 
+%\caption{Schematic illustration of a network partitioning into subgraphs providing the basis of the interdependent network analysis framework used for studying IRNs.}
+%\label{fig:interacting}
+%\end{figure}
+
+We are now in a position to study the interconnectivity structure between two subnetworks $G_k, G_l$ on several topological scales drawing on the lineup of local and global graph-theoretical measures generalizing those used for single network characterization (Section~\ref{sec:rn_measures}). In this context, local measures $\hat{f}_v^{kl}$ characterize a property of vertex $v \in V_k$ with respect to subnetwork $G_l$, while global measures $\hat{f}_{kl}$ assign a single real number to a pair of subnetworks $G_k, G_l$ to quantify a certain aspect of their mutual interconnectivity structure. Most interconnectivity characteristics discussed below have been originally introduced in \cite{Donges2011EPJB} which see for more detailed discussions.
+
     
 		\subsubsection{General foundations}
-		\subsubsection{Vertex characteristics}
-		\subsubsection{Global characteristics}
+
+\subsubsection{Vertex characteristics}
+
+The \textit{cross-degree} (or \textit{cross-degree centrality})
+\begin{equation}
+\hat{k}_v^{kl} = \sum_{i \in V_l} A_{vi}
+\label{eq:degree_cross}
+\end{equation}
+counts the number of neighbors of $v$ within $G_l$, i.e., direct connections between $G_k$ and $G_l$ (Fig.~\ref{fig:interacting_measures}A). Thus, this measure provides information on the relevance of $v$ for the network ``coupling'' between $G_k$ and $G_l$\footnote{In the specific case of an IRN, we interpret this as geometric signatures of the coupling between the underlying dynamical systems $X_k$ and $X_l$~\cite{Feldhoff2011,Feldhoff2012}.}. For the purpose of the present work, it is useful studying a normalized version of this measure, the \textit{cross-degree density}
+\begin{equation}
+\hat{\rho}_v^{kl} = \frac{1}{N_l} \sum_{i \in V_l} A_{vi} = \frac{1}{N_l} \hat{k}_v^{kl}.
+\label{eq:locrho_cross}
+\end{equation}
+\noindent
+For an IRN, $\hat{\rho}_v^{kl}(\varepsilon_{kl})$ equals the (cross-) recurrence rate $RR_{kl}(\varepsilon_{kl})$ (for $k=l$, it gives the corresponding single-system recurrence rate $RR_k(\varepsilon_k)$).
+
+As for the single network case, important information is governed by the presence of triangles in the network. Given two subnetworks, the \textit{local cross-clustering coefficient}
+\begin{equation}
+\hat{\mathcal{C}}_v^{kl} = \frac{1}{\hat{k}_v^{kl}(\hat{k}_v^{kl} - 1)} \sum_{i,j \in V_l} A_{vi} A_{ij} A_{jv},
+\label{eq:locclustering_cross}
+\end{equation}
+\noindent
+measures the relative frequency of two randomly drawn neighbors $i,j\in V_l$ of $v\in V_k$ are mutually connected (Fig.~\ref{fig:interacting_measures}B). For $\hat{k}_v^{kl}<2$, we define $\hat{\mathcal{C}}_v^{kl}=0$. In general, $\hat{\mathcal{C}}_v^{kl}$ characterizes the tendency of vertices in $G_k$ to connect to clusters of vertices in $G_l$. 
+%Unlike for the cross-degree, the standard local clustering coefficient does not directly follow by summing up the local cross-clustering coefficients of $v$ with respect to all subnetworks $G_l$, but requires more complex mathematical operations~\cite{Donges2011EPJB}. 
+
+The \textit{cross-closeness centrality}
+\begin{equation}
+\hat{c}_v^{kl} = \left(\frac{\sum_{i \in V_l} d_{vi}}{N_l}\right)^{-1}
+\label{eq:closeness_cross}
+\end{equation}
+\noindent
+(where $d_{vi}$ is the graph-theoretical shortest-path length between $v$ and $i$) characterizes the topological closeness of $v\in G_k$ to $G_l$, i.e., the inverse arithmetic mean of the shortest path lengths between $v$ and all vertices $i\in V_l$. If there exist no such paths, $d_{vi}$ is commonly set to the maximum possible value $N-1$ given the size of $G$. As in the single network case, replacing the arithmetic by the harmonic mean yields the \textit{local cross-efficiency}
+\begin{equation}
+\hat{e}_v^{kl} = \frac{\sum_{i \in V_l} d_{vi}^{-1}}{N_l},
+\label{eq:locefficiency_cross}
+\end{equation}
+\noindent
+which can be interpreted in close analogy to $\hat{c}_v^{kl}$. Note that in the case of IRNs, topological closeness directly implies geometric closeness.
+
+As a final vertex characteristic, we may generalize the betweenness concept to the case of coupled subnetworks, which results in the \textit{cross-betweenness centrality}
+\begin{equation}
+\hat{b}_v^{kl} = \sum_{i\in V_k,j\in V_l;i,j\neq v} \frac{\hat{\sigma}_{ij}(v)}{\hat{\sigma}_{ij}}.
+\label{eq:betweenness_cross}
+\end{equation}
+\noindent
+Here, $\hat{\sigma}_{ij}(v)$ and $\hat{\sigma}_{ij}$ are defined as in the case of a single network. Note that unlike the other vertex characteristics discussed above, in the case of cross-betweenness centrality, we do not require $v$ belonging to $G_k$ or $G_l$  (Fig.~\ref{fig:interacting_measures}C). The reason for this is that vertices belonging to any subnetwork may have a non-zero betweenness regarding two given subgraphs $G_k$ and $G_l$, in the sense that shortest paths between $i\in V_k$ and $j\in V_l$ can also include vertices in other subnetworks. 
+
+
+\subsubsection{Global characteristics}
+
+The density of connections between two subnetworks can be quantified by taking the arithmetic mean of the local cross-degree density (Eq.~\ref{eq:locrho_cross}), yielding the \textit{cross-edge density}
+\begin{equation}
+\hat{\rho}^{kl} = \frac{1}{N_k N_l} \sum_{i \in V_k, j \in V_l} A_{ij} = \hat{\rho}^{lk}.
+\label{eq:globrho_cross}
+\end{equation}
+Notably, $\hat{\rho}^{kl}$ corresponds to the definition of the \textit{cross-recurrence rate} $RR_{kl}$ (Eq.~\ref{eq:crr}). Since we consider here only undirected networks (i.e., bidirectional edges), the cross-edge density is invariant under mutual exchange of the two considered subnetworks.
+
+The \textit{global cross-clustering coefficient}
+\begin{equation}
+\hat{\mathcal{C}}^{kl} = \left<\hat{\mathcal{C}}_v^{kl}\right>_{v \in V_k} = \frac{1}{N_k} \sum_{v \in V_k, \hat{k}_v^{kl}>1} \frac{\sum_{i,j \in V_l} A_{vi} A_{ij} A_{jv}}{\sum_{i \neq j \in V_l} A_{vi} A_{vj}}
+\label{eq:globclustering_cross}
+\end{equation}
+estimates the probability of vertices in $G_k$ to have mutually connected neighbors in $G_l$. Unlike the cross-edge density, the corresponding ``cross-transitivity'' structure is typically asymmetric, i.e., $\hat{\mathcal{C}}^{kl} \neq \hat{\mathcal{C}}^{lk}$. As in the single network case, we need to distinguish $\hat{\mathcal{C}}^{kl}$ from the \textit{cross-transitivity}
+\begin{equation}
+\hat{\mathcal{T}}^{kl} = \frac{\sum_{v \in V_k; i,j \in V_l} A_{vi} A_{ij} A_{jv}}{\sum_{v \in V_k; i \neq j \in V_l} A_{vi}  A_{vj}},
+\label{eq:transitivity_cross}
+\end{equation}
+for which we generally have $\hat{\mathcal{T}}^{kl}(\varepsilon) \neq \hat{\mathcal{T}}^{lk}(\varepsilon)$ as well. Again, we have to underline that cross-transitivity and global cross-clustering coefficient are based on a similar concept, but capture distinctively different network properties.
+
+Regarding the quantification of shortest path-based characteristics, we define the \textit{cross-average path length}
+\begin{equation}
+\hat{\mathcal{L}}^{kl} = \frac{1}{N_k N_l} \sum_{i \in V_k, j \in V_l} d_{ij} %= \hat{\mathcal{L}}_{lk}
+\label{eq:apl_cross}
+\end{equation}
+and the \textit{global cross-efficiency}
+\begin{equation}
+\hat{\mathcal{E}}^{kl} = \left( \frac{1}{N_k N_l} \sum_{i \in V_k, j \in V_l} d_{ij}^{-1} \right)^{-1} %= \hat{\mathcal{E}}_{lk}.
+\label{eq:globefficiency_cross}
+\end{equation}
+\noindent
+Unlike $\hat{\mathcal{C}}^{kl}$ and $\hat{\mathcal{T}}^{kl}$, $\hat{\mathcal{L}}^{kl}$ and $\hat{\mathcal{E}}^{kl}$ are (as shortest path-based measures) symmetric by definition, i.e., $\hat{\mathcal{L}}^{kl}(\varepsilon)=\hat{\mathcal{L}}^{lk}(\varepsilon)$ and $\hat{\mathcal{E}}^{kl}(\varepsilon)=\hat{\mathcal{E}}^{lk}(\varepsilon)$. In the case of disconnected network components, the shortest path length $d_{ij}$ is defined as discussed for the corresponding local measures.
+
+%All aforementioned global characteristics quantify certain aspects of the interdependence structure between two subnetworks and can be derived from contributions of local (single-vertex) measures. Notably, we may also proceed in a similar way regarding the cross-betweenness centrality to obtain a \textit{global cross-betweenness} by setting
+%\begin{equation}
+%\hat{\mathcal{B}}_{kl}=\frac{1}{K}\sum_{m=1}^K \hat{\mathcal{B}}^{kl|m}
+%\end{equation}
+%\noindent
+%with
+%\begin{equation}
+%\hat{\mathcal{B}}_{kl|m} = \frac{1}{N_m} \sum_{v\in V_m} \hat{b}_{v}^{kl}.
+%\end{equation}
+%\noindent
+%We note that using betweenness as a global network characteristics is quite uncommon in complex network theory, so that we will not further utilize this measure here. Specifically, $\hat{\mathcal{B}}_{kl}$ quantifies the total number of shortest paths between elements from $G_k$ and $G_l$, including both direct connections (which have already been characterized by the cross-edge density) and indirect connections (i.e., shortest paths traversing further vertices within $G_k$ and $G_l$ or even other subnetworks). Regarding the latter aspect, consideration of $\hat{\mathcal{B}}_{kl|m}$ connecting three subnetworks might be particularly interesting. Here, we expect $\hat{\mathcal{B}}_{kl|m}=\hat{\mathcal{B}}_{lk|m}$, but $\hat{\mathcal{B}}_{kl|m}\neq \hat{\mathcal{B}}_{km|l}$ etc. In this spirit, $\hat{\mathcal{B}}_{kl|m}$ can be interpreted as a \emph{conditional} global network characteristics.
+
+In the same spirit as shown above, other single network characteristics~\cite{Boccaletti2006,Costa2007} can be adopted as well for defining further interdependent network measures. This includes measures characterizing edges or, more generally, pairs of vertices like edge betweenness or matching index, further global network characteristics (assortativity, network diameter and radius), mesoscopic structures (motifs), or even characteristics associated with diffusion processes on the network instead of shortest paths (e.g., eigenvector centrality or random walk betweenness). The selection of measures introduced above reflects those characteristics which have the most direct interpretation in the context of IRNs and have also been utilized in studying the interdependence structure between complex networks in other contexts~\cite{Donges2011EPJB,Wiedermann2013}. %A more detailed discussion of further measures, including the derivation of closed-form expressions and possible continuous generalizations (see Section~\ref{sec:analytics}) is left as a topic of future research.
