@@ -1,9 +1,186 @@
-\section{Complex network theory {\bf{(Reik)}}}
-	\subsection{Basic concepts}
+\section{Complex network theory {\bf{(ALL)}}} \label{sec:CompNetworkT}
+We provide a brief introduction of the recent developments in the characterization of the structural properties of a network, focusing on definitions, notations, and basic quantities that are most often used to describe the topologies of networks that are reconstructed from time series. More general descriptions of complex networks can be found in the literature in a number of review articles \cite{Albert2002,Newman2003,Boccaletti2006,Costa2007} and books \cite{Cohenbook2010,Newmanbook2010}, which the reader may find useful to consult.  
+	
+	\subsection{Basic concepts} 
+	A complex network is often represented as a graph $G = (V, E)$ which consists of two sets $V$ and $E$, where $V$ is the set of vertices (nodes or points) of the graph $G$, and $E$ is the set of edges (links, edges or lines) representing the connection pairs of elements of $V$ \cite{Costa2007}. Each vertex is identified by an integer index $i = 1, 2, \cdots, N$ and each edge is identified by a pair $e_{ij}$ connecting two vertices $i$ and $j$. A graph $G$ is called undirected if an edge from vertex $i$ to $j$ as denoted by $e_{ij}$ is equivalent to the edge of $e_{ji}$ from vertex $j$ to $i$, $e_{ij} = e_{ji}$. On the other hand, in a directed graph, $e_{ij} \neq e_{ji}$. A graph may contain loops, i.e. edges from a vertex to itself or multiple edges, i.e. pairs of vertices connected by more than one edges which needs another attribute $w$ to quantify the weight of $e_{ij}$, i.e. denoted by $w_{ij}$. A weighted digraph can be completely described by its weight matrix $W$ so that each entry $w_{ij}$ expresses the weight of the connection from vertex $i$ to vertex $j$. In this chapter, we first consider undirected and unweighted graphs no need $w_{ij}$ which will be the case for most of the network approaches for time series.  Weighted graphs will receive a special attention and will be discussed in Section \ref{sec:TransitionNt} for transition networks. 
+	
+	An unweighted graph can be achieved by introducing a proper threshold to the weighted counterpart $W$ \cite{Costa2007}, yielding the binary matrix $A$. The entry of $A$ are computed by comparing the corresponding weight matrix $W$ with a specified threshold $T$ and we have $a_{ij} = 1$ if $w_{ij} > T$, otherwise, $a_{ij} = 0$. The resulting matrix $A$ is called adjacency matrix of the unweighted graph. Further introduction of symmetry to $A$ i.e. identifying $e_{ij} = e_{ji}$ results in an undirected graph. Such an undirected, unweighted graph is also called a simple graph which is the  mathematical framework for the structural characterization of complex networks in the following sections. 
+	
+	Depending on the particular mappings transforming a given time series into a complex network, the resulting adjacency matrix $A$ often depends on some proper chosen algorithmic parameters, for instance, the threshold value $\varepsilon$ of the recurrence network approach. More importantly, we often have some particular interpretations for network measures, for instance, in terms of geometry of dynamical system. In the following, we first introduce some general formula in characterizing network structures based on $A$. More specific discussions of network measures in terms of the particular network transforming methods will be presented in the later sections. 
 
+	In addition to the concepts of vertices and edges, the third important concept in complex network theory is the notion of paths. A \emph{path} between two specified vertices $i$ and $j$ is an ordered sequence of edges starting at $i$ and ending at $j$, with its \emph{path length} $d_{ij}$ given by the number of edges in this sequence. There are also various measures characterizing the structural properties of networks based on paths, which will be briefly reviewed here as well.  
+
+	\subsection{Network characteristics} \label{sec:basictheoryCN}
+		\subsubsection{Vertex characteristics}
+		There are various measures to characterize the structures of a complex network, quantifying the importance of either a vertex or an edge in terms of a particular definition of network property. The conceptually simplest measure characterizing the connectivity properties of a single vertex in a complex network is the \textit{degree} or \textit{degree centrality}
+\begin{equation} 
+k_v=\sum_{i=1}^N A_{iv} ,
+\label{eq:degree}
+\end{equation}
+\noindent
+which simply counts the number of edges associated with a given vertex $v$. It is also convenient to introduce the averaged degree $\rho_v = \frac{1}{N-1} k_v$ as the local connectivity density of $v$. Furthermore, the topological characterization of the graph $G$ can be obtained in terms of the degree distribution $p(k)$, defined as the probability that a vertex chosen uniformly at random has degree $k$ or, equivalently, as the fraction of vertices in the graph having degree $k$. Note that the variable $k$ assumes non-negative integer values. Degree distribution $p(k)$ is often used to classify complex networks, for instance, a scale free network is characterized by $p(k) \sim k^{-\gamma}$, which will further discussed in Sec. \ref{sec:styleFacts}. 
+
+		In order to characterize the density of connections among the neighbors of a given vertex $v$, we can utilize the \textit{local clustering coefficient}
+\begin{equation}
+  {\mathcal{C}}_v =\frac{1}{  {k}_v (  {k}_v -1)} \sum_{i,j=1}^N A_{vi}  A_{ij}  A_{jv} ,
+\label{eq:locclustering}
+\end{equation}
+\noindent
+which measures the fraction of pairs of vertices in the neighborhood of $v$ that are mutually connected. 
+
+		While degree and local clustering coefficient characterize network structures on the local and meso-scale, there are further vertex characteristics that make explicit use of the concept of shortest paths and, thus, provide measures relying on the connectivity of the entire network. Two specific properties of this kind are the \textit{closeness} or \textit{closeness centrality}
+\begin{equation}
+  {c}_v =\left(\frac{1}{N-1}\sum_{i=1}^N   {d}_{vi}  \right)^{-1},
+\label{eq:closeness}
+\end{equation}
+\noindent
+which gives the inverse arithmetic mean of the shortest path lengths $d_{vi}$ between vertex $v$ and all other vertices, and the \textit{local efficiency}
+\begin{equation}
+  {e}_v =\frac{1}{N-1}\sum_{i=1}^N   {d}_{vi} ^{-1},
+\label{eq:locefficiency}
+\end{equation}
+\noindent
+which gives the inverse harmonic mean of these shortest path lengths. Notably, the latter quantity has the advantage of being well-behaved in the case of disconnected network components, where there are no paths between certain pairs of vertices (i.e., $  {d}_{ij}=\infty$). In order to circumvent divergences of the closeness due to the existence of disconnected components, it is convenient to always set ${d}_{ij}$ to the highest possible value of $N-1$ for pairs of vertices that cannot be mutually reached. Both $  {c}_v $ and $  {e}_v $ characterize the geometric centrality of vertex $v$ in the network, i.e., closeness and local efficiency exhibit the highest values for such vertices which are situated in the center of the networks. 
+
+		Another frequently studied path-based vertex characteristic is the so-called \textit{betweenness} or \textit{betweenness centrality}, which measures the fraction of shortest paths in a network traversing a given vertex $v$. Let $  {\sigma}_{ij}$ denote the total number of shortest paths between two vertices $i$ and $j$ and $  {\sigma}_{ij}(v)$ the multiplicity of these paths that include a given vertex $v$, betweenness centrality is defined as
+\begin{equation}
+  {b}_v =\sum_{i,j=1; i,j\neq v}^M \frac{  {\sigma}_{ij}(v)}{  {\sigma}_{ij}}.
+\label{eq:betweenness}
+\end{equation}
+\noindent
+Betweenness centrality is commonly used for characterizing the importance of vertices for information propagation in networks. 
+
+		\subsubsection{Edge characteristics}
+		In contrast to vertices, whose properties can be characterized by a multitude of graph characteristics, there are fewer measures that explicitly relate to the properties of edges or, more general, pairs of vertices. One such measure is the \textit{matching index}, which quantifies the overlap of the network neighborhoods of two vertices $v$ and $w$:
+\begin{equation}
+  {m}_{vw} =\frac{\sum_{i=1}^N A_{vi}  A_{wi} }{  {k}_v +  {k}_w -\sum_{i=1}^N A_{vi}  A_{wi} }.
+\label{eq:matching}
+\end{equation}
+\noindent
+
+		While the concept of matching index does not require the presence of an edge between two vertices $v$ and $w$, there are other characteristics that are explicitly edge-based. To this end, we only mention that the concept of betweenness centrality can also be transferred to edges, leading to the \textit{edge betweenness} measuring the fraction of shortest paths on the graph traversing through a specific edge $(v,w)$:
+\begin{equation}
+  {b}_{vw} =\sum_{i,j=1; i,j\neq v,w}^M \frac{  {\sigma}_{ij}(v,w)}{  {\sigma}_{ij}},
+\label{eq:edgebetweenness}
+\end{equation}
+\noindent
+where $  {\sigma}_{ij}(v,w)$ gives the total number of shortest paths between two vertices $i$ and $j$ that include the edge $(v,w)$. If there is no edge between two vertices $v$ and $w$, we set $  {b}_{vw}=0$ for convenience. 
+        
+        		\subsubsection{Global network characteristics}
+		Some, but not all useful global network characteristics can be derived by averaging certain local-scale (vertex) properties. Prominently, the \textit{edge density}
+\begin{equation}
+  {\rho} =\frac{1}{N}\sum_{v=1}^N   {\rho}_v =\frac{1}{N(N-1)} \sum_{i,j=1}^N A_{ij} 
+\label{eq:edgedensity}
+\end{equation}
+is defined as the arithmetic mean of the degree densities of all vertices and characterizes the fraction of possible edges that are present in the network. 
+
+		In a similar way, we consider the arithmetic mean of the local clustering coefficients $  {\mathcal{C}}_v $ of all vertices, resulting in the (Watts-Strogatz) \textit{global clustering coefficient}~\cite{Watts1998}
+\begin{equation}
+  {\mathcal{C}} =\frac{1}{N}\sum_{v=1}^N   {\mathcal{C}}_v 
+= \frac{1}{N}\sum_{v=1}^N \frac{\sum_{i,j=1}^N A_{vi}  A_{ij}  A_{jv} }{  {k}_v (  {k}_v -1)}.
+\label{eq:globclustering}
+\end{equation}
+\noindent
+The global clustering coefficient measures the mean fraction of triangles that include the different vertices of the network. 
+
+		Notably, in the case of a very heterogeneous degree distribution, the global clustering coefficient will be dominated by contributions from the most abundant type of vertices. For example, for a scale-free network with $p(k)\sim k^{-\gamma}$, vertices with small degree will contribute predominantly, which can lead to an underestimation of the actual fraction of triangles in the network, since $  {\mathcal{C}}_v =0$ if $  {k}_v <2$ by definition. In order to correct for such effects, Barrat and Weigt~\cite{Barrat2000} proposed an alternative definition of the clustering coefficient, which is nowadays frequently referred to as \textit{network transitivity}~\cite{Boccaletti2006} and is defined as
+\begin{equation}
+  {\mathcal{T}} = \frac{\sum_{v,i,j=1}^N A_{vi}  A_{ij}  A_{jv} }{\sum_{v,i,j=1}^N A_{vi}  A_{jv} }.
+\label{eq:transitivity}
+\end{equation}
+\noindent
+
+
+	Finally, turning to shortest path-based characteristics, we define the \textit{average path length}
+\begin{equation}
+  {\mathcal{L}} =\frac{1}{N(N-1)} \sum_{i,j=1}^N   {d}_{ij}  = \frac{1}{N} \sum_{v=1}^N   {c}_v ^{-1}
+\label{eq:apl}
+\end{equation}
+\noindent
+as the arithmetic mean of the shortest path lengths between all pairs of vertices, and the \textit{global efficiency}
+\begin{equation} 
+  {\mathcal{E}} =\left(\frac{1}{N(N-1)} \sum_{i,j=1}^N   {d}_{ij} ^{-1} \right)^{-1} = \left( \frac{1}{N} \sum_{v=1}^N   {e}_v  \right)^{-1}
+\label{eq:globefficiency}
+\end{equation}
+\noindent
+as the associated harmonic mean. Notably, the average path length can be rewritten as the arithmetic mean of the inverse closeness, and the global efficiency as the inverse arithmetic mean of the local efficiency.         
+
+	\subsection{Stylized facts of complex networks} \label{sec:styleFacts}
+	Erd\"os and R\'enyi \cite{Erdos1959} introduced a model to generate random graphs consisting of $N$ vertices and $M$ edges. Starting with $N$ disconnected vertices, the network is constructed by the addition of $L$ edges at random, avoiding multiple and self connections. Another similar model defines $N$ vertices and a probability $p$ of connecting each pair of vertices. The latter model is widely known as Erd\"os-R\'enyi (ER) model. For the ER model, in the large network size limit $(N \to \infty)$, the average number of connections of each vertex $\left < k \right>$ is given by $\left< k \right > = p (N - 1)$,  where $p$ is fixed  and often chosen as a function of $N$ to keep $\left < k \right >$ fixed. For this model, degree distribution $p(k)$ is a Poisson distribution. 
+	
+	In regular hypercubic lattices in $D$ dimensions, the mean number of vertices one has to pass by in order to reach an arbitrarily chosen vertex, grows with the lattice size as $N^{1/d}$. Conversely, in most of the real networks, despite of their often large size $N$, there is a relatively short path between any two vertices. This feature is known as the small-world property and is mathematically characterized by an average shortest path length $\mathcal{L}$ (Eq. \eqref{eq:apl}) that depends at most logarithmically on the network size $N$ \cite{Albert2002,Newman2003,Boccaletti2006}. As variance with random graphs, the small world property in real networks is often associated with the presence of clustering, denoted by high values of the clustering coefficient. For this reason, Watts and Strogatz \cite{Watts1998} have proposed to define small-world networks (WS model) as those networks having both a small value of $\mathcal{L}$, like random graphs, and a high clustering coefficient $\mathcal{C}$, like regular lattices.  This model is situated between an ordered finite lattice and a random graph, presenting the small world property and high clustering coefficient. 
+
+	Barab\'asi and Albert \cite{Barabasi199} showed that the degree distribution $p(k)$ of many real systems is characterized by an uneven distribution. Instead of the vertices of these networks having a random pattern of connections with a characteristic degree, as with the ER and WS models, some vertices are highly connected while others have few connections, with the absence of a characteristic degree. More specifically, the degree distribution has been found to follow a power law for large $k$, namely, $p(k) \sim k^{-\gamma}$. These networks are called scale free networks (BA model), which is captured by a pronounced linear regime in the double logarithmic plot of $p(k)$. The two important ingredients of the BA model is growth and preferential attachment. A proper statistical justification of scale free properties of real networks is a non-trivial task because of effects from finite sizes, intrinsic noise and finite sampling etc \cite{Clauset2009}. 
+	
+	In addition, a large number of real networks are correlated in the sense that the probability that a node of degree $k$ is connected to another node of degree, say $k'$, depends on $k$. This problem can be quantified by the average nearest neighbors degree of a vertex $i$, or simply the assortativity coefficient $\mathcal{R}$ correlation coefficient between the degree sequences \cite{Newman2002}. In assortative networks, the vertices tend to connect to their connectivity peers ($\mathcal{R} > 0$), while in disassortative networks vertices with low degrees are more likely connected with highly connected ones ($\mathcal{R} < 0$). 
+	
+	All of these stylized facts of complex networks will be discussed in the respective framework when introducing different network construction algorithms for nonlinear time series. 
+	
+		\subsection{Multiplex and multilayer networks} \label{sec:multiplex}
+		Most complex systems include multiple subsystems and layers of connectivity and they evolve, adapt and transform through internal and external dynamic interactions affecting the subsystems and components at both local and global scale. Predicting their multiscale and multicomponent dynamics is a difficult challenge for the recent research \cite{Boccaletti2014}. The issues posed by the multiscale modeling of both natural and artificial complex systems call for a generalization of the ``traditional" network theory, by developing a solid foundation and the consequent new associated tools to study multilayer and multicomponent systems in a comprehensive fashion. 
+		
+		We follow with the formal definition of a multilayer network \cite{Boccaletti2014} that is a pair $\mathcal{M} = (\mathcal{G}, \mathcal{C})$ where $\mathcal{G} = \{G_{\alpha}; \alpha \in [1, 2, \dots, M]\}$ is a family of graphs $G_{\alpha} = (V_{\alpha}, E_{\alpha})$ and 
+		\begin{equation}
+		\mathcal{C} = \{ E_{\alpha\beta} \subseteq V_{\alpha} \times V_{\beta}; \alpha, \beta \in [1, 2, \dots, M], \alpha \neq \beta \}
+		\end{equation}
+		is the set of interconnections between nodes of different layers $G_{\alpha}$ and $G_{\beta}$ with $\alpha \neq \beta$. The elements of $\mathcal{C}$ are called crossed layers and the elements of each $E_{\alpha}$ are called intralayer connections of $\mathcal{M}$ in contrast with elements of each $E_{\alpha\beta}$ that are called interlayer connections. By using this representation, we simultaneously consider edges that are inside different layers and edges that connect different layers. A multiplex network is a special type of multilayer network that each layer shares the same set of vertices, namely, $V_{1} = V_{2} = \cdots = V_M$ and the only possible type of interlayer connections are those in which a given node is connected to its counterpart nodes in the rest of layers.  In other words, a multiplex network consists of a fixed set of vertices connected by different types of edges \cite{Boccaletti2014}. 
+		
+		The readers are referred to \cite{Boccaletti2014,Buldyrev2010} for a more thorough review on multilayer networks. Furthermore, it is important to remark that concept of multilayer networks has been extended to other relevant notations, for instance, network of networks, interacting or interconnected networks, multidimensional networks, interdependent networks, multilevel networks, and hypernetworks etc. 
+		
+		\subsection{Transformations from time series to network domain}
+		The great success of network theory in various fields of research has motivated first attempts to generalize this concept for a direct application to time series \cite{Zhang2006,Zhang2008,Xu2008,Shimada2008,Yang2008,Lacasa2008,Wu2008,Small2009,Gao2009,Marwan2009,Donner2010a,Donner2011}. Then, based on network representation of time series, important complementary features of dynamical systems (i.e., properties that are not captured by existing methods of time series analysis) can be resolved. By means of complex network analysis, the first step is to find a proper network representation for time series, i.e., an algorithm defining what network vertex and network edge are. To this end, several approaches have been proposed. These methods can be roughly distinguished into three classes (see Tab.~\ref{tab:methods}), which are based on
+\begin{enumerate}[(i)]
+\item mutual proximity of different segments of a time series (proximity networks),
+\item convexity of successive observations (visibility graphs), and
+\item transition probabilities between discrete states (transition networks).
+\end{enumerate}
+
+		With the exception of visibility graphs, all approaches are related with the concept of recurrence \cite{Donner2011}. This is particularly evident for proximity networks, where connectivity is defined in a data-adaptive local way, \textit{i.e.,} by considering distinct regions with a varying center at a given vertex in either the phase space itself or an abstract proximity space. In contrast, for transition networks, the corresponding classes are rigid, \textit{i.e.,} determined by a fixed coarse-graining of the phase space. The distinction between both classes of approaches is conceptually similar to the duality of symbolic time series analysis (\textit{i.e.,} time series analysis based on a coarse-graining of the dynamics), which may both be used for estimating similar dynamical invariants such as entropies and mutual information.
+% I think this might be the best place to present this table. 			
+\begin{table}[t]%[H] add [H] placement to break table across pages
+\caption{Summary of the definitions of vertices and the criteria for the existence of edges in existing complex network approaches.}{
+%\begin{ruledtabular}
+\small
+\begin{tabular}{llll}
+\hline
+Method & Vertex & Edge & Directedness \\
+\hline
+Proximity networks & & \\
+\textit{Cycle networks} & Cycle & Correlation or phase space distance between cycles & undirected \\
+\textit{Correlation networks} & State vector & Correlation coefficient between state vectors & undirected \\
+\textit{Recurrence networks} & & & \\
+\quad \textit{$k$-nearest neighbor networks}& State (vector) & Recurrence of states (fixed neighborhood mass) & directed \\
+\quad \textit{adaptive nearest neighbor networks}& State (vector)  & Recurrence of states (fixed number of edges) & undirected \\
+\quad \textit{$\varepsilon$-recurrence networks} & State (vector) & Recurrence of states (fixed neighborhood volume) & undirected \\
+\hline
+Visibility graphs & Scalar state & Mutual visibility of states & undirected \\
+\hline
+Transition networks & Discrete state & Transitions between states & directed \\
+\hline
+\end{tabular}
+%\end{ruledtabular}
+\normalsize
+\label{tab:methods}}
+\end{table}
+
+		Among the three classes of methods listed above, the largest group of concepts is given by proximity networks, where the mutual closeness or similarity of different segments of a trajectory can be characterized in different ways. Consequently, there are different types of such proximity networks (see Tab.~\ref{tab:methods}): cycle networks, correlation networks, and recurrence networks. However, all these methods are characterized by two common general properties: Firstly, the resulting networks are invariant under relabeling of their vertices in the adjacency matrix. Hence, the topological characteristics of proximity networks yield nonlinear measures that are invariant against permutation of vertices. In this respect, the network-theoretic approach is distinctively different from traditional methods of time series analysis where the temporal order of observations does explicitly matter. Secondly, we have to point out that particularly proximity networks are spatial networks. In particular, recurrence networks are embedded in the phase space of the considered system, with distances being defined by one of the standard metrics (\textit{e.g.,} Euclidean, Manhattan, etc.). Similar considerations apply to other types of proximity networks as well. 
+
+		In this report, we will provide an exhaustive review on complex network approaches for nonlinear time series analysis, focusing on some important transformation methods that have been widely applied to various real experimental data analysis, in particular, recurrence networks, visibility graphs, and transition networks and their applications. Certainly, we will also discuss some algorithmic variants of these concepts and the relevant methods wherever it is necessary. 
+
+		\subsection{Transformations of complex networks to time series}
+		To investigate how much information is encoded in a network model of a time series, some studies have been undertaken to recover the original time series from the network, to use the network to reconstruct the phase space topology of the original system, or to generate new time series from the networks and compare these with the original \cite{Campanharo2011,hirata2008,Hirata2016,McCullough2017}. This inverse problem of getting back from the network adjacency matrix to time series of the underlying dynamical system remains a big challenge, which certainly has many applications. In general transformations of complex networks to time series are not so easy. In networks, the order of the vertices can be exchanged without affecting the network topology. But for this reconstruction of the trajectory the temporal order of the nodes are be required. 
+		
+		Some few algorithms have been proposed so far to reconstruct time series from networks. For instance, under the condition for the reconstructability, Thiel {\textit{et al}} proposed an algorithm to reconstruct time series from recurrence plot \cite{thiel2004b}. The reconstructed attractor shows topological equivalence with the original attractor. Furthermore, based on $k$-nearest neighbor networks, the topological properties of the underlying time series have been reconstructed by an inversion algorithm as presented in \cite{hirata2008}. Recently, it has been shown that $k$-nearest neighbor and $\varepsilon$-recurrence networks can be viewed as identical structures under a change of (equivalent) metrics \cite{Khor2016}. Based on this fact, an improved inversion algorithm is proposed in \cite{Khor2016}, which further validates the use of complex networks as a valid means of studying dynamical systems, whilst also revealing an equivalence between $\varepsilon$-recurrence and $k$-nearest neighbor classes of complex networks. Algorithms based on random walks have been proposed in the literature. For instance, a random walk algorithm has been proposed in \cite{Hou2015}, which further compares the performance of RNs and adaptive $k$-nearest neighbor networks. The performance of these algorithms have been compared in \cite{Liu2013c}. Recently, a constrained random walk algorithm has been proposed to regenerate time series from ordinal transition networks \cite{McCullough2017}. 
+		
+	
+	% 
+%%%%%%%%%%%%% The following should be back to RN section %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\iffalse
 	\subsection{Network characteristics}
-    Reik to add content from RN book chapter, then Jona to revise/update
-
 		\subsubsection{Vertex characteristics}
         
 The conceptually simplest measure characterizing the connectivity properties of a single vertex in a complex network is the \textit{degree} or \textit{degree centrality}
@@ -27,7 +204,7 @@ In order to characterize the density of connections among the neighbors of a giv
 \end{equation}
 \noindent
 which measures the fraction of pairs of vertices in the $\varepsilon$-ball around $x_v$ that are
-mutually $\varepsilon$-close. For vertices with $\hat{k}_v(\varepsilon)<2$, we define $\hat{\mathcal{C}}_v(\varepsilon)=0$. It can be shown (see Section~\ref{sec:transitivity}) that the local clustering coefficient in a RN is associated with the geometric alignment of state vectors. Specifically, close to dynamically invariant objects such as unstable periodic orbits (UPOs) of low period, the dynamics of the system is effectively lower-dimensional, which results in a locally enhanced fraction of closed paths of length 3 (``triangles'') and, thus, a higher local clustering coefficicent. The latter behavior is exemplified in Fig.~\ref{fig:local}B for the R\"ossler system, where we recognize certain bands with higher values of $\hat{\mathcal{C}}_v$ corresponding to the positions of known low-periodic UPOs~\cite{Donner2010NJP}.
+mutually $\varepsilon$-close. For vertices with $\hat{k}_v(\varepsilon)<2$, we define $\hat{\mathcal{C}}_v(\varepsilon)=0$. It can be shown (see Section~\ref{sec:transitivity}) that the local clustering coefficient in a RN is associated with the geometric alignment of state vectors. Specifically, close to dynamically invariant objects such as unstable periodic orbits (UPOs) of low period, the dynamics of the system is effectively lower-dimensional, which results in a locally enhanced fraction of closed paths of length 3 (``triangles'') and, thus, a higher local clustering coefficicent. The latter behavior is exemplified in Fig.~\ref{fig:local}B for the R\"ossler system, where we recognize certain bands with higher values of $\hat{\mathcal{C}}_v$ corresponding to the positions of known low-periodic UPOs~\cite{Donner2010a}.
 
 While degree and local clustering coefficient characterize network structures on the local and meso-scale, there are further vertex characteristics that make explicit use of the concept of shortest paths and, thus, provide measures relying on the connectivity of the entire network. Two specific properties of this kind are the \textit{closeness} or \textit{closeness centrality}
 \begin{equation}
@@ -49,7 +226,7 @@ Another frequently studied path-based vertex characteristic is the so-called \te
 \label{eq:betweenness}
 \end{equation}
 \noindent
-Betweenness centrality is commonly used for characterizing the importance of vertices for information propagation in networks. In the RN context, it can be interpreted as indicating the local degree of fragmentation of the underlying attractor~\cite{Donner2010NJP}. To see this, consider two densely populated regions of phase space that are separated by a poorly populated one. Vertices in the latter will ``bundle'' the shortest paths between vertices in the former ones, thus forming geometric bottlenecks in the RN. In this spirit, we may understand the spatial distribution of betweenness centrality for the R\"ossler system (Fig.~\ref{fig:local}D) which includes certain bands with higher and lower residence probability reflected in lower and higher betweenness values.
+Betweenness centrality is commonly used for characterizing the importance of vertices for information propagation in networks. In the RN context, it can be interpreted as indicating the local degree of fragmentation of the underlying attractor~\cite{Donner2010a}. To see this, consider two densely populated regions of phase space that are separated by a poorly populated one. Vertices in the latter will ``bundle'' the shortest paths between vertices in the former ones, thus forming geometric bottlenecks in the RN. In this spirit, we may understand the spatial distribution of betweenness centrality for the R\"ossler system (Fig.~\ref{fig:local}D) which includes certain bands with higher and lower residence probability reflected in lower and higher betweenness values.
            
         
   		\subsubsection{Edge characteristics}
@@ -113,7 +290,7 @@ as the arithmetic mean of the shortest path lengths between all pairs of vertice
 \label{eq:globefficiency}
 \end{equation}
 \noindent
-as the associated harmonic mean. Notably, the average path length can be rewritten as the arithmetic mean of the inverse closeness, and the global efficiency as the inverse arithmetic mean of the local efficiency. We can easily convince ourselves that the average path length must exhibit an inverse relationship with the recurrence threshold, since it approximates (constant) distances in phase space in units of $\varepsilon$~\cite{Donner2010NJP}.
+as the associated harmonic mean. Notably, the average path length can be rewritten as the arithmetic mean of the inverse closeness, and the global efficiency as the inverse arithmetic mean of the local efficiency. We can easily convince ourselves that the average path length must exhibit an inverse relationship with the recurrence threshold, since it approximates (constant) distances in phase space in units of $\varepsilon$~\cite{Donner2010a}.
 
 
 	\subsection{Stylized facts of complex networks}
@@ -127,7 +304,7 @@ as the associated harmonic mean. Notably, the average path length can be rewritt
 
 	\subsection{Coupled networks}
     
-In order to define characteristics that are specifically tailored for analyzing the interdependence structure between two or more complex networks (also called interacting, interdependent, or networks of networks)~\cite{Buldyrev2010}, we utilize a recently introduced general framework~\cite{Donges2011EPJB,Wiedermann2013}. For this purpose, let us consider an arbitrary undirected and unweighted simple graph $G=(V,E)$ with adjacency matrix $\textbf{A}=\{A_{ij}\}_{i,j=1}^N$. Furthermore, let us assume that there is a given partition of $G$ with the following properties:
+In order to define characteristics that are specifically tailored for analyzing the interdependence structure between two or more complex networks (also called interacting, interdependent, or networks of networks)~\cite{Buldyrev2010}, we utilize a recently introduced general framework~\cite{Donges2011i,Wiedermann2013}. For this purpose, let us consider an arbitrary undirected and unweighted simple graph $G=(V,E)$ with adjacency matrix $\textbf{A}=\{A_{ij}\}_{i,j=1}^N$. Furthermore, let us assume that there is a given partition of $G$ with the following properties:
 \begin{enumerate}
 \item The vertex set $V$ is decomposed into $K$ disjunct subsets $V_k \subseteq V$ such that $\bigcup_{k=1}^K V_k = V$ and $V_k \cap V_l = \emptyset$ for all $k \neq l$. The cardinality of $V_k$ will be denoted as $N_k$. 
 \item The edge set $E$ consists of mutually disjoint sets $E_{kl} \subseteq E$ with $\bigcup_{k,l=1}^K E_{kl} = E$ and $E_{kl} \cap E_{mn}=\empty$ for all $(k,l) \neq (m,n)$.
@@ -143,7 +320,7 @@ Under these conditions, $E_{kk}$ comprises the (internal) edges within $G_k$, wh
 %\label{fig:interacting}
 %\end{figure}
 
-We are now in a position to study the interconnectivity structure between two subnetworks $G_k, G_l$ on several topological scales drawing on the lineup of local and global graph-theoretical measures generalizing those used for single network characterization (Section~\ref{sec:rn_measures}). In this context, local measures $\hat{f}_v^{kl}$ characterize a property of vertex $v \in V_k$ with respect to subnetwork $G_l$, while global measures $\hat{f}_{kl}$ assign a single real number to a pair of subnetworks $G_k, G_l$ to quantify a certain aspect of their mutual interconnectivity structure. Most interconnectivity characteristics discussed below have been originally introduced in \cite{Donges2011EPJB} which see for more detailed discussions.
+We are now in a position to study the interconnectivity structure between two subnetworks $G_k, G_l$ on several topological scales drawing on the lineup of local and global graph-theoretical measures generalizing those used for single network characterization (Section~\ref{sec:rn_measures}). In this context, local measures $\hat{f}_v^{kl}$ characterize a property of vertex $v \in V_k$ with respect to subnetwork $G_l$, while global measures $\hat{f}_{kl}$ assign a single real number to a pair of subnetworks $G_k, G_l$ to quantify a certain aspect of their mutual interconnectivity structure. Most interconnectivity characteristics discussed below have been originally introduced in \cite{Donges2011i} which see for more detailed discussions.
 
     
 		\subsubsection{General foundations}
@@ -241,4 +418,6 @@ Unlike $\hat{\mathcal{C}}^{kl}$ and $\hat{\mathcal{T}}^{kl}$, $\hat{\mathcal{L}}
 %\noindent
 %We note that using betweenness as a global network characteristics is quite uncommon in complex network theory, so that we will not further utilize this measure here. Specifically, $\hat{\mathcal{B}}_{kl}$ quantifies the total number of shortest paths between elements from $G_k$ and $G_l$, including both direct connections (which have already been characterized by the cross-edge density) and indirect connections (i.e., shortest paths traversing further vertices within $G_k$ and $G_l$ or even other subnetworks). Regarding the latter aspect, consideration of $\hat{\mathcal{B}}_{kl|m}$ connecting three subnetworks might be particularly interesting. Here, we expect $\hat{\mathcal{B}}_{kl|m}=\hat{\mathcal{B}}_{lk|m}$, but $\hat{\mathcal{B}}_{kl|m}\neq \hat{\mathcal{B}}_{km|l}$ etc. In this spirit, $\hat{\mathcal{B}}_{kl|m}$ can be interpreted as a \emph{conditional} global network characteristics.
 
-In the same spirit as shown above, other single network characteristics~\cite{Boccaletti2006,Costa2007} can be adopted as well for defining further interdependent network measures. This includes measures characterizing edges or, more generally, pairs of vertices like edge betweenness or matching index, further global network characteristics (assortativity, network diameter and radius), mesoscopic structures (motifs), or even characteristics associated with diffusion processes on the network instead of shortest paths (e.g., eigenvector centrality or random walk betweenness). The selection of measures introduced above reflects those characteristics which have the most direct interpretation in the context of IRNs and have also been utilized in studying the interdependence structure between complex networks in other contexts~\cite{Donges2011EPJB,Wiedermann2013}. %A more detailed discussion of further measures, including the derivation of closed-form expressions and possible continuous generalizations (see Section~\ref{sec:analytics}) is left as a topic of future research.
+In the same spirit as shown above, other single network characteristics~\cite{Boccaletti2006,Costa2007} can be adopted as well for defining further interdependent network measures. This includes measures characterizing edges or, more generally, pairs of vertices like edge betweenness or matching index, further global network characteristics (assortativity, network diameter and radius), mesoscopic structures (motifs), or even characteristics associated with diffusion processes on the network instead of shortest paths (e.g., eigenvector centrality or random walk betweenness). The selection of measures introduced above reflects those characteristics which have the most direct interpretation in the context of IRNs and have also been utilized in studying the interdependence structure between complex networks in other contexts~\cite{Donges2011i,Wiedermann2013}. %A more detailed discussion of further measures, including the derivation of closed-form expressions and possible continuous generalizations (see Section~\ref{sec:analytics}) is left as a topic of future research.
+
+\fi
