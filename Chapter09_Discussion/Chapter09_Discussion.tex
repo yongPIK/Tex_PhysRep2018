@@ -1,19 +1,46 @@
-\section{Discussion {\bf{(All)}}}
-
+\section{Conclusions and future perspectives {\bf{(All)}}} \label{sec:Discussion}
+	\subsection{Conclusions and discussion}
 Comments by Jonathan:
 
 - What is the added value of network methods compared to standard methods?
 
-- Why do network methods typically seem to work better with small data sets than
-standard methods? Does this have to do with $N^2$ of information units (although
-not independent) being created from N data points through building an adjacency
-matrix, leading to more robust statistics?
+- Why do network methods typically seem to work better with small data sets than standard methods? Does this have to do with $N^2$ of information units (although not independent) being created from N data points through building an adjacency matrix, leading to more robust statistics?
 
-- What are common applications of network methods? Such as identifying regime
-shifts / transitions / tipping points in time series, distinguishing different
-dynamical regimes, analysis of dynamical system structure in phase space,
-prediction of some types... What more?
+- What are common applications of network methods? Such as identifying regime shifts / transitions / tipping points in time series, distinguishing different dynamical regimes, analysis of dynamical system structure in phase space, prediction of some types... What more?
 
-We might probably start with taking these points already in the introduction (as
-motivating questions beyond the methodological interest) and take them up for
-more detailed discussion at the end of the review.
+We might probably start with taking these points already in the introduction (as motivating questions beyond the methodological interest) and take them up for more detailed discussion at the end of the review.
+
+For recurrence network approaches, there are some evident questions, the most relevant being about the invariance of findings under variation of the threshold value $\varepsilon$ since this value determines the link density of the network and all network characteristics become trivial in the limit of full connectivity \cite{Bradley2015c}.
+
+	\subsection{Future perspectives}
+	Some of the following topics should be paid for more attention, which are currently under investigations. Furthermore, the questions as discussed in the previous sections should be integrated into the following working packages. 
+	\begin{enumerate}
+		\item Evolving network analysis for time series remains largely open, for instance, by temporal network approaches. 
+
+	There is one natural extension of network science from static to dynamic analysis, which build models by evolving networks that change as a function of time. The generalization to evolving network analysis for time series remains largely open, which however almost all real world networks evolve over time, either by adding or removing nodes or links over time. Evolving network concepts build on established network theory and are now being introduced into studying networks in many diverse fields \cite{Holme2012}. Taking social networks as examples, people make and lose friends over time, thereby creating and destroying edges, and some people become part of new social networks or leave their networks, changing the nodes in the network. 
+
+
+	The most common way of characterizing evolving networks is to treat evolving networks as successive snapshots of a static network. In analyzing time series, we often use running (sliding) window technique and network analysis is performed for each window. This set of all individual static windows compose a motion perspective over time. Dynamical changes or regime shifts are then tracked by the variations of network properties. Unfortunately, the sliding window technique to a motion picture also reveals the main difficulty with this approach, namely, empirical choices of time window lengths and the window overlapping which are rarely suggested by the network analysis. Using extremely small window sizes between two consecutive snapshot preserves resolution, but may actually obscure wider trends which only become visible over longer timescales. Conversely, using larger window sizes loses the temporal order of events within each snapshot. Therefore, we need careful choices of the appropriate timescale for dividing the evolution of a network into static snapshots, which have certain effects on proper interpretations of the results \cite{Donges2011,Zou2014}. 
+
+	Anyway, such a sliding window technique does not cover all aspects of the temporal structures of networks \cite{Holme2012}. More generally, we need to include an additional time dimension to quantify the detailed information on the temporal sequences of the network structures, for instance, timings when the edges are active or not. The time ordering have important effects that can not be captured by static networks, especially when considering dynamical processes on top of networks. When coming to time series analysis, Weng {\textit{et al}} \cite{Weng2017} proposed to transform time series into temporal networks by encoding temporal information into an additional topological dimension of the graph, which captures the ``lifetime" of edges. We note that a proper combination of ordinal pattern transition network approach (for instance, short-term transition networks) may provide the temporal information for this problem since the transition matrix describes the probability of future evolution directions of the trajectory in phase space. 
+
+		\item Multilayer and multiplex network analysis for multiple time scale time series. 
+
+	In this work, we have provided a review on the existing methods in reconstructing multilayer and multiplex networks from time series, for instance, multiplex recurrence networks, multiplex visibility graphs, inter-system cross recurrence networks, and joint recurrence networks etc. However, most of these methods are appropriate for stationary time series as we have discussed in Sec. \ref{subsec:practicalRN}. When monitoring complex physical systems over time, one often finds multiple phenomena in the data that work on different time scales. For example, observations are collected on a smaller time scale, and also exhibit time series behavior over a larger time scale, which is rather typical for data of climate sciences. Another prominent example from neuroscience is the recording of spiking activity of individual neurons (discrete event series) and local field potentials (time continuous measurement). Variability of the data on the smaller scale can obscure the time series behavior of the data on the larger scale, making it more difficult to identify the larger scale trends. If one is interested in analyzing and modeling these individual phenomena, it is crucial to recognize the multiple time scales in the construction of multilayer and multiplex networks from time series.  
+
+
+		\item Bringing complex network methods to understanding complexity from various disciplines. 
+
+	In future, we need to demonstrate the existing methods by more applications to various disciplines, particularly providing deeper insights to the existing knowledge of the respective topics. Depending on the particular working topic, it is crucial to make good use of the network analysis to extract some features that are not easily captured by most of the standard methods. 
+
+
+		\item The inverse problem of regeneration of time series from networks. 
+
+	Most of the existing works focus on the proper transformation methods mapping a time series into network representations. However, regeneration of time series from a network as denoted by the adjacency matrix is remains a big challenge, which certainly has many applications. In networks, the order of the vertices can be exchanged without affecting the network topology. But for this reconstruction of the trajectory the temporal order of the nodes is required. Depending on different network representations for time series, regeneration algorithms should be different. Recently these methods have been focused on mainly on recurrences \cite{thiel2004b,hirata2008,Hirata2016}, $k$ nearest neighbor networks \cite{Hou2015,Khor2016}, and ordinal transition networks \cite{McCullough2017}. For all these different algorithms, there are several important algorithmic parameters that have to be chosen empirically in order to guarantee consistent topology between the reconstructed time series and the original system. The computational complexity of each algorithm has to be evaluated in the future work. One application of such regeneration algorithms is to perform surrogate analysis, for example, to test the statistical significance of the results obtained for the original time series. Therefore, we have to take into account the proper choice of null hypothesis while proposing algorithms regenerating time series from networks. 
+
+
+		\item Building network models for time series prediction. 
+
+	Time series modeling and forecasting has attracted a great number of researchers' attention, which is the core of nonlinear time series analysis \cite{kantz1997,Bradley2015c}. To this end, we build a proper model to forecast the system's future behavior, given a sequence of observations of one or a few time variable characteristics. Most of methods originated from nonlinear dynamics are state-space models, which build local model in 'patches' of a reconstructed state space and then use that model to make the prediction of the next point, which remains an active area of research \cite{Bradley2015c}. In the case of stochastic processes, delay vector strategies have been further proposed to generalize the state-space models to short-term prediction. We note that most of existing network approaches to nonlinear time series analysis have been focusing on characterizing network features of phase space. Time series modeling and prediction have not been reported in the literature yet.  
+
+	\end{enumerate}
