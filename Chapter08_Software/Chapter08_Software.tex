@@ -1,4 +1,52 @@
-\section{Existing software {\bf{(Jonathan+Norbert)}}}
-	\subsection{{\color{red} pyunicorn}  }
+\section{Software implementation -- \texttt{pyunicorn} {\bf{(Jonathan+Norbert)}}}\label{sec:Software}
+	In this chapter, we introduce the Python software package \texttt{pyunicorn}, which implements methods from both complex network theory and nonlinear time series analysis, and unites these approaches in a performant, modular and flexible way \cite{Donges2015}. Here, we mainly present a brief introduction of \texttt{pyunicorn} and a discussion of software structure and related computational issues. More details of the illustrative examples have been presented in \cite{Donges2015}.  Although in the tutorial of \cite{Donges2015}, the work flow of using \texttt{pyunicorn} is mainly illustrated drawing upon examples from climatology, the package is applicable to all fields of study where the analysis of (big) time series data is of interest, e.g. neuroscience \cite{Bullmore2009,Subramaniyam2014,Subramaniyam2015}. 
 	
-	\subsection{{\color{red} Any others?}  }
+	\texttt{pyunicorn} is intended as an integrated container for a host of conceptionally related methods which have been developed and applied by the involved research groups for many years. Its aim is to establish a shared infrastructure for scientific data analysis by  means of complex networks and nonlinear time series analysis and it has greatly taken advantage from the backflow contributed by users all over the world. The code base has been fully open sourced under the BSD 3-Clause license.
+
+	\texttt{pyunicorn}'s capabilities for analyzing and modeling complex networks are described including general networks, spatial networks, networks of interacting networks or multiplex networks and node-weighted networks. More specifically, {\color{red}as shown in Fig. shows the software architecture of \texttt{pyunicorn} displayed as a Unified Modeling Language (UML) diagram of class relationships.} \texttt{pyunicorn} presents methods for constructing and analyzing functional networks from fields of multiple time series, including cases demonstrating the application of climate network and coupled climate network analysis, methods for performing nonlinear time series analysis using recurrence plots, recurrence networks and visibility graphs. \texttt{pyunicorn} also presents methods for generating surrogate time series, which are useful for both functional network and network-based time series analysis. 
+	
+\begin{table*}[bth]
+\caption{Structure of the \texttt{pyunicorn} software package listing the most important classes belonging to each submodule (selection for brevity).}
+\begin{center}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lllll}
+\hline
+\textbf{core} & \textbf{funcnet} & \textbf{climate} & \textbf{timeseries} & \textbf{utils} \\
+\hline
+%(Sect.~\ref{sec:networks}) & (Sect.~\ref{sec:functional_networks}) & (Sects.~\ref{sec:climate_networks}, \ref{sec:coupled_climate_nets}) & (Sects.~\ref{sec:time_series}, \ref{sec:surrogates}) & (Sect.~\ref{sec:intro}) \\
+\texttt{Network} & \texttt{CouplingAnalysis} & \texttt{ClimateNetwork} & \texttt{RecurrencePlot} & \texttt{mpi} \\
+\texttt{GeoNetwork} & \texttt{CouplingAnalysisPurePython} & \texttt{CoupledClimateNetwork} & \texttt{CrossRecurrencePlot} & \texttt{navigator} \\
+\texttt{InteractingNetworks} & & \texttt{TsonisClimateNetwork} & \texttt{JointRecurrencePlot} & \\
+\texttt{ResNetwork} & & \texttt{SpearmanClimateNetwork} & \texttt{RecurrenceNetwork} & \\
+\texttt{Data} & & \texttt{MutualInfoClimateNetwork} & \texttt{InterSystemRecurrenceNetwork} & \\
+\texttt{Grid} & & \texttt{ClimateData} & \texttt{JointRecurrenceNetwork} & \\
+ & & & \texttt{VisibilityGraph} & \\
+ & & & \texttt{Surrogates} & \\
+\hline
+\end{tabular}
+}
+\end{center}
+\label{tab:pyunicorn_structure}
+\end{table*}%
+
+The \texttt{pyunicorn} library is fully object-oriented and its inheritance and composition hierarchy reflects the relationships between the analysis methods. It consists of five subpackages (Tab.~\ref{tab:pyunicorn_structure}):
+\begin{enumerate}
+\item[\bf{core}] This name space contains the basic building blocks for general network analysis and modeling and is accessible after calling \texttt{import pyunicorn} %(Sect.~\ref{sec:networks}). 
+The backbone \texttt{Network} class provides numerous standard and advanced complex network statistics, measures and generative models as well as import and export capabilities to GraphML, GML, NCOL, LGL, DOT, DIMACS and other formats. \texttt{Grid} and \texttt{GeoNetwork} extend these functionalities with respect to spatio-temporally embedded networks, which can be imported from and exported to ASCII and NetCDF files via the \texttt{Data} class. \texttt{InteractingNetworks} provides advanced methods designed for networks of networks (or multiplex networks), while \texttt{ResNetwork} specializes in power grids transporting electric currents and related infrastructure networks.
+
+\item[\bf{funcnet}] Advanced tools for construction and analysis of general (non-climate) functional networks will be accommodated here. So far, \texttt{CouplingAnalysis} calculates cross-correlation, mutual information, mutual sorting information and their respective surrogates for large arrays of scalar time series.% (Sect.~\ref{sec:functional_networks}).
+
+\item[\bf{climate}] Building on top of \texttt{GeoNetwork} and \texttt{Data}, the \texttt{ClimateNetwork} class and its children facilitate the construction and analysis of functional networks representing the statistical interdependency structure within a field of time series, based on similarity measures such as lagged linear Pearson or Spearman correlation and mutual information. %(Sect.~\ref{sec:climate_networks}). 
+\texttt{CoupledClimateNetwork} extends this capability to the study of interrelationships between two distinct fields of observables.% (Sect.~\ref{sec:coupled_climate_nets}).
+
+\item[\bf{timeseries}] This subpackage provides various tools for the analysis of non-linear dynamical systems and uni- and multivariate time series.% (Sect.~\ref{sec:time_series}). 
+Apart from visibility graphs with time-directed measures (\texttt{VisibilityGraph} class), the focus lies on recurrence-based methods derived from the \texttt{RecurrencePlot} class. These include single, joint and cross-recurrence plots as well as standard, joint and inter-system recurrence networks, supporting time-delay embedding and several phase space metrics and are equipped with common measures of recurrence quantification analysis. \texttt{Surrogates} allow testing for the statistical significance of similarity measures by generating surrogate data sets under miscellaneous constraints from observable time series. %(Sect.~\ref{sec:surrogates}).
+
+\item[\bf{utils}] Currently this includes \texttt{MPI} parallelization support and an experimental interactive network navigator.
+\end{enumerate}
+
+\texttt{pyunicorn} is conveniently applicable to research domains in science and society as different as neuroscience, infrastructure and climatology. Most computationally demanding algorithms are implemented in fast compiled languages on sparse data structures, allowing the performant analysis of large networks and time series data sets. The software's modular and object-oriented architecture enables the flexible and parsimonious combination of data structures, methods and algorithms from different fields. For example, combining complex network theory (\texttt{core.Network} class) and recurrence plots (\texttt{timeseries.RecurrencePlot} class) yields recurrence network analysis (\texttt{timeseries.RecurrenceNetwork} class), a versatile framework that opens new perspectives for nonlinear time series analysis and the study of complex dynamical systems in phase space. Another example are climate networks (\texttt{climate.ClimateNetwork} class), an approach bringing together ideas and concepts from complex network theory and classical eigen analysis of climatological data (e.g. empirical orthogonal function analysis) \cite{Donges2015}.
+
+Along these lines, \texttt{pyunicorn} has the potential to facilitate future methodological developments in the fields of network theory, time series analysis and complex systems science by synthesizing existing elements and by adding new methods and classes that interact with or build upon preexisting ones. Nonetheless, we urge users of the software to ensure that such developments are theoretically well-founded and explicable as well as motivated by well-posed and relevant research questions to produce high-quality research.
+
+Besides \texttt{pyunicorn}, we suggest that some other software packages are available, for instance, the MATLAB toolbox CRPtool that allows to get the adjacency matrix (or recurrence matrix). Furthermore, this toobox provides the computation of several network measures like clustering coefficients $\mathcal{C}$ and transitivity $\mathcal{T}$. In addition, we recommend some network visualization toolboxes, including Gephi or Networkx which can be used to analyze the networks (when the recurrence matrix is available).
