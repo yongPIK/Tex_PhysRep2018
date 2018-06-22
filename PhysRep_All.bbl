@@ -1,21 +1,2327 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{100}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
-\bibitem{Donner2010NJP}
-R.~V. Donner, Y.~Zou, J.~F. Donges, N.~Marwan, J.~Kurths, {Recurrence networks
-  -- A novel paradigm for nonlinear time series analysis}, New J. Phys. 12~(3)
-  (2010) 033025.
-\newblock \href {http://dx.doi.org/10.1088/1367-2630/12/3/033025}
+\bibitem{schonberger2013}
+V.~Mayer-Sch{\"{o}}nberger, K.~Cukier, {Big Data: A Revolution That Will
+  Transform How We Live, Work, and Think}, Eamon Dolan/Houghton Mifflin
+  Harcourt, 2013.
+
+\bibitem{Bradley2015c}
+E.~Bradley, H.~Kantz, {Nonlinear time-series analysis revisited}, Chaos 25~(9)
+  (2015) 097610.
+\newblock \href {http://arxiv.org/abs/1503.07493} {\path{arXiv:1503.07493}},
+  \href {http://dx.doi.org/10.1063/1.4917289} {\path{doi:10.1063/1.4917289}}.
+
+\bibitem{kantz1997}
+H.~Kantz, T.~Schreiber, Nonlinear time series analysis, 2nd Edition, Cambridge
+  University Press, 2004.
+
+\bibitem{Packard1980}
+N.~H. Packard, J.~P. Crutchfield, J.~D. Farmer, R.~S. Shaw, {Geometry from a
+  Time Series}, Phys. Rev. Lett. 45~(9) (1980) 712--716.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.45.712}
+  {\path{doi:10.1103/PhysRevLett.45.712}}.
+
+\bibitem{abarbanel1993}
+H.~D.~I. Abarbanel, R.~Brown, J.~J. Sidorowich, L.~S. Tsimring, {The analysis
+  of observed chaotic data in physical systems}, Rev. Mod. Phys. 65~(4) (1993)
+  1331--1392.
+\newblock \href {http://dx.doi.org/10.1103/RevModPhys.65.1331}
+  {\path{doi:10.1103/RevModPhys.65.1331}}.
+
+\bibitem{Sprott2003}
+J.~C. Sprott, Chaos and Time-Series Analysis, Oxford University Press, Oxford,
+  2003.
+
+\bibitem{Grassberger1983PRL}
+P.~Grassberger, I.~Procaccia, Characterization of strange attractors, Phys.
+  Rev. Lett. 50~(5) (1983) 346--349.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.50.346}
+  {\path{doi:10.1103/PhysRevLett.50.346}}.
+
+\bibitem{Boccaletti2002}
+S.~Boccaletti, J.~Kurths, G.~Osipov, D.~Valladares, C.~Zhou, {The
+  synchronization of chaotic systems}, Phys. Rep. 366~(1-2) (2002) 1--101.
+\newblock \href {http://dx.doi.org/10.1016/S0370-1573(02)00137-0}
+  {\path{doi:10.1016/S0370-1573(02)00137-0}}.
+
+\bibitem{Pikovsky_Kurths_synchr}
+A.~Pikovsky, M.~Rosenblum, J.~Kurths, Synchronization -- A Universal Concept in
+  Nonlinear Sciences, Cambridge University Press, 2001.
+
+\bibitem{Boccaletti2006}
+S.~Boccaletti, V.~Latora, Y.~Moreno, M.~Chavez, D.-U. Hwang, {Complex networks:
+  Structure and dynamics}, {Phys. Rep.} 424~(4-5) (2006) 175--308.
+\newblock \href {http://dx.doi.org/10.1016/j.physrep.2005.10.009}
+  {\path{doi:10.1016/j.physrep.2005.10.009}}.
+
+\bibitem{Stankovski2017}
+T.~Stankovski, T.~Pereira, P.~V.~E. McClintock, A.~Stefanovska, {Coupling
+  functions: Universal insights into dynamical interaction mechanisms}, Rev.
+  Mod. Phys. 89~(4) (2017) 045001.
+\newblock \href {http://arxiv.org/abs/1706.01810} {\path{arXiv:1706.01810}},
+  \href {http://dx.doi.org/10.1103/RevModPhys.89.045001}
+  {\path{doi:10.1103/RevModPhys.89.045001}}.
+
+\bibitem{Frenzel_prl_2007}
+S.~Frenzel, B.~Pompe, {Partial Mutual Information for Coupling Analysis of
+  Multivariate Time Series}, Phys. Rev. Lett. 99~(20) (2007) 204101.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.99.204101}
+  {\path{doi:10.1103/PhysRevLett.99.204101}}.
+
+\bibitem{vejmelka_pre_2008}
+M.~Vejmelka, M.~Palu{\v{s}}, {Inferring the directionality of coupling with
+  conditional mutual information}, Phys. Rev. E 77~(2) (2008) 026214.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.77.026214}
+  {\path{doi:10.1103/PhysRevE.77.026214}}.
+
+\bibitem{Granger_1969}
+C.~W.~J. Granger, {Investigating Causal Relations by Econometric Models and
+  Cross-spectral Methods}, Econometrica 37 (1969) 424--438.
+
+\bibitem{Dhamala_prl2008}
+M.~Dhamala, G.~Rangarajan, M.~Ding, {Estimating Granger Causality from Fourier
+  and Wavelet Transforms of Time Series Data}, Phys. Rev. Lett. 100~(1) (2008)
+  018701.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.100.018701}
+  {\path{doi:10.1103/PhysRevLett.100.018701}}.
+
+\bibitem{schreiber_prl2000}
+T.~Schreiber, {Measuring Information Transfer}, Phys. Rev. Lett. 85~(2) (2000)
+  461--464.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.85.461}
+  {\path{doi:10.1103/PhysRevLett.85.461}}.
+
+\bibitem{Quiroga_pre2000}
+R.~Q. Quiroga, J.~Arnhold, P.~Grassberger, {Learning driver-response
+  relationships from synchronization patterns}, Phys. Rev. E 61~(5) (2000)
+  5142--5148.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.61.5142}
+  {\path{doi:10.1103/PhysRevE.61.5142}}.
+
+\bibitem{Rosenblum2001}
+M.~G. Rosenblum, A.~S. Pikovsky, {Detecting direction of coupling in
+  interacting oscillators}, Phys. Rev. E 64~(4) (2001) 045202.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.64.045202}
+  {\path{doi:10.1103/PhysRevE.64.045202}}.
+
+\bibitem{rosenblum_pre2002}
+M.~G. Rosenblum, L.~Cimponeriu, A.~Bezerianos, A.~Patzak, R.~Mrowka,
+  {Identification of coupling direction: Application to cardiorespiratory
+  interaction}, Phys. Rev. E 65~(4) (2002) 041909.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.65.041909}
+  {\path{doi:10.1103/PhysRevE.65.041909}}.
+
+\bibitem{smirnov_pre2005}
+D.~A. Smirnov, R.~G. Andrzejak, {Detection of weak directional coupling:
+  Phase-dynamics approach versus state-space approach}, Phys. Rev. E 71~(3)
+  (2005) 036207.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.71.036207}
+  {\path{doi:10.1103/PhysRevE.71.036207}}.
+
+\bibitem{Palus_pre_2007}
+M.~Palu{\v{s}}, M.~Vejmelka, {Directionality of coupling from bivariate time
+  series: How to avoid false causalities and missed connections}, Phys. Rev. E
+  75~(5) (2007) 056211.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.75.056211}
+  {\path{doi:10.1103/PhysRevE.75.056211}}.
+
+\bibitem{Romano_pre_2007}
+M.~C. Romano, M.~Thiel, J.~Kurths, C.~Grebogi, Estimation of the direction of
+  the coupling by conditional probabilities of recurrence, Phys. Rev. E 76~(3)
+  (2007) 036211.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.76.036211}
+  {\path{doi:10.1103/PhysRevE.76.036211}}.
+
+\bibitem{bahraminasab_prl2008}
+A.~Bahraminasab, F.~Ghasemi, A.~Stefanovska, P.~V.~E. McClintock, H.~Kantz,
+  {Direction of Coupling from Phases of Interacting Oscillators: A Permutation
+  Information Approach}, Phys. Rev. Lett. 100~(8) (2008) 084101.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.100.084101}
+  {\path{doi:10.1103/PhysRevLett.100.084101}}.
+
+\bibitem{Nawrath_prl_2010}
+J.~Nawrath, M.~C. Romano, M.~Thiel, I.~Z. Kiss, M.~Wickramasinghe, J.~Timmer,
+  J.~Kurths, B.~Schelter, {Distinguishing Direct from Indirect Interactions in
+  Oscillatory Networks with Multiple Time Scales}, Phys. Rev. Lett. 104~(3)
+  (2010) 038701.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.104.038701}
+  {\path{doi:10.1103/PhysRevLett.104.038701}}.
+
+\bibitem{Ding_Book_2007}
+M.~Ding, Y.~Chen, S.~L. Bressler, {Granger Causality: Basic Theory and
+  Application to Neuroscience}, in: B.~Schelter, M.~Winterhalder, J.~Timmer
+  (Eds.), Handb. Time Ser. Anal., Wiley-VCH Verlag GmbH {\&} Co. KGaA, 2007,
+  pp. 437--460.
+
+\bibitem{Hlavackovaschindler2007}
+K.~Hlavackovaschindler, M.~Paluš, M.~Vejmelka, J.~Bhattacharya, {Causality
+  detection based on information-theoretic approaches in time series analysis},
+  Phys. Rep. 441~(1) (2007) 1--46.
+\newblock \href {http://dx.doi.org/10.1016/j.physrep.2006.12.004}
+  {\path{doi:10.1016/j.physrep.2006.12.004}}.
+
+\bibitem{Donner2011b}
+R.~V. Donner, J.~Heitzig, J.~F. Donges, Y.~Zou, N.~Marwan, J.~Kurths, {The
+  geometry of chaotic dynamics — a complex network perspective}, Eur. Phys.
+  J. B 84~(4) (2011) 653--672.
+\newblock \href {http://dx.doi.org/10.1140/epjb/e2011-10899-1}
+  {\path{doi:10.1140/epjb/e2011-10899-1}}.
+
+\bibitem{McCullough2015}
+M.~McCullough, M.~Small, T.~Stemler, H.~H.-C. Iu, {Time lagged ordinal
+  partition networks for capturing dynamics of continuous dynamical systems},
+  Chaos 25~(5) (2015) 053101.
+\newblock \href {http://arxiv.org/abs/arXiv:1501.06656v1}
+  {\path{arXiv:arXiv:1501.06656v1}}, \href
+  {http://dx.doi.org/10.1063/1.4919075} {\path{doi:10.1063/1.4919075}}.
+
+\bibitem{Albert2002}
+R.~Albert, A.-L. Barabasi, {Statistical mechanics of complex networks}, {Rev.
+  Mod. Phys.} 74~(1) (2002) 47--97.
+\newblock \href {http://dx.doi.org/10.1103/RevModPhys.74.47}
+  {\path{doi:10.1103/RevModPhys.74.47}}.
+
+\bibitem{Costa2007}
+L.~da~F.~Costa, F.~A. Rodrigues, G.~Travieso, P.~R. {Villas Boas},
+  {Characterization of complex networks: A survey of measurements}, {Adv.
+  Phys.} 56~(1) (2007) 167--242.
+\newblock \href {http://dx.doi.org/10.1080/00018730601170527}
+  {\path{doi:10.1080/00018730601170527}}.
+
+\bibitem{Newman2003}
+M.~E.~J. Newman, {The structure and function of complex networks}, {SIAM Rev.}
+  45~(2) (2003) 167--256.
+\newblock \href {http://dx.doi.org/10.1137/S003614450342480}
+  {\path{doi:10.1137/S003614450342480}}.
+
+\bibitem{Bullmore2009}
+E.~Bullmore, O.~Sporns, {Complex brain networks: graph theoretical analysis of
+  structural and functional systems}, Nat. Rev. Neurosci. 10 (2009) 186--198.
+\newblock \href {http://dx.doi.org/10.0.4.14/nrn2575}
+  {\path{doi:10.0.4.14/nrn2575}}.
+
+\bibitem{Zhou2006}
+C.~Zhou, L.~Zemanova, G.~Zamora, C.~C. Hilgetag, J.~Kurths, {Hierarchical
+  organization unveiled by functional connectivity in complex brain networks},
+  {Phys. Rev. Lett.} {97}~({23}) ({2006}) {238103}.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.97.238103}
+  {\path{doi:10.1103/PhysRevLett.97.238103}}.
+
+\bibitem{Zhou2007}
+C.~Zhou, L.~Zemanova, G.~Zamora-Lopez, C.~C. Hilgetag, J.~Kurths,
+  {Structure-function relationship in complex brain networks expressed by
+  hierarchical synchronization}, {New J. Phys.} {9}~(6) ({2007}) 178.
+\newblock \href {http://dx.doi.org/10.1088/1367-2630/9/6/178}
+  {\path{doi:10.1088/1367-2630/9/6/178}}.
+
+\bibitem{Tsonis2004}
+A.~A. Tsonis, P.~J. Roebber, {The architecture of the climate network}, Physica
+  A 333 (2004) 497--504.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2003.10.045}
+  {\path{doi:10.1016/j.physa.2003.10.045}}.
+
+\bibitem{Donges2009b}
+J.~F. Donges, Y.~Zou, N.~Marwan, J.~Kurths, The backbone of the climate
+  network, Europhys. Lett. {87}~({4}) ({2009}) {48007}.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/87/48007}
+  {\path{doi:10.1209/0295-5075/87/48007}}.
+
+\bibitem{Donges2009a}
+J.~F. Donges, Y.~Zou, N.~Marwan, J.~Kurths, {Complex networks in climate
+  dynamics - Comparing linear and nonlinear network construction methods},
+  {Eur. Phys. J. ST} 174 (2009) 157--179.
+\newblock \href {http://dx.doi.org/10.1140/epjst/e2009-01098-2}
+  {\path{doi:10.1140/epjst/e2009-01098-2}}.
+
+\bibitem{Donner2011}
+R.~V. Donner, M.~Small, J.~F. Donges, N.~Marwan, Y.~Zou, R.~Xiang, J.~Kurths,
+  {Recurrence-based time series analysis by means of complex network methods},
+  Int. J. Bifurc. Chaos 21~(04) (2011) 1019--1046.
+\newblock \href {http://arxiv.org/abs/1010.6032} {\path{arXiv:1010.6032}},
+  \href {http://dx.doi.org/10.1142/S0218127411029021}
+  {\path{doi:10.1142/S0218127411029021}}.
+
+\bibitem{Zhang2006}
+J.~Zhang, M.~Small, {Complex Network from Pseudoperiodic Time Series: Topology
+  versus Dynamics}, Phys. Rev. Lett. 96~(23) (2006) 238701.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.96.238701}
+  {\path{doi:10.1103/PhysRevLett.96.238701}}.
+
+\bibitem{Xu2008}
+X.~Xu, J.~Zhang, M.~Small, {Superfamily phenomena and motifs of networks
+  induced from time series}, Proc. Natl. Acad. Sci. 105~(50) (2008)
+  19601--19605.
+\newblock \href {http://dx.doi.org/10.1073/pnas.0806082105}
+  {\path{doi:10.1073/pnas.0806082105}}.
+
+\bibitem{Lacasa2008}
+L.~Lacasa, B.~Luque, F.~Ballesteros, J.~Luque, J.~C. Nuno, {From time series to
+  complex networks: The visibility graph}, Proc. Natl. Acad. Sci. 105~(13)
+  (2008) 4972--4975.
+\newblock \href {http://arxiv.org/abs/0810.0920} {\path{arXiv:0810.0920}},
+  \href {http://dx.doi.org/10.1073/pnas.0709247105}
+  {\path{doi:10.1073/pnas.0709247105}}.
+
+\bibitem{Marwan2009}
+N.~Marwan, J.~F. Donges, Y.~Zou, R.~V. Donner, J.~Kurths, {Complex network
+  approach for recurrence analysis of time series}, Phys. Lett. A 373~(46)
+  (2009) 4246--4254.
+\newblock \href {http://arxiv.org/abs/0907.3368} {\path{arXiv:0907.3368}},
+  \href {http://dx.doi.org/10.1016/j.physleta.2009.09.042}
+  {\path{doi:10.1016/j.physleta.2009.09.042}}.
+
+\bibitem{Donner2010a}
+R.~V. Donner, Y.~Zou, J.~F. Donges, N.~Marwan, J.~Kurths, {Recurrence
+  networks—a novel paradigm for nonlinear time series analysis}, New J. Phys.
+  12~(3) (2010) 033025.
+\newblock \href {http://arxiv.org/abs/0908.3447v1} {\path{arXiv:0908.3447v1}},
+  \href {http://dx.doi.org/10.1088/1367-2630/12/3/033025}
   {\path{doi:10.1088/1367-2630/12/3/033025}}.
+
+\bibitem{Zhang2008e}
+J.~Zhang, J.~Sun, X.~Luo, K.~Zhang, T.~Nakamura, M.~Small, {Characterizing
+  pseudoperiodic time series through the complex network approach}, Phys. D
+  237~(22) (2008) 2856--2865.
+\newblock \href {http://dx.doi.org/10.1016/j.physd.2008.05.008}
+  {\path{doi:10.1016/j.physd.2008.05.008}}.
+
+\bibitem{Yang2008}
+Y.~Yang, H.~Yang, {Complex network-based time series analysis}, Physica A
+  387~(5-6) (2008) 1381--1386.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2007.10.055}
+  {\path{doi:10.1016/j.physa.2007.10.055}}.
+
+\bibitem{Luque2009}
+B.~Luque, L.~Lacasa, F.~Ballesteros, J.~Luque, {Horizontal visibility graphs:
+  Exact results for random time series}, Phys. Rev. E 80~(4) (2009) 046103.
+\newblock \href {http://arxiv.org/abs/1002.4526} {\path{arXiv:1002.4526}},
+  \href {http://dx.doi.org/10.1103/PhysRevE.80.046103}
+  {\path{doi:10.1103/PhysRevE.80.046103}}.
+
+\bibitem{Donner2012}
+R.~V. Donner, J.~F. Donges, {Visibility graph analysis of geophysical time
+  series: Potentials and possible pitfalls}, Acta Geophys. 60~(3) (2012)
+  589--623.
+\newblock \href {http://dx.doi.org/10.2478/s11600-012-0032-x}
+  {\path{doi:10.2478/s11600-012-0032-x}}.
+
+\bibitem{Lacasa2009}
+L.~Lacasa, B.~Luque, J.~Luque, J.~C. Nu{\~{n}}o, {The visibility graph: A new
+  method for estimating the Hurst exponent of fractional Brownian motion}, EPL
+  (Europhysics Lett. 86~(3) (2009) 30001.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/86/30001}
+  {\path{doi:10.1209/0295-5075/86/30001}}.
+
+\bibitem{Ni2009}
+X.-H. Ni, Z.-Q. Jiang, W.-X. Zhou, {Degree distributions of the visibility
+  graphs mapped from fractional Brownian motions and multifractal random
+  walks}, Phys. Lett. A 373~(42) (2009) 3822--3826.
+\newblock \href {http://arxiv.org/abs/0812.2099} {\path{arXiv:0812.2099}},
+  \href {http://dx.doi.org/10.1016/j.physleta.2009.08.041}
+  {\path{doi:10.1016/j.physleta.2009.08.041}}.
+
+\bibitem{Donges2013}
+J.~F. Donges, R.~V. Donner, J.~Kurths, {Testing time series irreversibility
+  using complex network methods}, EPL (Europhysics Lett. 102~(1) (2013) 10004.
+\newblock \href {http://arxiv.org/abs/1211.1162} {\path{arXiv:1211.1162}},
+  \href {http://dx.doi.org/10.1209/0295-5075/102/10004}
+  {\path{doi:10.1209/0295-5075/102/10004}}.
+
+\bibitem{Lacasa2012}
+L.~Lacasa, A.~Nu{\~{n}}ez, {\'{E}}.~Rold{\'{a}}n, J.~M.~R. Parrondo, B.~Luque,
+  {Time series irreversibility: a visibility graph approach}, Eur. Phys. J. B
+  85~(6) (2012) 217.
+\newblock \href {http://arxiv.org/abs/1108.1691} {\path{arXiv:1108.1691}},
+  \href {http://dx.doi.org/10.1140/epjb/e2012-20809-8}
+  {\path{doi:10.1140/epjb/e2012-20809-8}}.
+
+\bibitem{Nicolis2005}
+G.~Nicolis, A.~G. Cantu, C.~Nicolis, {Dynamical aspects of interaction
+  networks}, Int. J. Bifurc. Chaos 15~(11) (2005) 3467--3480.
+\newblock \href {http://dx.doi.org/10.1142/S0218127405014167}
+  {\path{doi:10.1142/S0218127405014167}}.
+
+\bibitem{Kulp2016b}
+C.~W. Kulp, J.~M. Chobot, H.~R. Freitas, G.~D. Sprechini, {Using ordinal
+  partition transition networks to analyze ECG data}, Chaos 26~(7) (2016)
+  073114.
+\newblock \href {http://dx.doi.org/10.1063/1.4959537}
+  {\path{doi:10.1063/1.4959537}}.
+
+\bibitem{Bandt2002}
+C.~Bandt, B.~Pompe, {Permutation Entropy: A Natural Complexity Measure for Time
+  Series}, Phys. Rev. Lett. 88~(17) (2002) 174102.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.88.174102}
+  {\path{doi:10.1103/PhysRevLett.88.174102}}.
+
+\bibitem{Zhang2017b}
+J.~Zhang, J.~Zhou, M.~Tang, H.~Guo, M.~Small, Y.~Zou, {Constructing ordinal
+  partition transition networks from multivariate time series}, Sci. Rep. 7~(1)
+  (2017) 7795.
+\newblock \href {http://dx.doi.org/10.1038/s41598-017-08245-x}
+  {\path{doi:10.1038/s41598-017-08245-x}}.
+
+\bibitem{Kulp2016a}
+C.~W. Kulp, J.~M. Chobot, B.~J. Niskala, C.~J. Needhammer, {Using forbidden
+  ordinal patterns to detect determinism in irregularly sampled time series},
+  Chaos 26~(2) (2016) 023107.
+\newblock \href {http://dx.doi.org/10.1063/1.4941674}
+  {\path{doi:10.1063/1.4941674}}.
+
+\bibitem{McCullough2016}
+M.~McCullough, K.~Sakellariou, T.~Stemler, M.~Small, {Counting forbidden
+  patterns in irregularly sampled time series. I. The effects of
+  under-sampling, random depletion, and timing jitter}, Chaos 26~(12) (2016)
+  123103.
+\newblock \href {http://dx.doi.org/10.1063/1.4968551}
+  {\path{doi:10.1063/1.4968551}}.
+
+\bibitem{Sakellariou2016}
+K.~Sakellariou, M.~McCullough, T.~Stemler, M.~Small, {Counting forbidden
+  patterns in irregularly sampled time series. ii. reliability in the presence
+  of highly irregular sampling}, Chaos 26~(12).
+\newblock \href {http://dx.doi.org/10.1063/1.4970483}
+  {\path{doi:10.1063/1.4970483}}.
+
+\bibitem{Eroglu2016}
+D.~Eroglu, F.~H. McRobie, I.~Ozken, T.~Stemler, K.~H. Wyrwoll, S.~F.
+  Breitenbach, N.~Marwan, J.~Kurths, {See-saw relationship of the Holocene East
+  Asian-Australian summer monsoon}, Nat. Commun. 7 (2016) 1--7.
+\newblock \href {http://dx.doi.org/10.1038/ncomms12929}
+  {\path{doi:10.1038/ncomms12929}}.
+
+\bibitem{Donges2015}
+J.~F. Donges, J.~Heitzig, B.~Beronov, M.~Wiedermann, J.~Runge, Q.~Y. Feng,
+  L.~Tupikina, V.~Stolbova, R.~V. Donner, N.~Marwan, H.~A. Dijkstra, J.~Kurths,
+  {Unified functional network and nonlinear time series analysis for complex
+  systems science: The pyunicorn package}, Chaos 25~(11) (2015) 113101.
+\newblock \href {http://arxiv.org/abs/1507.01571} {\path{arXiv:1507.01571}},
+  \href {http://dx.doi.org/10.1063/1.4934554} {\path{doi:10.1063/1.4934554}}.
+
+\bibitem{Cohenbook2010}
+R.~Cohen, S.~Havlin, {Complex networks: Structure, robustness and function},
+  Cambridge University Press, Cambridge, 2010.
+
+\bibitem{Newmanbook2010}
+M.~E.~J. Newman, {Networks: An introduction}, Oxford University Press, Oxford,
+  2010.
+
+\bibitem{Watts1998}
+D.~J. Watts, S.~H. Strogatz, Collective dynamics of ``small-world" networks,
+  Nature 393~(6684) (1998) 440--442.
+\newblock \href {http://dx.doi.org/10.1038/30918} {\path{doi:10.1038/30918}}.
+
+\bibitem{Barrat2000}
+A.~Barrat, M.~Weigt, On the properties of small-world network models, Eur.
+  Phys. J. B 13 (2000) 547--560.
+\newblock \href {http://dx.doi.org/10.1007/s100510050067}
+  {\path{doi:10.1007/s100510050067}}.
+
+\bibitem{Erdos1959}
+P.~Erd{\"o}s, A.~R\'enyi, On random graphs. i, Publicationes Mathematicae 6
+  (1959) 290?297.
+
+\bibitem{Barabasi199}
+A.-L. Barab{\'a}si, R.~Albert, Emergence of scaling in random networks, Science
+  286~(5439) (1999) 509--512.
+\newblock \href {http://dx.doi.org/10.1126/science.286.5439.509}
+  {\path{doi:10.1126/science.286.5439.509}}.
+
+\bibitem{Clauset2009}
+A.~Clauset, C.~R. Shalizi, M.~E.~J. Newman, {Power-Law Distributions in
+  Empirical Data}, SIAM Rev. 51~(4) (2009) 661--703.
+\newblock \href {http://dx.doi.org/10.1137/070710111}
+  {\path{doi:10.1137/070710111}}.
+
+\bibitem{Newman2002}
+M.~E.~J. Newman, {Assortative mixing in networks}, Phys. Rev. Lett. 89~(20)
+  (2002) 208701.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.89.208701}
+  {\path{doi:10.1103/PhysRevLett.89.208701}}.
+
+\bibitem{Boccaletti2014}
+S.~Boccaletti, G.~Bianconi, R.~Criado, C.~del Genio,
+  J.~G{\'{o}}mez-Garde{\~{n}}es, M.~Romance, I.~Sendi{\~{n}}a-Nadal, Z.~Wang,
+  M.~Zanin, {The structure and dynamics of multilayer networks}, Phys. Rep.
+  544~(1) (2014) 1--122.
+\newblock \href {http://dx.doi.org/10.1016/j.physrep.2014.07.001}
+  {\path{doi:10.1016/j.physrep.2014.07.001}}.
+
+\bibitem{Buldyrev2010}
+S.~V. Buldyrev, R.~Parshani, G.~Paul, H.~E. Stanley, S.~Havlin, {Catastrophic
+  cascade of failures in interdependent networks}, {Nature} 464~(7291) (2010)
+  1025--1028.
+\newblock \href {http://dx.doi.org/{10.1038/nature08932}}
+  {\path{doi:{10.1038/nature08932}}}.
+
+\bibitem{Zhang2008}
+J.~Zhang, J.~Sun, X.~Xu, M.~Small, {Time series classification by complex
+  network transformation}, in: 2008 Int. Symp. Nonlinear Theory its Appl.,
+  2008, pp. 90--93.
+
+\bibitem{Shimada2008}
+Y.~Shimada, T.~Kimura, T.~Ikeguchi, {Analysis of Chaotic Dynamics Using
+  Measures of the Complex Network Theory}, in: Artif. Neural Networks - ICANN
+  2008, Springer Berlin Heidelberg, Berlin, Heidelberg, 2008, pp. 61--70.
+\newblock \href {http://dx.doi.org/10.1007/978-3-540-87536-9_7}
+  {\path{doi:10.1007/978-3-540-87536-9_7}}.
+
+\bibitem{Wu2008}
+J.~Wu, H.~Sun, Z.~Gao, {Mapping to Complex Networks from Chaos Time Series in
+  the Car Following Model}, in: B.~Mao, Z.~Tian, H.~Huang, Z.~Gao (Eds.),
+  Traffic Transp. Stud., American Society of Civil Engineers, Reston, VA, 2008,
+  pp. 397--407.
+\newblock \href {http://dx.doi.org/10.1061/40995(322)37}
+  {\path{doi:10.1061/40995(322)37}}.
+
+\bibitem{Small2009}
+M.~Small, J.~Zhang, X.~Xu, {Transforming Time Series into Complex Networks},
+  in: J.~Zhou (Ed.), Complex Sci. First Int. Conf. Complex 2009. Shanghai,
+  China, Febr. 2009. Revis. Pap. Part 2, Springer, Berlin, 2009, Ch.
+  Transformi, pp. 2078--2089.
+\newblock \href {http://dx.doi.org/10.1007/978-3-642-02469-6_84}
+  {\path{doi:10.1007/978-3-642-02469-6_84}}.
+
+\bibitem{Gao2009}
+Z.-K. Gao, N.-D. Jin, {Flow-pattern identification and nonlinear dynamics of
+  gas-liquid two-phase flow in complex networks}, Phys. Rev. E 79~(6) (2009)
+  1--14.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.79.066303}
+  {\path{doi:10.1103/PhysRevE.79.066303}}.
+
+\bibitem{Campanharo2011}
+A.~S. L.~O. Campanharo, M.~I. Sirer, R.~D. Malmgren, F.~M. Ramos, L.~A.~N.
+  Amaral, {Duality between Time Series and Networks}, PLoS One 6~(8) (2011)
+  e23378.
+\newblock \href {http://dx.doi.org/10.1371/journal.pone.0023378}
+  {\path{doi:10.1371/journal.pone.0023378}}.
+
+\bibitem{hirata2008}
+Y.~Hirata, S.~Horai, K.~Aihara, {Reproduction of distance matrices and original
+  time series from recurrence plots and their applications}, Eur. Phys. J.
+  Spec. Top. 164~(1) (2008) 13--22.
+\newblock \href {http://dx.doi.org/10.1140/epjst/e2008-00830-8}
+  {\path{doi:10.1140/epjst/e2008-00830-8}}.
+
+\bibitem{Hirata2016}
+Y.~Hirata, A.~Oda, K.~Ohta, K.~Aihara, {Three-dimensional reconstruction of
+  single-cell chromosome structure using recurrence plots}, Sci. Rep. 6 (2016)
+  34982.
+\newblock \href {http://dx.doi.org/10.0.4.14/srep34982}
+  {\path{doi:10.0.4.14/srep34982}}.
+
+\bibitem{McCullough2017}
+M.~McCullough, K.~Sakellariou, T.~Stemler, M.~Small, {Regenerating time series
+  from ordinal networks}, Chaos 27~(3) (2017) 035814.
+\newblock \href {http://dx.doi.org/10.1063/1.4978743}
+  {\path{doi:10.1063/1.4978743}}.
+
+\bibitem{thiel2004b}
+M.~Thiel, M.~C. Romano, J.~Kurths, {How much information is contained in a
+  recurrence plot?}, Phys. Lett. A 330~(5) (2004) 343--349.
+\newblock \href {http://dx.doi.org/10.1016/j.physleta.2004.07.050}
+  {\path{doi:10.1016/j.physleta.2004.07.050}}.
+
+\bibitem{Khor2016}
+A.~Khor, M.~Small, {Examining k-nearest neighbour networks: Superfamily
+  phenomena and inversion}, Chaos 26~(4) (2016) 043101.
+\newblock \href {http://dx.doi.org/10.1063/1.4945008}
+  {\path{doi:10.1063/1.4945008}}.
+
+\bibitem{Hou2015}
+L.~Hou, M.~Small, S.~Lao, {Dynamical Systems Induced on Networks Constructed
+  from Time Series}, Entropy 17~(12) (2015) 6433--6446.
+\newblock \href {http://dx.doi.org/10.3390/e17096433}
+  {\path{doi:10.3390/e17096433}}.
+
+\bibitem{Liu2013c}
+J.~Liu, S.~T. Shi, J.~C. Zhao, {Comparison study of typical algorithms for
+  reconstructing time series from the recurrence plot of dynamical systems},
+  Chinese Phys. B 22~(1) (2013) 1--7.
+\newblock \href {http://dx.doi.org/10.1088/1674-1056/22/1/010505}
+  {\path{doi:10.1088/1674-1056/22/1/010505}}.
+
+\bibitem{Zbilut1998}
+J.~P. Zbilut, A.~Giuliani, C.~L. {Webber Jr.}, Detecting deterministic signals
+  in exceptionally noisy environments using cross-recurrence quantification,
+  Phys. Lett. A 246~(1-2) (1998) 122 -- 128.
+\newblock \href {http://dx.doi.org/10.1016/S0375-9601(98)00457-5}
+  {\path{doi:10.1016/S0375-9601(98)00457-5}}.
+
+\bibitem{romano2004}
+M.~C. Romano, M.~Thiel, J.~Kurths, W.~{von Bloh}, {Multivariate Recurrence
+  Plots}, Physics Letters A 330~(3--4) (2004) 214--223.
+\newblock \href {http://dx.doi.org/10.1016/j.physleta.2004.07.066}
+  {\path{doi:10.1016/j.physleta.2004.07.066}}.
+
+\bibitem{Eckmann1987}
+J.-P. Eckmann, S.~O. Kamphorst, D.~Ruelle, Recurrence plots of dynamical
+  systems, Europhys. Lett. 4~(9) (1987) 973--977.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/4/9/004}
+  {\path{doi:10.1209/0295-5075/4/9/004}}.
 
 \bibitem{marwan2007}
 N.~Marwan, M.~C. Romano, M.~Thiel, J.~Kurths, Recurrence plots for the analysis
   of complex systems, Phys. Rep. 438~(5--6) (2007) 237--329.
 \newblock \href {http://dx.doi.org/10.1016/j.physrep.2006.11.001}
   {\path{doi:10.1016/j.physrep.2006.11.001}}.
+
+\bibitem{zbilut92}
+J.~P. Zbilut, C.~L. {Webber Jr.}, Embeddings and delays as derived from
+  quantification of recurrence plots, Physics Letters A 171~(3--4) (1992)
+  199--203.
+\newblock \href {http://dx.doi.org/10.1016/0375-9601(92)90426-M}
+  {\path{doi:10.1016/0375-9601(92)90426-M}}.
+
+\bibitem{trulla96}
+L.~L. Trulla, A.~Giuliani, J.~P. Zbilut, C.~L. {Webber Jr.}, Recurrence
+  quantification analysis of the logistic equation with transients, Physics
+  Letters A 223~(4) (1996) 255--260.
+\newblock \href {http://dx.doi.org/10.1016/S0375-9601(96)00741-4}
+  {\path{doi:10.1016/S0375-9601(96)00741-4}}.
+
+\bibitem{Fraser1986}
+A.~M. Fraser, H.~L. Swinney, {Independent coordinates for strange attractors
+  from mutual information}, {Phys. Rev. A} {33}~({2}) ({1986}) {1134--1140}.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevA.33.1134}
+  {\path{doi:10.1103/PhysRevA.33.1134}}.
+
+\bibitem{Kennel1992}
+M.~B. Kennel, R.~Brown, H.~D.~I. Abarbanel, Determining embedding dimension for
+  phase-space reconstruction using a geometrical construction, {Phys. Rev. A}
+  45~(6) (1992) 3403--3411.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevA.45.3403}
+  {\path{doi:10.1103/PhysRevA.45.3403}}.
+
+\bibitem{Takens1981}
+F.~Takens, {Detecting strange attractors in turbulence}, in: D.~A. Rand, L.-S.
+  Young (Eds.), Dynamical Systems and Turbulence, Warwick 1980, Vol. 898 of
+  Lecture Notes in Mathematics, Springer, New York, 1981, pp. 366--381.
+\newblock \href {http://dx.doi.org/10.1007/BFb0091924}
+  {\path{doi:10.1007/BFb0091924}}.
+
+\bibitem{Ott1993}
+E.~Ott, Chaos in Dynamical Systems, 2nd Edition, Cambridge University Press,
+  Cambridge, 2002.
+
+\bibitem{poincare1890}
+H.~Poincar{\'e}, Sur la probl{\`e}me des trois corps et les {\'e}quations de la
+  dynamique, Acta Mathematica 13~(1) (1890) A3--A270.
+
+\bibitem{Horai2002}
+S.~Horai, T.~Yamada, K.~Aihara, {Determinism analysis with iso-directional
+  recurrence plots}, {IEEJ Transactions on Electronics, Information and
+  Systems} {122}~({1}) ({2002}) {141--147}.
+
+\bibitem{marwan2002}
+N.~Marwan, M.~Thiel, N.~R. Nowaczyk, {Cross Recurrence Plot Based
+  Synchronization of Time Series}, Nonlinear Processes in Geophysics 9~(3/4)
+  (2002) 325--331.
+
+\bibitem{marwan2008}
+N.~Marwan, S.~Schinkel, J.~Kurths, {Significance for a recurrence based
+  transition analysis}, in: Proceedings of the 2008 International Symposium on
+  Nonlinear Theory and its Applications NOLTA{\^A}??08, Budapest, Hungary,
+  September 7-10, 2008, {2008}, pp. {412--415}.
+
+\bibitem{facchini2007}
+A.~Facchini, C.~Mocenni, N.~Marwan, A.~Vicino, E.~Tiezzi, {Nonlinear time
+  series analysis of dissolved oxygen in the Orbetello Lagoon (Italy)}, Ecol.
+  Modell. 203 (2007) 339--348.
+
+\bibitem{litak2009c}
+G.~Litak, J.~T. Sawicki, R.~Kasperek, Cracked rotor detection by recurrence
+  plots, Nondestruct. Test. Eval. 24 (2009) 347--351.
+\newblock \href {http://dx.doi.org/10.1080/10589750802570836}
+  {\path{doi:10.1080/10589750802570836}}.
+
+\bibitem{marwan2003climdyn}
+N.~Marwan, M.~H. Trauth, M.~Vuille, J.~Kurths, {Comparing modern and
+  Pleistocene ENSO-like influences in NW Argentina using nonlinear time series
+  analysis methods}, Clim. Dyn. 21 (2003) 317--326.
+
+\bibitem{marwan2007pla}
+N.~Marwan, J.~Kurths, P.~Saparin, {Generalised Recurrence Plot Analysis for
+  Spatial Data}, Phys. Lett. A 360 (2007) 545--551.
+
+\bibitem{Giuliani2002a}
+A.~Giuliani, R.~Benigni, J.~P. Zbilut, C.~Webber, P.~Sirabella, A.~Colosimo,
+  Nonlinear signal analysis methods in the elucidation of protein
+  sequence{\^a}{\^a}??{\^a}??structure relationships, Chemical Reviews 102~(5)
+  (2002) 1471--1492.
+\newblock \href {http://dx.doi.org/10.1021/cr0101499}
+  {\path{doi:10.1021/cr0101499}}.
+
+\bibitem{zbilut2004a}
+J.~P. Zbilut, J.~C. Mitchell, A.~Giuliani, N.~Marwan, C.~L. {Webber Jr.},
+  {Singular Hydrophobicity Patterns and Net Charge: A Mesoscopic Principle for
+  Protein Aggregation/Folding}, Physica A 343 (2004) 348--358.
+
+\bibitem{marwan2008epjst}
+N.~Marwan, {A Historical Review of Recurrence Plots}, Eur. Phys. J. -- Spec.
+  Top. 164 (2008) 3--12.
+
+\bibitem{webber2009}
+C.~L. {Webber Jr.}, N.~Marwan, A.~Facchini, A.~Giuliani, {Simpler methods do it
+  better: Success of Recurrence Quantification Analysis as a general purpose
+  data analysis tool}, Phys. Lett. A 373 (2009) 3753--3756.
+
+\bibitem{thiel2004a}
+M.~Thiel, M.~C. Romano, P.~L. Read, J.~Kurths, {Estimation of dynamical
+  invariants without embedding by recurrence plots}, Chaos 14~(2) (2004)
+  234--243.
+\newblock \href {http://dx.doi.org/10.1063/1.1667633}
+  {\path{doi:10.1063/1.1667633}}.
+
+\bibitem{marwan2002npg}
+N.~Marwan, M.~Thiel, N.~R. Nowaczyk, {Cross Recurrence Plot Based
+  Synchronization of Time Series}, Nonlinear Process. Geophys. 9 (2002)
+  325--331.
+
+\bibitem{romano2005}
+M.~C. Romano, M.~Thiel, J.~Kurths, I.~Z. Kiss, J.~Hudson, Detection of
+  synchronization for non-phase-coherent and non-stationary data, Europhysics
+  Letters 71~(3) (2005) 466--472.
+\newblock \href {http://dx.doi.org/10.1209/epl/i2005-10095-1}
+  {\path{doi:10.1209/epl/i2005-10095-1}}.
+
+\bibitem{Romano2007}
+M.~C. Romano, M.~Thiel, J.~Kurths, C.~Grebogi, Estimation of the direction of
+  the coupling by conditional probabilities of recurrence, Phys. Rev. E 76~(3)
+  (2007) 036211.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.76.036211}
+  {\path{doi:10.1103/PhysRevE.76.036211}}.
+
+\bibitem{vanLeeuwen2009}
+P.~{Van Leeuwen}, D.~Geue, M.~Thiel, D.~Cysarz, S.~Lange, M.~C. Romano,
+  N.~Wessel, J.~Kurths, D.~H. Gr�nemeyer, {Influence of paced maternal
+  breathing on fetal -- maternal heart rate coordination}, Proc. Natl. Acad.
+  Sci. 106 (2009) 13661--13666.
+\newblock \href {http://dx.doi.org/10.1073??pnas.0901049106}
+  {\path{doi:10.1073??pnas.0901049106}}.
+
+\bibitem{Nawrath2010}
+J.~Nawrath, M.~C. Romano, M.~Thiel, I.~Z. Kiss, M.~Wickramasinghe, J.~Timmer,
+  J.~Kurths, B.~Schelter, {Distinguishing Direct from Indirect Interactions in
+  Oscillatory Networks with Multiple Time Scales}, Phys. Rev. Lett. 104~(3)
+  (2010) 1--4.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.104.038701}
+  {\path{doi:10.1103/PhysRevLett.104.038701}}.
+
+\bibitem{Pham2016}
+T.~D. Pham, {Fuzzy recurrence plots}, EPL (Europhysics Lett. 116~(5) (2016)
+  50008.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/116/50008}
+  {\path{doi:10.1209/0295-5075/116/50008}}.
+
+\bibitem{graben2013}
+P.~beim Graben, A.~Hutt, {Detecting Recurrence Domains of Dynamical Systems by
+  Symbolic Dynamics}, Phys. Rev. Lett. 110~(15) (2013) 154101.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.110.154101}
+  {\path{doi:10.1103/PhysRevLett.110.154101}}.
+
+\bibitem{Costa2018}
+D.~G. d.~B. Costa, B.~M. d.~F. Reis, Y.~Zou, M.~G. Quiles, E.~E.~N. Macau,
+  {Recurrence Density Enhanced Complex Networks for Nonlinear Time Series
+  Analysis}, Int. J. Bifurc. Chaos 28~(01) (2018) 1850008.
+\newblock \href {http://dx.doi.org/10.1142/S0218127418500086}
+  {\path{doi:10.1142/S0218127418500086}}.
+
+\bibitem{Martinovic2018}
+T.~Martinovi{\v{c}}, G.~Zitzlsberger, {Highly scalable algorithm for
+  computation of recurrence quantitative analysis}, J. Supercomput.\href
+  {http://dx.doi.org/10.1007/s11227-018-2350-5}
+  {\path{doi:10.1007/s11227-018-2350-5}}.
+
+\bibitem{Yang2013}
+H.~Yang, G.~Liu, {Self-organized topology of recurrence-based complex
+  networks}, Chaos 23~(4) (2013) 043116.
+\newblock \href {http://dx.doi.org/10.1063/1.4829877}
+  {\path{doi:10.1063/1.4829877}}.
+
+\bibitem{Liu2010a}
+C.~Liu, W.-X. Zhou, {Superfamily classification of nonstationary time series
+  based on DFA scaling exponents}, J. Phys. A Math. Theor. 43~(49).
+\newblock \href {http://arxiv.org/abs/0912.2016} {\path{arXiv:0912.2016}},
+  \href {http://dx.doi.org/10.1088/1751-8113/43/49/495005}
+  {\path{doi:10.1088/1751-8113/43/49/495005}}.
+
+\bibitem{Li2011a}
+Y.~Li, H.~Cao, Y.~Tan, {A comparison of two methods for modeling large-scale
+  data from time series as complex networks}, AIP Adv. 1~(1) (2011) 012103.
+\newblock \href {http://dx.doi.org/10.1063/1.3556121}
+  {\path{doi:10.1063/1.3556121}}.
+
+\bibitem{Li2011b}
+Y.~Li, H.~Ca{\"{o}}, Y.~Tan, {Novel method of identifying time series based on
+  network graphs}, Complexity 17~(1) (2011) 13--34.
+\newblock \href {http://dx.doi.org/10.1002/cplx.20384}
+  {\path{doi:10.1002/cplx.20384}}.
+
+\bibitem{Cao2014}
+H.~Cao, Y.~Li, {Unraveling chaotic attractors by complex networks and
+  measurements of stock market complexity}, Chaos 24~(1) (2014) 013134.
+\newblock \href {http://dx.doi.org/10.1063/1.4868258}
+  {\path{doi:10.1063/1.4868258}}.
+
+\bibitem{Fan2015}
+X.~Fan, L.~Wang, H.~Xu, S.~Li, L.~Tian, {Characterizing air quality data from
+  complex network perspective}, Environ. Sci. Pollut. Res.\href
+  {http://dx.doi.org/10.1007/s11356-015-5596-y}
+  {\path{doi:10.1007/s11356-015-5596-y}}.
+
+\bibitem{Li2012}
+X.~Li, D.~Yang, X.~Liu, X.-M. Wu, {Bridging Time Series Dynamics and Complex
+  Network Theory with Application to Electrocardiogram Analysis}, IEEE Circuits
+  Syst. Mag. 12~(4) (2012) 33--46.
+\newblock \href {http://dx.doi.org/10.1109/MCAS.2012.2221521}
+  {\path{doi:10.1109/MCAS.2012.2221521}}.
+
+\bibitem{Daw2003}
+C.~S. Daw, C.~E.~A. Finney, E.~R. Tracy, A review of symbolic analysis of
+  experimental data, Rev. Scient. Instrum. 74~(2) (2003) 915--930.
+\newblock \href {http://dx.doi.org/10.1063/1.1531823}
+  {\path{doi:10.1063/1.1531823}}.
+
+\bibitem{Donner2008}
+R.~Donner, U.~Hinrichs, B.~Scholz-Reiter, Symbolic recurrence plots: A new
+  quantitative framework for performance analysis of manufacturing networks,
+  Eur. Phys. J. ST 164 (2008) 85--104.
+\newblock \href {http://dx.doi.org/10.1140/epjst/e2008-00836-2}
+  {\path{doi:10.1140/epjst/e2008-00836-2}}.
+
+\bibitem{Faure2010}
+P.~Faure, A.~Lesne, Recurrence plots for symbolic sequences, Int. J.
+  Bifurcation Chaos 20~(6) (2010) 1731--1749.
+\newblock \href {http://dx.doi.org/10.1142/S0218127410026794}
+  {\path{doi:10.1142/S0218127410026794}}.
+
+\bibitem{Pham2017}
+T.~D. Pham, {From fuzzy recurrence plots to scalable recurrence networks of
+  time series}, EPL (Europhysics Lett. 118~(2) (2017) 20003.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/118/20003}
+  {\path{doi:10.1209/0295-5075/118/20003}}.
+
+\bibitem{Donges2011a}
+J.~F. Donges, R.~V. Donner, M.~H. Trauth, N.~Marwan, H.-J. Schellnhuber,
+  J.~Kurths, {Nonlinear detection of paleoclimate-variability transitions
+  possibly related to human evolution}, Proc. Natl. Acad. Sci. 108~(51) (2011)
+  20422--20427.
+\newblock \href {http://dx.doi.org/10.1073/pnas.1117052108}
+  {\path{doi:10.1073/pnas.1117052108}}.
+
+\bibitem{Donges2011}
+J.~F. Donges, R.~V. Donner, K.~Rehfeld, N.~Marwan, M.~H. Trauth, J.~Kurths,
+  {Identification of dynamical transitions in marine palaeoclimate records by
+  recurrence network analysis}, Nonlinear Process. Geophys. 18~(5) (2011)
+  545--562.
+\newblock \href {http://dx.doi.org/10.5194/npg-18-545-2011}
+  {\path{doi:10.5194/npg-18-545-2011}}.
+
+\bibitem{casdagli97}
+M.~C. Casdagli, {Recurrence plots revisited}, Physica{\~{}}D 108 (1997) 12--44.
+
+\bibitem{Iwayama2012}
+K.~Iwayama, Y.~Hirata, K.~Takahashi, K.~Watanabe, K.~Aihara, H.~Suzuki,
+  {Characterizing global evolutions of complex systems via intermediate network
+  representations}, Sci. Rep. 2~(1) (2012) 423.
+\newblock \href {http://dx.doi.org/10.1038/srep00423}
+  {\path{doi:10.1038/srep00423}}.
+
+\bibitem{Donges2012}
+J.~F. Donges, J.~Heitzig, R.~V. Donner, J.~Kurths, {Analytical framework for
+  recurrence network analysis of time series}, Phys. Rev. E 85~(4).
+\newblock \href {http://arxiv.org/abs/arXiv:1203.4701v1}
+  {\path{arXiv:arXiv:1203.4701v1}}, \href
+  {http://dx.doi.org/10.1103/PhysRevE.85.046105}
+  {\path{doi:10.1103/PhysRevE.85.046105}}.
+
+\bibitem{thiel2006b}
+M.~Thiel, M.~C. Romano, J.~Kurths, M.~Rolfs, R.~Kliegl, {Twin surrogates to
+  test for complex synchronisation}, Europhys. Lett. 75~(4) (2006) 535--541.
+\newblock \href {http://dx.doi.org/10.1209/epl/i2006-10147-0}
+  {\path{doi:10.1209/epl/i2006-10147-0}}.
+
+\bibitem{Romano2009}
+M.~C. Romano, M.~Thiel, J.~Kurths, K.~Mergenthaler, R.~Engbert, {Hypothesis
+  test for synchronization: Twin surrogates revisited}, {Chaos} {19}~({1})
+  ({2009}) {015108}.
+\newblock \href {http://dx.doi.org/10.1063/1.3072784}
+  {\path{doi:10.1063/1.3072784}}.
+
+\bibitem{Penrose2003}
+M.~Penrose, Random Geometric Graphs, Oxford University Press, Oxford, 2003.
+
+\bibitem{Herrmann2003}
+C.~Herrmann, M.~Barth{\'e}lemy, P.~Provero, Connectivity distribution of
+  spatial networks, Phys. Rev. E 68~(2) (2003) 026128.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.68.026128}
+  {\path{doi:10.1103/PhysRevE.68.026128}}.
+
+\bibitem{Dall2002}
+J.~Dall, M.~Christensen, Random geometric graphs, Phys. Rev. E 66~(1) (2002)
+  016121.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.66.016121}
+  {\path{doi:10.1103/PhysRevE.66.016121}}.
+
+\bibitem{Eckmann1985}
+J.~P. Eckmann, D.~Ruelle, Ergodic theory of chaos and strange attractors, Rev.
+  Mod. Phys. 57 (1985) 617--656.
+\newblock \href {http://dx.doi.org/10.1103/RevModPhys.57.617}
+  {\path{doi:10.1103/RevModPhys.57.617}}.
+
+\bibitem{Zou2012}
+Y.~Zou, J.~Heitzig, R.~V. Donner, J.~F. Donges, J.~D. Farmer, R.~Meucci,
+  S.~Euzzor, N.~Marwan, J.~Kurths, {Power-laws in recurrence networks from
+  dynamical systems}, EPL (Europhysics Lett. 98~(4) (2012) 48001.
+\newblock \href {http://arxiv.org/abs/1203.3345} {\path{arXiv:1203.3345}},
+  \href {http://dx.doi.org/10.1209/0295-5075/98/48001}
+  {\path{doi:10.1209/0295-5075/98/48001}}.
+
+\bibitem{Jocob2016}
+R.~Jacob, K.~P. Harikrishnan, R.~Misra, G.~Ambika, {Measure for degree
+  heterogeneity in complex networks and its application to recurrence network
+  analysis}, R. Soc. Open Sci. 4~(1) (2016) 160757.
+\newblock \href {http://arxiv.org/abs/1605.06607} {\path{arXiv:1605.06607}},
+  \href {http://dx.doi.org/10.1098/rsos.160757}
+  {\path{doi:10.1098/rsos.160757}}.
+
+\bibitem{Milgram1967}
+S.~Milgram, {Small-world problem}, {Psychology Today} {1}~({1}) ({1967})
+  {61--67}.
+
+\bibitem{Donner2010Nolta}
+R.~V. Donner, J.~F. Donges, Y.~Zou, N.~Marwan, J.~Kurths, {Recurrence-based
+  evolving networks for time series analysis of complex systems}, Proc. NOLTA
+  2010 (2010) 87--90.
+
+\bibitem{Donner2010b}
+R.~V. Donner, Y.~Zou, J.~F. Donges, N.~Marwan, J.~Kurths, {Ambiguities in
+  recurrence-based complex network representations of time series}, Phys. Rev.
+  E 81~(1) (2010) 015101.
+\newblock \href {http://arxiv.org/abs/1001.4620} {\path{arXiv:1001.4620}},
+  \href {http://dx.doi.org/10.1103/PhysRevE.81.015101}
+  {\path{doi:10.1103/PhysRevE.81.015101}}.
+
+\bibitem{Zou2010}
+Y.~Zou, R.~V. Donner, J.~F. Donges, N.~Marwan, J.~Kurths, {Identifying complex
+  periodic windows in continuous-time dynamical systems using recurrence-based
+  methods}, Chaos 20~(4) (2010) 043130.
+\newblock \href {http://arxiv.org/abs/1011.5172} {\path{arXiv:1011.5172}},
+  \href {http://dx.doi.org/10.1063/1.3523304} {\path{doi:10.1063/1.3523304}}.
+
+\bibitem{Zou2012c}
+Y.~Zou, R.~V. Donner, J.~Kurths, {Geometric and dynamic perspectives on
+  phase-coherent and noncoherent chaos}, Chaos 22~(1) (2012) 013115.
+\newblock \href {http://arxiv.org/abs/arXiv:1202.4823v1}
+  {\path{arXiv:arXiv:1202.4823v1}}, \href {http://dx.doi.org/10.1063/1.3677367}
+  {\path{doi:10.1063/1.3677367}}.
+
+\bibitem{Zou2012b}
+Y.~Zou, R.~V. Donner, M.~Wickramasinghe, I.~Z. Kiss, M.~Small, J.~Kurths,
+  {Phase coherence and attractor geometry of chaotic electrochemical
+  oscillators}, Chaos 22~(3) (2012) 033130.
+\newblock \href {http://dx.doi.org/10.1063/1.4747707}
+  {\path{doi:10.1063/1.4747707}}.
+
+\bibitem{Faure1998}
+P.~Faure, H.~Korn, {A new method to estimate the Kolmogorov entropy from
+  recurrence plots: its application to neuronal signals}, {Physica D} 122~(1-4)
+  (1998) 265--279.
+\newblock \href {http://dx.doi.org/10.1016/S0167-2789(98)00177-8}
+  {\path{doi:10.1016/S0167-2789(98)00177-8}}.
+
+\bibitem{Grassberger1983PLA}
+P.~Grassberger, Generalized dimensions of strange attractors, {Phys. Lett. A}
+  97~(6) (1983) 227--230.
+\newblock \href {http://dx.doi.org/10.1016/0375-9601(83)90753-3}
+  {\path{doi:10.1016/0375-9601(83)90753-3}}.
+
+\bibitem{Lathrop1989}
+D.~P. Lathrop, E.~J. Kostelich, {Characterization of an experimental strange
+  attractor by periodic-orbits}, {Phys. Rev. A} 40~(7) (1989) 4028--4031.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevA.40.4028}
+  {\path{doi:10.1103/PhysRevA.40.4028}}.
+
+\bibitem{Strozzi2009}
+F.~Strozzi, J.~M. Zald{\'{i}}var, K.~Poljansek, F.~Bono, E.~Guti{\'{e}}rrez,
+  {From complex networks to time series analysis and viceversa : application to
+  metabolic networks complex networks time series}, Tech. rep., European
+  Commission Joint Research Centre Contact (2009).
+\newblock \href {http://dx.doi.org/10.2788/25588} {\path{doi:10.2788/25588}}.
+
+\bibitem{Zou2015}
+Y.~Zou, R.~V. Donner, J.~Kurths, {Analyzing long-term correlated stochastic
+  processes by means of recurrence networks: Potentials and pitfalls}, Phys.
+  Rev. E 91~(2) (2015) 022926.
+\newblock \href {http://arxiv.org/abs/1409.3613} {\path{arXiv:1409.3613}},
+  \href {http://dx.doi.org/10.1103/PhysRevE.91.022926}
+  {\path{doi:10.1103/PhysRevE.91.022926}}.
+
+\bibitem{Liu2014}
+J.-L. Liu, Z.-G. Yu, V.~Anh, {Topological properties and fractal analysis of a
+  recurrence network constructed from fractional Brownian motions}, Phys. Rev.
+  E 89~(3) (2014) 032814.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.89.032814}
+  {\path{doi:10.1103/PhysRevE.89.032814}}.
+
+\bibitem{schinkel2008}
+S.~Schinkel, O.~Dimigen, N.~Marwan, {Selection of recurrence threshold for
+  signal detection}, Eur. Phys. J. Spec. Top. 164~(1) (2008) 45--53.
+\newblock \href {http://dx.doi.org/10.1140/epjst/e2008-00833-5}
+  {\path{doi:10.1140/epjst/e2008-00833-5}}.
+
+\bibitem{Yang2015a}
+D.~Yang, W.-X. Ren, Y.-D. Hu, D.~Li, {Selection of optimal threshold to
+  construct recurrence plot for structural operational vibration measurements},
+  J. Sound Vib. 349 (2015) 361--374.
+\newblock \href {http://dx.doi.org/10.1016/j.jsv.2015.03.046}
+  {\path{doi:10.1016/j.jsv.2015.03.046}}.
+
+\bibitem{Jacob2016b}
+R.~Jacob, K.~P. Harikrishnan, R.~Misra, G.~Ambika, {Uniform framework for the
+  recurrence-network analysis of chaotic time series}, Phys. Rev. E 93~(1)
+  (2016) 012202.
+\newblock \href {http://arxiv.org/abs/arXiv:1502.03527v1}
+  {\path{arXiv:arXiv:1502.03527v1}}, \href
+  {http://dx.doi.org/10.1103/PhysRevE.93.012202}
+  {\path{doi:10.1103/PhysRevE.93.012202}}.
+
+\bibitem{Eroglu2014}
+D.~Eroglu, N.~Marwan, S.~Prasad, J.~Kurths, {Finding recurrence networks'
+  threshold adaptively for a specific time series}, Nonlinear Process. Geophys.
+  21~(6) (2014) 1085--1092.
+\newblock \href {http://dx.doi.org/10.5194/npg-21-1085-2014}
+  {\path{doi:10.5194/npg-21-1085-2014}}.
+
+\bibitem{Lin2016}
+M.~Lin, X.~X. Fan, G.~Wang, G.~Zhao, {Network structure entropy and its
+  dynamical evolution for recurrence networks from earthquake magnitude time
+  series}, Eur. Phys. J. B 89~(5) (2016) 131.
+\newblock \href {http://dx.doi.org/10.1140/epjb/e2016-70004-0}
+  {\path{doi:10.1140/epjb/e2016-70004-0}}.
+
+\bibitem{Zou2016d}
+Y.~Zou, R.~V. Donner, M.~Thiel, J.~Kurths, {Disentangling regular and chaotic
+  motion in the standard map using complex network analysis of recurrences in
+  phase space}, Chaos 26~(2) (2016) 023120.
+\newblock \href {http://arxiv.org/abs/arXiv:1603.06388v1}
+  {\path{arXiv:arXiv:1603.06388v1}}, \href
+  {http://dx.doi.org/10.1063/1.4942584} {\path{doi:10.1063/1.4942584}}.
+
+\bibitem{Vega2016}
+I.~Vega, C.~Sch{\"{u}}tte, T.~Conrad, {Finding metastable states in real-world
+  time series with recurrence networks}, Physica A 445 (2016) 1--17.
+\newblock \href {http://arxiv.org/abs/1404.7807} {\path{arXiv:1404.7807}},
+  \href {http://dx.doi.org/10.1016/j.physa.2015.10.041}
+  {\path{doi:10.1016/j.physa.2015.10.041}}.
+
+\bibitem{thiel2002}
+M.~Thiel, M.~C. Romano, J.~Kurths, R.~Meucci, E.~Allaria, F.~T. Arecchi,
+  {Influence of observational noise on the recurrence quantification analysis},
+  Phys. D 171 (2002) 138--152.
+
+\bibitem{Subramaniyam2014}
+N.~P. Subramaniyam, J.~Hyttinen, {Characterization of dynamical systems under
+  noise using recurrence networks: Application to simulated and EEG data},
+  Phys. Lett. A 378~(46) (2014) 3464--3474.
+\newblock \href {http://dx.doi.org/10.1016/j.physleta.2014.10.005}
+  {\path{doi:10.1016/j.physleta.2014.10.005}}.
+
+\bibitem{Jacob2018}
+R.~Jacob, K.~Harikrishnan, R.~Misra, G.~Ambika, {Recurrence network measures
+  for hypothesis testing using surrogate data: Application to black hole light
+  curves}, Commun. Nonlinear Sci. Numer. Simul. 54 (2018) 84--99.
+\newblock \href {http://dx.doi.org/10.1016/j.cnsns.2017.05.018}
+  {\path{doi:10.1016/j.cnsns.2017.05.018}}.
+
+\bibitem{Eroglu2018}
+D.~Eroglu, N.~Marwan, M.~Stebich, J.~Kurths, {Multiplex recurrence networks},
+  Phys. Rev. E 97~(1) (2018) 012312.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.97.012312}
+  {\path{doi:10.1103/PhysRevE.97.012312}}.
+
+\bibitem{Lacasa2015b}
+L.~Lacasa, V.~Nicosia, V.~Latora, {Network structure of multivariate time
+  series}, Sci. Rep. 5~(1) (2015) 15508.
+\newblock \href {http://arxiv.org/abs/1408.0925} {\path{arXiv:1408.0925}},
+  \href {http://dx.doi.org/10.1038/srep15508} {\path{doi:10.1038/srep15508}}.
+
+\bibitem{Donges2011b}
+J.~F. Donges, H.~C. Schultz, N.~Marwan, Y.~Zou, J.~Kurths, {Investigating the
+  topology of interacting networks: Theory and application to coupled climate
+  subnetworks}, Eur. Phys. J. B 84~(4) (2011) 635--651.
+\newblock \href {http://arxiv.org/abs/1102.3067} {\path{arXiv:1102.3067}},
+  \href {http://dx.doi.org/10.1140/epjb/e2011-10795-8}
+  {\path{doi:10.1140/epjb/e2011-10795-8}}.
+
+\bibitem{Wiedermann2013}
+M.~Wiedermann, J.~F. Donges, J.~Heitzig, J.~Kurths, {Node-weighted interacting
+  network measures improve the representation of real-world complex systems},
+  EPL (Europhysics Lett. 102~(2) (2013) 28007.
+\newblock \href {http://arxiv.org/abs/1301.0805} {\path{arXiv:1301.0805}},
+  \href {http://dx.doi.org/10.1209/0295-5075/102/28007}
+  {\path{doi:10.1209/0295-5075/102/28007}}.
+
+\bibitem{Feldhoff2011}
+J.~Feldhoff, Multivariate extensions of recurrence network analysis, Master's
+  thesis, Humboldt University, Berlin (2011).
+
+\bibitem{Feldhoff2012}
+J.~H. Feldhoff, R.~V. Donner, J.~F. Donges, N.~Marwan, J.~Kurths, {Geometric
+  detection of coupling directions by means of inter-system recurrence
+  networks}, Phys. Lett. A 376~(46) (2012) 3504--3513.
+\newblock \href {http://arxiv.org/abs/1301.0934} {\path{arXiv:1301.0934}},
+  \href {http://dx.doi.org/10.1016/j.physleta.2012.10.008}
+  {\path{doi:10.1016/j.physleta.2012.10.008}}.
+
+\bibitem{Feldhoff2013}
+J.~H. Feldhoff, R.~V. Donner, J.~F. Donges, N.~Marwan, J.~Kurths, {Geometric
+  signature of complex synchronisation scenarios}, EPL (Europhysics Lett.
+  102~(3) (2013) 30007.
+\newblock \href {http://arxiv.org/abs/1301.0806} {\path{arXiv:1301.0806}},
+  \href {http://dx.doi.org/10.1209/0295-5075/102/30007}
+  {\path{doi:10.1209/0295-5075/102/30007}}.
+
+\bibitem{Guimera2007}
+R.~Guimer{\`a}, M.~Sales-Pardo, L.~A.~N. Amaral, Module identification in
+  bipartite and directed networks, Phys. Rev. E 76~(3) (2007) 036102.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.76.036102}
+  {\path{doi:10.1103/PhysRevE.76.036102}}.
+
+\bibitem{Kitsak2011}
+M.~Kitsak, D.~Krioukov, {Hidden variables in bipartite networks}, Phys. Rev. E
+  84 (2011) 026114.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.84.026114}
+  {\path{doi:10.1103/PhysRevE.84.026114}}.
+
+\bibitem{Guillaume2004}
+J.-L. Guillaume, M.~Latapy, Bipartite structure of all complex networks,
+  Inform. Process. Lett. 90~(5) (2004) 215--221.
+\newblock \href {http://dx.doi.org/10.1016/j.ipl.2004.03.007}
+  {\path{doi:10.1016/j.ipl.2004.03.007}}.
+
+\bibitem{Guillaume2006}
+J.-L. Guillaume, M.~Latapy, Bipartite graphs as models of complex networks,
+  Physica A 371~(2) (2006) 795--813.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2006.04.047}
+  {\path{doi:10.1016/j.physa.2006.04.047}}.
+
+\bibitem{Fortunato2010}
+S.~Fortunato, Community detection in graphs, Phys. Rep. 486~(3-5) (2010)
+  75--174.
+\newblock \href {http://dx.doi.org/10.1016/j.physrep.2009.11.002}
+  {\path{doi:10.1016/j.physrep.2009.11.002}}.
+
+\bibitem{Barber2007}
+M.~J. Barber, Modularity and community detection in bipartite networks, Phys.
+  Rev. E 76~(6) (2007) 066102.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.76.066102}
+  {\path{doi:10.1103/PhysRevE.76.066102}}.
+
+\bibitem{Murata2009}
+T.~Murata, Detecting communities from bipartite networks based on bipartite
+  modularities, in: Proceedings of the 2009 International Conference on
+  Computational Science and Engineering - Volume 04, IEEE Computer Society,
+  Washington, DC, USA, 2009, pp. 50--57.
+\newblock \href {http://dx.doi.org/10.1109/CSE.2009.81}
+  {\path{doi:10.1109/CSE.2009.81}}.
+
+\bibitem{Suzuki2009}
+K.~Suzuki, K.~Wakita, Extracting multi-facet community structure from bipartite
+  networks, in: Proceedings of the 2009 International Conference on
+  Computational Science and Engineering - Volume 04, IEEE Computer Society,
+  Washington, DC, USA, 2009, pp. 312--319.
+\newblock \href {http://dx.doi.org/10.1109/CSE.2009.451}
+  {\path{doi:10.1109/CSE.2009.451}}.
+
+\bibitem{Du2008}
+N.~Du, B.~Wang, B.~Wu, Y.~Wang, Overlapping community detection in bipartite
+  networks, in: Proceedings of the 2008 IEEE/WIC/ACM International Conference
+  on Web Intelligence and Intelligent Agent Technology - Volume 01, IEEE
+  Computer Society, Washington, DC, USA, 2008, pp. 176--179.
+\newblock \href {http://dx.doi.org/10.1109/WIIAT.2008.98}
+  {\path{doi:10.1109/WIIAT.2008.98}}.
+
+\bibitem{Lehmann2008}
+S.~Lehmann, M.~Schwartz, L.~K. Hansen, Biclique communities, Phys. Rev. E
+  78~(1) (2008) 016108.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.78.016108}
+  {\path{doi:10.1103/PhysRevE.78.016108}}.
+
+\bibitem{Sawardecker2009}
+E.~N. Sawardecker, C.~A. Amundsen, M.~Sales-Pardo, L.~A.~N. Amaral, Comparison
+  of methods for the detection of node group membership in bipartite networks,
+  Eur. Phys. J. B 72 (2009) 671--677.
+\newblock \href {http://dx.doi.org/10.1140/epjb/e2009-00397-6}
+  {\path{doi:10.1140/epjb/e2009-00397-6}}.
+
+\bibitem{Lind2005}
+P.~G. Lind, M.~C. Gonz{\'a}lez, H.~J. Herrmann, Cycles and clustering in
+  bipartite networks, Phys. Rev. E 72~(5) (2005) 056127.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.72.056127}
+  {\path{doi:10.1103/PhysRevE.72.056127}}.
+
+\bibitem{Zhang2008PhysA}
+P.~Zhang, J.~Wang, X.~Li, M.~Li, Z.~Di, Y.~Fan, Clustering coefficient and
+  community structure of bipartite networks, Physica A 387~(27) (2008)
+  6869--6875.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2008.09.006}
+  {\path{doi:10.1016/j.physa.2008.09.006}}.
+
+\bibitem{Newman2004}
+M.~E.~J. Newman, {Detecting community structure in networks}, {Eur. Phys. J. B}
+  {38}~({2}) ({2004}) {321--330}.
+\newblock \href {http://dx.doi.org/10.1140/epjb/e2004-00124-y}
+  {\path{doi:10.1140/epjb/e2004-00124-y}}.
+
+\bibitem{Donges2012PhD}
+J.~Donges, Functional network macroscopes for probing past and present earth
+  system dynamics: Complex hierarchical interactions, tipping points, and
+  beyond, Ph.D. thesis, Humboldt University, Berlin (2012).
+
+\bibitem{zou2011}
+Y.~Zou, M.~C. Romano, M.~Thiel, N.~Marwan, J.~Kurths, {Inferring indirect
+  coupling by means of recurrences}, Int. J. Bifurc. Chaos 21~(04) (2011)
+  1099--1111.
+\newblock \href {http://dx.doi.org/10.1142/S0218127411029033}
+  {\path{doi:10.1142/S0218127411029033}}.
+
+\bibitem{Gao2013}
+Z.-K. Gao, X.-W. Zhang, N.-D. Jin, N.~Marwan, J.~Kurths, {Multivariate
+  recurrence network analysis for characterizing horizontal oil-water two-phase
+  flow}, Phys. Rev. E 88~(3) (2013) 1--12.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.88.032910}
+  {\path{doi:10.1103/PhysRevE.88.032910}}.
+
+\bibitem{Gao2016b}
+Z.-K. Gao, Y.-X. Yang, Q.~Cai, S.-S. Zhang, N.-D. Jin, {Multivariate weighted
+  recurrence network inference for uncovering oil-water transitional flow
+  behavior in a vertical pipe}, Chaos 26~(6) (2016) 063117.
+\newblock \href {http://dx.doi.org/10.1063/1.4954271}
+  {\path{doi:10.1063/1.4954271}}.
+
+\bibitem{Gao2016c}
+Z.-K. Gao, Y.-X. Yang, L.-S. Zhai, W.-D. Dang, J.-L. Yu, N.-D. Jin,
+  {Multivariate multiscale complex network analysis of vertical upward
+  oil-water two-phase flow in a small diameter pipe}, Sci. Rep. 6~(1) (2016)
+  20052.
+\newblock \href {http://dx.doi.org/10.1038/srep20052}
+  {\path{doi:10.1038/srep20052}}.
+
+\bibitem{Palus1995}
+M.~Palu\v{s}, Testing for nonlinearity using redundancies: quantitative and
+  qualitative aspects, Physica D 80 (1995) 186--205.
+\newblock \href {http://dx.doi.org/10.1016/0167-2789(95)90079-9}
+  {\path{doi:10.1016/0167-2789(95)90079-9}}.
+
+\bibitem{Prichard1995}
+D.~Prichard, J.~Theiler, Generalized redundancies for time series analysis,
+  Physica D 84 (1995) 476--???493.
+\newblock \href {http://dx.doi.org/10.1016/0167-2789(95)00041-2}
+  {\path{doi:10.1016/0167-2789(95)00041-2}}.
+
+\bibitem{Zhang2006b}
+J.~Zhang, X.~Luo, M.~Small, {Detecting chaos in pseudoperiodic time series
+  without embedding}, Phys. Rev. E 73~(1) (2006) 016216.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.73.016216}
+  {\path{doi:10.1103/PhysRevE.73.016216}}.
+
+\bibitem{Theiler1996}
+J.~Theiler, P.~E. Rapp, {Re-examination of the evidence for low-dimensional,
+  nonlinear structure in the human electroencephalogram}, Electroencephalogr.
+  Clin. Neurophysiol. 98~(3) (1996) 213--222.
+
+\bibitem{Small2001}
+M.~Small, D.~Yu, R.~G. Harrison, {Surrogate Test for Pseudoperiodic Time Series
+  Data}, Phys. Rev. Lett. 87~(18) (2001) 188101.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.87.188101}
+  {\path{doi:10.1103/PhysRevLett.87.188101}}.
+
+\bibitem{Emmert2011}
+F.~Emmert-Streib, {Parametric construction of episode networks from
+  pseudoperiodic time series based on mutual information}, PLoS One 6~(12).
+\newblock \href {http://dx.doi.org/10.1371/journal.pone.0027733}
+  {\path{doi:10.1371/journal.pone.0027733}}.
+
+\bibitem{Men2011}
+C.~Men, J.~Wang, Y.-M. Qin, B.~Deng, X.-L. Wei, {Characterizing electrical
+  signals evoked by acupuncture through complex network mapping: A new
+  perspective on acupuncture}, Comput. Methods Programs Biomed. 104~(3) (2011)
+  498--504.
+\newblock \href {http://dx.doi.org/10.1016/j.cmpb.2011.08.006}
+  {\path{doi:10.1016/j.cmpb.2011.08.006}}.
+
+\bibitem{Kobayashi2017}
+M.~U. Kobayashi, Y.~Saiki, {Network analysis of chaotic systems through
+  unstable periodic orbits}, Chaos 27~(8) (2017) 081103.
+\newblock \href {http://dx.doi.org/10.1063/1.4995043}
+  {\path{doi:10.1063/1.4995043}}.
+
+\bibitem{Cvitanovic1988}
+P.~Cvitanovi{\'{c}}, {Invariant Measurement of Strange Sets in Terms of
+  Cycles}, Phys. Rev. Lett. 61~(24) (1988) 2729--2732.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.61.2729}
+  {\path{doi:10.1103/PhysRevLett.61.2729}}.
+
+\bibitem{Grebogi1988}
+C.~Grebogi, E.~Ott, J.~A. Yorke, {Unstable periodic orbits and the dimensions
+  of multifractal chaotic attractors}, Phys. Rev. A 37~(5) (1988) 1711--1724.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevA.37.1711}
+  {\path{doi:10.1103/PhysRevA.37.1711}}.
+
+\bibitem{thiel2006}
+M.~Thiel, M.~C. Romano, J.~Kurths, {Spurious structures in recurrence plots
+  induced by embedding}, Nonlinear Dyn. 44~(1-4) (2006) 299--305.
+\newblock \href {http://dx.doi.org/10.1007/s11071-006-2010-9}
+  {\path{doi:10.1007/s11071-006-2010-9}}.
+
+\bibitem{Hou2014}
+F.-Z. Hou, J.~Wang, X.-C. Wu, F.-R. Yan, {A dynamic marker of very short-term
+  heartbeat under pathological states via network analysis}, EPL (Europhysics
+  Lett. 107~(5) (2014) 58001.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/107/58001}
+  {\path{doi:10.1209/0295-5075/107/58001}}.
+
+\bibitem{Hempel2011}
+S.~Hempel, A.~Koseska, J.~Kurths, Z.~Nikoloski, {Inner Composition Alignment
+  for Inferring Directed Networks from Short Time Series}, Phys. Rev. Lett.
+  107~(5) (2011) 054101.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.107.054101}
+  {\path{doi:10.1103/PhysRevLett.107.054101}}.
+
+\bibitem{Lozano1979}
+T.~Lozano-P\'erez, M.~A. Wesley, An algorithm for planning collision-free paths
+  among polyhedral obstacles, Communications of the ACM 22~(10) (1979)
+  560--570.
+\newblock \href {http://dx.doi.org/10.1145/359156.359164}
+  {\path{doi:10.1145/359156.359164}}.
+
+\bibitem{Nagy1994}
+G.~Nagy, Terrain visibility, Computers \& Graphics 18~(6) (1994) 763 -- 773.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/0097-8493(94)90002-7}
+  {\path{doi:https://doi.org/10.1016/0097-8493(94)90002-7}}.
+
+\bibitem{Floriani1994}
+L.~{De Floriani}, P.~Marzano, E.~Puppo, {Line-of-sight communication on terrain
+  models}, Int. J. Geogr. Inf. Syst. 8~(4) (1994) 329--342.
+\newblock \href {http://dx.doi.org/10.1080/02693799408902004}
+  {\path{doi:10.1080/02693799408902004}}.
+
+\bibitem{Turner2001}
+A.~Turner, M.~Doxa, D.~O'Sullivan, A.~Penn, {From Isovists to Visibility
+  Graphs: A Methodology for the Analysis of Architectural Space}, Environ.
+  Plan. B Plan. Des. 28~(1) (2001) 103--121.
+\newblock \href {http://dx.doi.org/10.1068/b2684} {\path{doi:10.1068/b2684}}.
+
+\bibitem{Lacasa2010}
+L.~Lacasa, R.~Toral, {Description of stochastic and chaotic series using
+  visibility graphs}, Phys. Rev. E 82~(3) (2010) 036120.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.82.036120}
+  {\path{doi:10.1103/PhysRevE.82.036120}}.
+
+\bibitem{Xie2011}
+W.-J. Xie, W.-X. Zhou, {Horizontal visibility graphs transformed from
+  fractional Brownian motions: Topological properties versus the Hurst index},
+  Physica A 390~(20) (2011) 3592--3601.
+\newblock \href {http://arxiv.org/abs/1012.3850} {\path{arXiv:1012.3850}},
+  \href {http://dx.doi.org/10.1016/j.physa.2011.04.020}
+  {\path{doi:10.1016/j.physa.2011.04.020}}.
+
+\bibitem{Gutin2011}
+G.~Gutin, T.~Mansour, S.~Severini, {A characterization of horizontal visibility
+  graphs and combinatorics on words}, Physica A 390~(12) (2011) 2421--2428.
+\newblock \href {http://arxiv.org/abs/1010.1850} {\path{arXiv:1010.1850}},
+  \href {http://dx.doi.org/10.1016/j.physa.2011.02.031}
+  {\path{doi:10.1016/j.physa.2011.02.031}}.
+
+\bibitem{Nunez2012}
+A.~Nu{\~{n}}ez, L.~Lacasa, J.~Patricio, B.~Luque, {Visibility Algorithms: A
+  Short Review}, in: New Front. Graph Theory, InTech, 2012, Ch.~6, pp.
+  119--152.
+\newblock \href {http://dx.doi.org/10.5772/34810} {\path{doi:10.5772/34810}}.
+
+\bibitem{Luque2016}
+B.~Luque, F.~J. Ballesteros, A.~Robledo, L.~Lacasa, {Entropy and
+  Renormalization in Chaotic Visibility Graphs}, in: Math. Found. Appl. Graph
+  Entropy, Wiley-VCH Verlag GmbH {\&} Co. KGaA, Weinheim, Germany, 2016, pp.
+  1--39.
+\newblock \href {http://dx.doi.org/10.1002/9783527693245.ch1}
+  {\path{doi:10.1002/9783527693245.ch1}}.
+
+\bibitem{Zou2014}
+Y.~Zou, R.~V. Donner, N.~Marwan, M.~Small, J.~Kurths, {Long-term changes in the
+  north–south asymmetry of solar activity: a nonlinear dynamics
+  characterization using visibility graphs}, Nonlinear Process. Geophys. 21~(6)
+  (2014) 1113--1126.
+\newblock \href {http://dx.doi.org/10.5194/npg-21-1113-2014}
+  {\path{doi:10.5194/npg-21-1113-2014}}.
+
+\bibitem{Luque2013a}
+B.~Luque, M.~Cordero-Gracia, M.~G{\'{o}}mez, A.~Robledo, {Quasiperiodic graphs
+  at the onset of chaos}, Phys. Rev. E 88~(6) (2013) 062918.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.88.062918}
+  {\path{doi:10.1103/PhysRevE.88.062918}}.
+
+\bibitem{Luque2013d}
+B.~Luque, F.~J. Ballesteros, A.~M. N{\'{u}}{\~{n}}ez, A.~Robledo,
+  {Quasiperiodic graphs: Structural design, scaling and entropic properties},
+  J. Nonlinear Sci. 23~(2) (2013) 335--342.
+\newblock \href {http://arxiv.org/abs/1203.3717} {\path{arXiv:1203.3717}},
+  \href {http://dx.doi.org/10.1007/s00332-012-9153-2}
+  {\path{doi:10.1007/s00332-012-9153-2}}.
+
+\bibitem{Ahadpour2012}
+S.~Ahadpour, Y.~Sadra, {Randomness criteria in binary visibility graph and
+  complex network perspective}, Inf. Sci. (Ny). 197 (2012) 161--176.
+\newblock \href {http://arxiv.org/abs/1004.2189} {\path{arXiv:1004.2189}},
+  \href {http://dx.doi.org/10.1016/j.ins.2012.02.022}
+  {\path{doi:10.1016/j.ins.2012.02.022}}.
+
+\bibitem{Bezsudnov2014}
+I.~Bezsudnov, A.~Snarskii, {From the time series to the complex networks: The
+  parametric natural visibility graph}, Physica A 414 (2014) 53--60.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2014.07.002}
+  {\path{doi:10.1016/j.physa.2014.07.002}}.
+
+\bibitem{Snarskii2013a}
+A.~Snarskii, I.~Bezsudnov, {Critical phenomena in the dynamical visibility
+  graph}, ArXiv e-prints\href {http://arxiv.org/abs/1302.3265}
+  {\path{arXiv:1302.3265}}.
+
+\bibitem{Gao2016}
+Z.-K. Gao, Q.~Cai, Y.-X. Yang, W.-D. Dang, S.-S. Zhang, {Multiscale limited
+  penetrable horizontal visibility graph for analyzing nonlinear time series},
+  Sci. Rep. 6~(1) (2016) 35622.
+\newblock \href {http://dx.doi.org/10.1038/srep35622}
+  {\path{doi:10.1038/srep35622}}.
+
+\bibitem{Pei2014a}
+X.~Pei, J.~Wang, B.~Deng, X.~Wei, H.~Yu, {WLPVG approach to the analysis of
+  EEG-based functional brain network under manual acupuncture}, Cogn. Neurodyn.
+  8~(5) (2014) 417--428.
+\newblock \href {http://dx.doi.org/10.1007/s11571-014-9297-x}
+  {\path{doi:10.1007/s11571-014-9297-x}}.
+
+\bibitem{Li2018}
+X.~Li, M.~Sun, C.~Gao, D.~Han, M.~Wang, {The parametric modified limited
+  penetrable visibility graph for constructing complex networks from time
+  series}, Physica A 492 (2018) 1097--1106.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2017.11.040}
+  {\path{doi:10.1016/j.physa.2017.11.040}}.
+
+\bibitem{Xiao2014a}
+Q.~Xiao, X.~Pan, X.-L. Li, M.~Stephen, H.-J. Yang, Y.~Jiang, J.-Y. Wang, Q.-J.
+  Zhang, {Row—column visibility graph approach to two-dimensional
+  landscapes}, Chinese Phys. B 23~(7) (2014) 078904.
+\newblock \href {http://dx.doi.org/10.1088/1674-1056/23/7/078904}
+  {\path{doi:10.1088/1674-1056/23/7/078904}}.
+
+\bibitem{Lacasa2017}
+L.~Lacasa, J.~Iacovacci, {Visibility graphs of random scalar fields and spatial
+  data}, Phys. Rev. E 96~(1) (2017) 012318.
+\newblock \href {http://arxiv.org/abs/1702.07813} {\path{arXiv:1702.07813}},
+  \href {http://dx.doi.org/10.1103/PhysRevE.96.012318}
+  {\path{doi:10.1103/PhysRevE.96.012318}}.
+
+\bibitem{Wang2015a}
+H.~Wang, H.~Mo, R.~Sadiq, Y.~Hu, Y.~Deng, {Ordered visibility graph weighted
+  averaging aggregation operator: A methodology based on network analysis},
+  Comput. Ind. Eng. 88 (2015) 181--190.
+\newblock \href {http://dx.doi.org/10.1016/j.cie.2015.06.021}
+  {\path{doi:10.1016/j.cie.2015.06.021}}.
+
+\bibitem{Mutua2015}
+M.~Stephen, C.~Gu, H.~Yang, {Visibility Graph Based Time Series Analysis}, PLoS
+  One 10~(11) (2015) e0143015.
+\newblock \href {http://dx.doi.org/10.1371/journal.pone.0143015}
+  {\path{doi:10.1371/journal.pone.0143015}}.
+
+\bibitem{Mutua2016a}
+S.~Mutua, C.~Gu, H.~Yang, {Visibility graphlet approach to chaotic time
+  series}, Chaos 26~(5) (2016) 053107.
+\newblock \href {http://dx.doi.org/10.1063/1.4951681}
+  {\path{doi:10.1063/1.4951681}}.
+
+\bibitem{Tsiotas2018}
+D.~Tsiotas, A.~Charakopoulos, {Visibility in the topology of complex networks},
+  Physica A 505 (2018) 280--292.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2018.03.055}
+  {\path{doi:10.1016/j.physa.2018.03.055}}.
+
+\bibitem{Wang2018}
+M.~Wang, A.~L.~M. Vilela, R.~Du, L.~Zhao, G.~Dong, L.~Tian, H.~E. Stanley,
+  {Exact results of the limited penetrable horizontal visibility graph
+  associated to random time series and its application}, Sci. Rep. 8~(1) (2018)
+  5130.
+\newblock \href {http://dx.doi.org/10.1038/s41598-018-23388-1}
+  {\path{doi:10.1038/s41598-018-23388-1}}.
+
+\bibitem{Lan2015a}
+X.~Lan, H.~Mo, S.~Chen, Q.~Liu, Y.~Deng, {Fast transformation from time series
+  to visibility graphs}, Chaos 25~(8) (2015) 083105.
+\newblock \href {http://dx.doi.org/10.1063/1.4927835}
+  {\path{doi:10.1063/1.4927835}}.
+
+\bibitem{Pierini2012}
+J.~O. Pierini, M.~Lovallo, L.~Telesca, {Visibility graph analysis of wind speed
+  records measured in central Argentina}, Physica A 391~(20) (2012) 5041--5048.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2012.05.049}
+  {\path{doi:10.1016/j.physa.2012.05.049}}.
+
+\bibitem{Ahmadlou2012}
+M.~Ahmadlou, H.~Adeli, A.~Adeli, {Improved visibility graph fractality with
+  application for the diagnosis of Autism Spectrum Disorder}, Physica A
+  391~(20) (2012) 4720--4726.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2012.04.025}
+  {\path{doi:10.1016/j.physa.2012.04.025}}.
+
+\bibitem{Czechowski2016}
+Z.~Czechowski, M.~Lovallo, L.~Telesca, {Multifractal analysis of visibility
+  graph-based Ito-related connectivity time series}, Chaos 26~(2) (2016)
+  023118.
+\newblock \href {http://dx.doi.org/10.1063/1.4942582}
+  {\path{doi:10.1063/1.4942582}}.
+
+\bibitem{Lacasa2014b}
+L.~Lacasa, Q.~Mary, {On the degree distribution of horizontal visibility graphs
+  associated with Markov processes and dynamical systems: Diagrammatic and
+  variational approaches}, Nonlinearity 27~(9) (2014) 2063--2093.
+\newblock \href {http://arxiv.org/abs/1402.5368} {\path{arXiv:1402.5368}},
+  \href {http://dx.doi.org/10.1088/0951-7715/27/9/2063}
+  {\path{doi:10.1088/0951-7715/27/9/2063}}.
+
+\bibitem{Yu2012}
+Z.~G. Yu, V.~Anh, R.~Eastes, {Multifractal analysis of solar flare indices and
+  their horizontal visibility graphs}, Nonlinear Process. Geophys. 19~(6)
+  (2012) 657--665.
+\newblock \href {http://dx.doi.org/10.5194/npg-19-657-2012}
+  {\path{doi:10.5194/npg-19-657-2012}}.
+
+\bibitem{Braga2016}
+A.~Braga, L.~Alves, L.~Costa, A.~Ribeiro, M.~de~Jesus, A.~Tateishi, H.~Ribeiro,
+  {Characterization of river flow fluctuations via horizontal visibility
+  graphs}, Physica A 444 (2016) 1003--1011.
+\newblock \href {http://arxiv.org/abs/1510.07009} {\path{arXiv:1510.07009}},
+  \href {http://dx.doi.org/10.1016/j.physa.2015.10.102}
+  {\path{doi:10.1016/j.physa.2015.10.102}}.
+
+\bibitem{Zou2014a}
+Y.~Zou, M.~Small, Z.~Liu, J.~Kurths, {Complex network approach to characterize
+  the statistical features of the sunspot series}, New J. Phys. 16~(1) (2014)
+  013051.
+\newblock \href {http://dx.doi.org/10.1088/1367-2630/16/1/013051}
+  {\path{doi:10.1088/1367-2630/16/1/013051}}.
+
+\bibitem{Goncalves2016}
+B.~A. Gon{\c{c}}alves, L.~Carpi, O.~A. Rosso, M.~G. Ravetti, {Time series
+  characterization via horizontal visibility graph and Information Theory},
+  Physica A 464 (2016) 93--102.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2016.07.063}
+  {\path{doi:10.1016/j.physa.2016.07.063}}.
+
+\bibitem{Chen2014}
+S.~Chen, Y.~Hu, S.~Mahadevan, Y.~Deng, {A visibility graph averaging
+  aggregation operator}, Physica A 403 (2014) 1--12.
+\newblock \href {http://arxiv.org/abs/1311.4166} {\path{arXiv:1311.4166}},
+  \href {http://dx.doi.org/10.1016/j.physa.2014.02.015}
+  {\path{doi:10.1016/j.physa.2014.02.015}}.
+
+\bibitem{Jiang2016}
+W.~Jiang, B.~Wei, J.~Zhan, C.~Xie, D.~Zhou, {A visibility graph power averaging
+  aggregation operator: A methodology based on network analysis}, Comput. Ind.
+  Eng. 101 (2016) 260--268.
+\newblock \href {http://dx.doi.org/10.1016/j.cie.2016.09.009}
+  {\path{doi:10.1016/j.cie.2016.09.009}}.
+
+\bibitem{Ravetti2014}
+M.~G. Ravetti, L.~C. Carpi, B.~A. Gon{\c{c}}alves, A.~C. Frery, O.~A. Rosso,
+  {Distinguishing Noise from Chaos: Objective versus Subjective Criteria Using
+  Horizontal Visibility Graph}, PLoS One 9~(9) (2014) e108004.
+\newblock \href {http://arxiv.org/abs/1401.2139} {\path{arXiv:1401.2139}},
+  \href {http://dx.doi.org/10.1371/journal.pone.0108004}
+  {\path{doi:10.1371/journal.pone.0108004}}.
+
+\bibitem{Zhang2017}
+R.~Zhang, Y.~Zou, J.~Zhou, Z.-K. Gao, S.-G. Guan, {Visibility graph analysis
+  for re-sampled time series from auto-regressive stochastic processes},
+  Commun. Nonlinear Sci. Numer. Simul. 42 (2017) 396--403.
+\newblock \href {http://dx.doi.org/10.1016/j.cnsns.2016.04.031}
+  {\path{doi:10.1016/j.cnsns.2016.04.031}}.
+
+\bibitem{Manshour2015}
+P.~Manshour, {Complex network approach to fractional time series}, Chaos
+  25~(10) (2015) 103105.
+\newblock \href {http://arxiv.org/abs/1512.08205} {\path{arXiv:1512.08205}},
+  \href {http://dx.doi.org/10.1063/1.4930839} {\path{doi:10.1063/1.4930839}}.
+
+\bibitem{Shao2010}
+Z.-G. Shao, {Network analysis of human heartbeat dynamics}, Appl. Phys. Lett.
+  96~(7) (2010) 073703.
+\newblock \href {http://dx.doi.org/10.1063/1.3308505}
+  {\path{doi:10.1063/1.3308505}}.
+
+\bibitem{Song2006}
+C.~Song, S.~Havlin, H.~A. Makse, {Origins of fractality in the growth of
+  complex networks}, Nat. Phys. 2~(4) (2006) 275--281.
+\newblock \href {http://dx.doi.org/10.1038/nphys266}
+  {\path{doi:10.1038/nphys266}}.
+
+\bibitem{Li2011}
+X.~Li, Z.~Dong, {Detection and prediction of the onset of human ventricular
+  fibrillation: An approach based on complex network theory}, Phys. Rev. E
+  84~(6) (2011) 062901.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.84.062901}
+  {\path{doi:10.1103/PhysRevE.84.062901}}.
+
+\bibitem{Iacovacci2016}
+J.~Iacovacci, L.~Lacasa, {Sequential visibility-graph motifs}, Phys. Rev. E
+  93~(4) (2016) 042309.
+\newblock \href {http://arxiv.org/abs/1512.00297} {\path{arXiv:1512.00297}},
+  \href {http://dx.doi.org/10.1103/PhysRevE.93.042309}
+  {\path{doi:10.1103/PhysRevE.93.042309}}.
+
+\bibitem{Telford2004}
+R.~J. Telford, E.~Heegaard, H.~J.~B. Birks, {All age-depth models are wrong:
+  But how badly?}, Quat. Sci. Rev. 23~(1-2) (2004) 1--5.
+\newblock \href {http://dx.doi.org/10.1016/j.quascirev.2003.11.003}
+  {\path{doi:10.1016/j.quascirev.2003.11.003}}.
+
+\bibitem{Telesca2012}
+L.~Telesca, M.~Lovallo, {Analysis of seismic sequences by using the method of
+  visibility graph}, EPL (Europhysics Lett. 97~(5) (2012) 50002.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/97/50002}
+  {\path{doi:10.1209/0295-5075/97/50002}}.
+
+\bibitem{Theiler1986}
+J.~Theiler, Spurious dimension from correlation algorithms applied to limited
+  time-series data, Phys. Rev. A 34 (1986) 2427--2432.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevA.34.2427}
+  {\path{doi:10.1103/PhysRevA.34.2427}}.
+
+\bibitem{Ahmadlou2012a}
+M.~Ahmadlou, H.~Adeli, {Visibility graph similarity: A new measure of
+  generalized synchronization in coupled dynamic systems}, Phys. D 241~(4)
+  (2012) 326--332.
+\newblock \href {http://dx.doi.org/10.1016/j.physd.2011.09.008}
+  {\path{doi:10.1016/j.physd.2011.09.008}}.
+
+\bibitem{Mitra2012}
+A.~Mitra, B.~Pyne, {Measuring Synchronization for coupled systems using
+  Visibility Graph Similarity}, Int. J. Recent Technol. Eng. 1~(3) (2012)
+  163--168.
+
+\bibitem{Mehraban2013}
+S.~Mehraban, a.~H. Shirazi, M.~Zamani, G.~R. Jafari, {Coupling between time
+  series: A network view}, EPL (Europhysics Lett. 103~(5) (2013) 50011.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/103/50011}
+  {\path{doi:10.1209/0295-5075/103/50011}}.
+
+\bibitem{Weiss1975}
+G.~Weiss, Time-reversibility of linear stochastic processes, Journal of Applied
+  Probability 12~(4) (1975) 831?836.
+\newblock \href {http://dx.doi.org/10.2307/3212735}
+  {\path{doi:10.2307/3212735}}.
+
+\bibitem{Lawrance1991}
+A.~J. Lawrance, {Directionality and Reversibility in Time Series}, Int. Stat.
+  Rev. / Rev. Int. Stat. 59~(1) (1991) 67.
+\newblock \href {http://dx.doi.org/10.2307/1403575}
+  {\path{doi:10.2307/1403575}}.
+
+\bibitem{Diks1995}
+C.~Diks, J.~C. van Houwelingen, F.~Takens, J.~DeGoede, {Reversibility as a
+  criterion for discriminating time series}, Phys. Lett. A 201~(2-3) (1995)
+  221--228.
+\newblock \href {http://dx.doi.org/10.1016/0375-9601(95)00239-Y}
+  {\path{doi:10.1016/0375-9601(95)00239-Y}}.
+
+\bibitem{Theiler1992}
+J.~Theiler, S.~Eubank, A.~Longtin, B.~Galdrikian, J.~{Doyne Farmer}, {Testing
+  for nonlinearity in time series: the method of surrogate data}, Phys. D
+  58~(1-4) (1992) 77--94.
+\newblock \href {http://arxiv.org/abs//doi.org/10.1016/0167-2789(92)90102-S}
+  {\path{arXiv:/doi.org/10.1016/0167-2789(92)90102-S}}, \href
+  {http://dx.doi.org/10.1016/0167-2789(92)90102-S}
+  {\path{doi:10.1016/0167-2789(92)90102-S}}.
+
+\bibitem{Voss1998}
+H.~Voss, J.~Kurths, {Test for nonlinear dynamical behavior in symbol
+  sequences}, Phys. Rev. E 58~(1) (1998) 1155--1158.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.58.1155}
+  {\path{doi:10.1103/PhysRevE.58.1155}}.
+
+\bibitem{Daw2000}
+C.~S. Daw, C.~E.~A. Finney, M.~B. Kennel, {Symbolic approach for measuring
+  temporal “irreversibility”}, Phys. Rev. E 62~(2) (2000) 1912--1921.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.62.1912}
+  {\path{doi:10.1103/PhysRevE.62.1912}}.
+
+\bibitem{Kennel2004}
+M.~B. Kennel, {Testing time symmetry in time series using data compression
+  dictionaries}, Phys. Rev. E 69~(5) (2004) 056208.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.69.056208}
+  {\path{doi:10.1103/PhysRevE.69.056208}}.
+
+\bibitem{Cammarota2007}
+C.~Cammarota, E.~Rogora, {Time reversal, symbolic series and irreversibility of
+  human heartbeat}, Chaos, Solitons and Fractals 32~(5) (2007) 1649--1654.
+\newblock \href {http://dx.doi.org/10.1016/j.chaos.2006.03.126}
+  {\path{doi:10.1016/j.chaos.2006.03.126}}.
+
+\bibitem{Costa2005}
+M.~Costa, A.~L. Goldberger, C.-K. Peng, {Broken Asymmetry of the Human
+  Heartbeat: Loss of Time Irreversibility in Aging and Disease}, Phys. Rev.
+  Lett. 95~(19) (2005) 198102.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.95.198102}
+  {\path{doi:10.1103/PhysRevLett.95.198102}}.
+
+\bibitem{Porporato2007}
+A.~Porporato, J.~R. Rigby, E.~Daly, {Irreversibility and Fluctuation Theorem in
+  Stationary Time Series}, Phys. Rev. Lett. 98~(9) (2007) 094101.
+\newblock \href {http://arxiv.org/abs/0703213} {\path{arXiv:0703213}}, \href
+  {http://dx.doi.org/10.1103/PhysRevLett.98.094101}
+  {\path{doi:10.1103/PhysRevLett.98.094101}}.
+
+\bibitem{Roldan2010}
+{\'{E}}.~Rold{\'{a}}n, J.~M.~R. Parrondo, {Estimating Dissipation from Single
+  Stationary Trajectories}, Phys. Rev. Lett. 105~(15) (2010) 150607.
+\newblock \href {http://arxiv.org/abs/1004.2831} {\path{arXiv:1004.2831}},
+  \href {http://dx.doi.org/10.1103/PhysRevLett.105.150607}
+  {\path{doi:10.1103/PhysRevLett.105.150607}}.
+
+\bibitem{Lacasa2015}
+L.~Lacasa, R.~Flanagan, {Time reversibility from visibility graphs of
+  nonstationary processes}, Phys. Rev. E 92~(2) (2015) 022817.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.92.022817}
+  {\path{doi:10.1103/PhysRevE.92.022817}}.
+
+\bibitem{Xiong2018}
+H.~Xiong, P.~Shang, J.~Xia, J.~Wang, {Time irreversibility and intrinsics
+  revealing of series with complex network approach}, Physica A 499 (2018)
+  241--249.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2018.02.041}
+  {\path{doi:10.1016/j.physa.2018.02.041}}.
+
+\bibitem{Tong1990}
+H.~Tong, Non-Linear Time Series: A Dynamical System Approach, Oxford University
+  Press, Oxford, 1990.
+
+\bibitem{Yang2018}
+P.~Yang, P.~Shang, {Relative asynchronous index: a new measure for time series
+  irreversibility}, Nonlinear Dyn.\href
+  {http://dx.doi.org/10.1007/s11071-018-4275-1}
+  {\path{doi:10.1007/s11071-018-4275-1}}.
+
+\bibitem{Xie2014}
+F.~Xie, Z.~Fu, L.~Piao, J.~Mao, {Time irreversibility of mean temperature
+  anomaly variations over China}, Theor. Appl. Climatol. 123~(1-2) (2016)
+  161--170.
+\newblock \href {http://dx.doi.org/10.1007/s00704-014-1347-0}
+  {\path{doi:10.1007/s00704-014-1347-0}}.
+
+\bibitem{Flanagan2016}
+R.~Flanagan, L.~Lacasa, {Irreversibility of financial time series: A
+  graph-theoretical approach}, Phys. Lett. A 380~(20) (2016) 1689--1697.
+\newblock \href {http://arxiv.org/abs/1601.01980} {\path{arXiv:1601.01980}},
+  \href {http://dx.doi.org/10.1016/j.physleta.2016.03.011}
+  {\path{doi:10.1016/j.physleta.2016.03.011}}.
+
+\bibitem{Meng2016a}
+D.~Meng, C.~Xiao-yan, L.~Hong-ying, H.~Qing, B.~Rui-xiang, L.~Weixin, L.~Zewei,
+  {Time Irreversibility from Time Series for Analyzing Oil-in-Water Flow
+  Transition}, Math. Probl. Eng. 2016 (2016) 1--10.
+\newblock \href {http://dx.doi.org/10.1155/2016/2879524}
+  {\path{doi:10.1155/2016/2879524}}.
+
+\bibitem{Serinaldi2016}
+F.~Serinaldi, C.~G. Kilsby, {Irreversibility and complex network behavior of
+  stream flow fluctuations}, Physica A 450 (2016) 585--600.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2016.01.043}
+  {\path{doi:10.1016/j.physa.2016.01.043}}.
+
+\bibitem{Telesca2018}
+L.~Telesca, E.~L. Flores-M{\'{a}}rquez, A.~Ram{\'{i}}rez-Rojas,
+  {Time-reversibility in seismic sequences: Application to the seismicity of
+  Mexican subduction zone}, Physica A 492 (2018) 1373--1381.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2017.11.064}
+  {\path{doi:10.1016/j.physa.2017.11.064}}.
+
+\bibitem{Crutchfield1989}
+J.~P. Crutchfield, K.~Young, Inferring statistical complexity, Phys. Rev. Lett.
+  63 (1989) 105--108.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.63.105}
+  {\path{doi:10.1103/PhysRevLett.63.105}}.
+
+\bibitem{Li2008}
+C.-B. Li, H.~Yang, T.~Komatsuzaki, {Multiscale complex network of protein
+  conformational fluctuations in single-molecule time series}, Proc. Natl.
+  Acad. Sci. 105~(2) (2008) 536--541.
+\newblock \href {http://dx.doi.org/10.1073/pnas.0707378105}
+  {\path{doi:10.1073/pnas.0707378105}}.
+
+\bibitem{Liu2016}
+L.~Liu, Z.~Wang, {Encoding Temporal Markov Dynamics in Graph for Time Series
+  Visualization}, ArXiv\href {http://arxiv.org/abs/1610.07273}
+  {\path{arXiv:1610.07273}}.
+
+\bibitem{Weng2017}
+T.~Weng, J.~Zhang, M.~Small, R.~Zheng, P.~Hui, {Memory and betweenness
+  preference in temporal networks induced from time series}, Sci. Rep.
+  7~(February) (2017) 41951.
+\newblock \href {http://dx.doi.org/10.1038/srep41951}
+  {\path{doi:10.1038/srep41951}}.
+
+\bibitem{Small2013}
+M.~Small, {Complex Networks from Time Series: Capturing Dynamics}, IEEE Int.
+  Symp. Circuits Syst. Proc. (2013) 2509--2512.
+
+\bibitem{McCullough2017b}
+M.~McCullough, M.~Small, H.~H.~C. Iu, T.~Stemler, {Multiscale ordinal network
+  analysis of human cardiac dynamics}, Philos. Trans. R. Soc. A Math. Phys.
+  Eng. Sci. 375~(2096) (2017) 20160292.
+\newblock \href {http://dx.doi.org/10.1098/rsta.2016.0292}
+  {\path{doi:10.1098/rsta.2016.0292}}.
+
+\bibitem{Small2018}
+M.~Small, M.~McCullough, K.~Sakellariou, {Ordinal Network Measures —
+  Quantifying Determinism in Data}, in: 2018 IEEE Int. Symp. Circuits Syst.,
+  IEEE, 2018, pp. 1--5.
+\newblock \href {http://dx.doi.org/10.1109/ISCAS.2018.8351743}
+  {\path{doi:10.1109/ISCAS.2018.8351743}}.
+
+\bibitem{Sun2014}
+X.~Sun, M.~Small, Y.~Zhao, X.~Xue, {Characterizing system dynamics with a
+  weighted and directed network constructed from time series data}, Chaos
+  24~(2) (2014) 024402.
+\newblock \href {http://dx.doi.org/10.1063/1.4868261}
+  {\path{doi:10.1063/1.4868261}}.
+
+\bibitem{Guo2018}
+H.~Guo, J.~Zhang, Y.~Zou, S.~Guan, Cross and joint ordinal partition transition
+  networks for multivariate time series analysis, Frontiers of Physics 13~(5)
+  (2018) 130508.
+\newblock \href {http://dx.doi.org/10.1080/02693799408902004}
+  {\path{doi:10.1080/02693799408902004}}.
+
+\bibitem{Emmert2012}
+F.~Emmert-Streib, {Universal construction mechanism for networks from
+  one-dimensional symbol sequences}, Appl. Math. Comput. 219~(3) (2012)
+  1020--1030.
+\newblock \href {http://dx.doi.org/10.1016/j.amc.2012.07.006}
+  {\path{doi:10.1016/j.amc.2012.07.006}}.
+
+\bibitem{Makowiec2013}
+D.~Makowiec, Z.~Struzik, B.~Graff, J.~Wdowczyk-Szulc,
+  M.~{\.{Z}}arczy{\'{n}}ska-Buchowiecka, S.~Kryszewski, {Community Structure in
+  Network Representation of Increments in Beat-to-beat Time Intervals of the
+  Heart in Patients After Heart Transplantation}, Acta Phys. Pol. B 44~(5)
+  (2013) 1219.
+\newblock \href {http://dx.doi.org/10.5506/APhysPolB.44.1219}
+  {\path{doi:10.5506/APhysPolB.44.1219}}.
+
+\bibitem{Makowiec2013b}
+D.~Makowiec, Z.~Struzik, B.~Graff, J.~Wdowczyk-Szulc, M.~{Zarczynska-
+  Buchnowiecka}, M.~Gruchala, A.~Rynkiewicz, {Complexity of the heart rhythm
+  after heart transplantation by entropy of transition network for
+  RR-increments of RR time intervals between heartbeats}, Proc. Annu. Int.
+  Conf. IEEE Eng. Med. Biol. Soc. EMBS (2013) 6127--6130\href
+  {http://dx.doi.org/10.1109/EMBC.2013.6610951}
+  {\path{doi:10.1109/EMBC.2013.6610951}}.
+
+\bibitem{Makowiec2014b}
+D.~Makowiec, Z.~Struzik, B.~Graff, M.~{\.{Z}}arczy{\'{n}}ska-Buchowiecka,
+  J.~Wdowczyk, {Transition Network Entropy in Characterization of Complexity of
+  Heart Rhythm After Heart Transplantation}, Acta Phys. Pol. B 45~(8) (2014)
+  1771.
+\newblock \href {http://dx.doi.org/10.5506/APhysPolB.45.1771}
+  {\path{doi:10.5506/APhysPolB.45.1771}}.
+
+\bibitem{Makowiec2015}
+D.~Makowiec, A.~Kaczkowska, D.~Wejer, M.~Zarczy??ska-Buchowiecka, Z.~R.
+  Struzik, {Entropic measures of complexity of short-term dynamics of nocturnal
+  heartbeats in an aging population}, Entropy 17~(3) (2015) 1253--1272.
+\newblock \href {http://dx.doi.org/10.3390/e17031253}
+  {\path{doi:10.3390/e17031253}}.
+
+\bibitem{Makowiec2015b}
+D.~Makowiec, D.~Wejer, A.~Kaczkowska, M.~{\.{Z}}arczy{\'{n}}ska-Buchowiecka,
+  Z.~R. Struzik, {Chronographic Imprint of Age-Induced Alterations in Heart
+  Rate Dynamical Organization}, Front. Physiol. 6~(JUL) (2015) 1--10.
+\newblock \href {http://dx.doi.org/10.3389/fphys.2015.00201}
+  {\path{doi:10.3389/fphys.2015.00201}}.
+
+\bibitem{Makowiec2016}
+D.~Makowiec, J.~Wdowczyk, M.~Grucha{\l}a, Z.~R. Struzik, {Network tools for
+  tracing the dynamics of heart rate after cardiac transplantation}, Chaos,
+  Solitons and Fractals 90 (2016) 101--110.
+\newblock \href {http://dx.doi.org/10.1016/j.chaos.2016.03.024}
+  {\path{doi:10.1016/j.chaos.2016.03.024}}.
+
+\bibitem{Laut2016}
+I.~Laut, C.~R{\"{a}}th, {Surrogate-assisted network analysis of nonlinear time
+  series}, Chaos 26~(10) (2016) 103108.
+\newblock \href {http://dx.doi.org/10.1063/1.4964646}
+  {\path{doi:10.1063/1.4964646}}.
+
+\bibitem{Li2006b}
+P.~Li, B.~Wang, {An approach to Hang Seng Index in Hong Kong stock market based
+  on network topological statistics}, Chinese Sci. Bull. 51~(5) (2006)
+  624--629.
+\newblock \href {http://dx.doi.org/10.1007/s11434-006-0624-4}
+  {\path{doi:10.1007/s11434-006-0624-4}}.
+
+\bibitem{Li2007a}
+P.~Li, B.-H. Wang, {Extracting hidden fluctuation patterns of Hang Seng stock
+  index from network topologies}, Physica A 378~(2) (2007) 519--526.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2006.10.089}
+  {\path{doi:10.1016/j.physa.2006.10.089}}.
+
+\bibitem{Gao2014a}
+X.~Gao, H.~An, W.~Fang, X.~Huang, H.~Li, W.~Zhong, Y.~Ding, {Transmission of
+  linear regression patterns between time series: From relationship in time
+  series to complex networks}, Phys. Rev. E 90~(1) (2014) 012818.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.90.012818}
+  {\path{doi:10.1103/PhysRevE.90.012818}}.
+
+\bibitem{Gao2014}
+X.~Gao, H.~An, W.~Fang, H.~Li, X.~Sun, {The transmission of fluctuant patterns
+  of the forex burden based on international crude oil prices}, Energy 73
+  (2014) 380--386.
+\newblock \href {http://dx.doi.org/10.1016/j.energy.2014.06.028}
+  {\path{doi:10.1016/j.energy.2014.06.028}}.
+
+\bibitem{Gao2015}
+X.~Gao, H.~An, W.~Fang, X.~Huang, H.~Li, W.~Zhong, {Characteristics of the
+  transmission of autoregressive sub-patterns in financial time series}, Sci.
+  Rep. 4~(1) (2015) 6290.
+\newblock \href {http://dx.doi.org/10.1038/srep06290}
+  {\path{doi:10.1038/srep06290}}.
+
+\bibitem{Huang2015}
+X.~Huang, H.~An, X.~Gao, X.~Hao, P.~Liu, {Multiresolution transmission of the
+  correlation modes between bivariate time series based on complex network
+  theory}, Physica A 428 (2015) 493--506.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2015.02.028}
+  {\path{doi:10.1016/j.physa.2015.02.028}}.
+
+\bibitem{Nakamura2012a}
+T.~Nakamura, T.~Tanizawa, {Networks with time structure from time series},
+  Physica A 391~(20) (2012) 4704--4710.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2012.05.039}
+  {\path{doi:10.1016/j.physa.2012.05.039}}.
+
+\bibitem{Nakamura2016}
+T.~Nakamura, T.~Tanizawa, M.~Small, {Constructing networks from a dynamical
+  system perspective for multivariate nonlinear time series}, Phys. Rev. E
+  93~(3) (2016) 032323.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.93.032323}
+  {\path{doi:10.1103/PhysRevE.93.032323}}.
+
+\bibitem{Lichtenberg_Lieberman_regular}
+A.~Lichtenberg, M.~Lieberman, Regular and Chaotic Dynamics, 2nd Edition,
+  Springer, Berlin, 1992.
+
+\bibitem{Meiss_rmp_1992}
+J.~D. Meiss, {Symplectic maps, variational principles, and transport}, Rev.
+  Mod. Phys. 64~(3) (1992) 795--848.
+\newblock \href {http://dx.doi.org/10.1103/RevModPhys.64.795}
+  {\path{doi:10.1103/RevModPhys.64.795}}.
+
+\bibitem{Karney_physicaD_1983}
+C.~F. Karney, {Long-time correlations in the stochastic regime}, Phys. D 8~(3)
+  (1983) 360--380.
+\newblock \href {http://dx.doi.org/10.1016/0167-2789(83)90232-4}
+  {\path{doi:10.1016/0167-2789(83)90232-4}}.
+
+\bibitem{Olyaee2016}
+M.~H. Olyaee, A.~Yaghoubi, M.~Yaghoobi, {Predicting protein structural classes
+  based on complex networks and recurrence analysis}, J. Theor. Biol. 404
+  (2016) 375--382.
+\newblock \href {http://dx.doi.org/10.1016/j.jtbi.2016.06.018}
+  {\path{doi:10.1016/j.jtbi.2016.06.018}}.
+
+\bibitem{Rehfeld2012}
+K.~Rehfeld, N.~Marwan, S.~F.~M. Breitenbach, J.~Kurths, {Late Holocene Asian
+  summer monsoon dynamics from small but complex networks of paleoclimate
+  data}, Clim. Dyn.\href {http://dx.doi.org/10.1007/s00382-012-1448-3}
+  {\path{doi:10.1007/s00382-012-1448-3}}.
+
+\bibitem{Boese2012}
+S.~B\"ose, Recurrence network analysis of remote sensing data, Master's thesis,
+  University of Bayreuth (2012).
+
+\bibitem{Lange2013Book}
+H.~Lange, S.~Boese, Recurrence quantification and recurrence network analysis
+  of global photosynthetic activity, in: C.~L. Webber, Jr., N.~Marwan (Eds.),
+  Recurrence Quantification Analysis: Theory and Best Practices, Springer
+  International Publishing, Cham, 2015, pp. 349--374.
+\newblock \href {http://dx.doi.org/10.1007/978-3-319-07155-8_12}
+  {\path{doi:10.1007/978-3-319-07155-8_12}}.
+
+\bibitem{Gorski2015}
+G.~G{\'{o}}rski, G.~Litak, R.~Mosdorf, A.~Rysak, {Two phase flow bifurcation
+  due to turbulence: transition from slugs to bubbles}, Eur. Phys. J. B 88~(9)
+  (2015) 239.
+\newblock \href {http://dx.doi.org/10.1140/epjb/e2015-60245-8}
+  {\path{doi:10.1140/epjb/e2015-60245-8}}.
+
+\bibitem{Gao2009a}
+Z.-K. Gao, N.-D. Jin, {Complex network from time series based on phase space
+  reconstruction}, Chaos 19~(3) (2009) 033137.
+\newblock \href {http://dx.doi.org/10.1063/1.3227736}
+  {\path{doi:10.1063/1.3227736}}.
+
+\bibitem{Gao2010a}
+Z.-K. Gao, N.-D. Jin, {Erratum: “Complex network from time series based on
+  phase space reconstruction” [Chaos 19, 033137 (2009)]}, Chaos 20~(1) (2010)
+  019902.
+\newblock \href {http://dx.doi.org/10.1063/1.3332246}
+  {\path{doi:10.1063/1.3332246}}.
+
+\bibitem{Gao2012}
+Z.-K. Gao, N.-D. Jin, {Characterization of chaotic dynamic behavior in the
+  gas–liquid slug flow using directed weighted complex network analysis},
+  Physica A 391~(10) (2012) 3005--3016.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2012.01.025}
+  {\path{doi:10.1016/j.physa.2012.01.025}}.
+
+\bibitem{Gao2012a}
+Z.-K. Gao, N.-D. Jin, {A directed weighted complex network for characterizing
+  chaotic dynamics from time series}, Nonlinear Anal. Real World Appl. 13~(2)
+  (2012) 947--952.
+\newblock \href {http://dx.doi.org/10.1016/j.nonrwa.2011.08.029}
+  {\path{doi:10.1016/j.nonrwa.2011.08.029}}.
+
+\bibitem{Gao2013b}
+Z.-K. Gao, L.-D. Hu, N.-D. Jin, {Markov transition probability-based network
+  from time series for characterizing experimental two-phase flow}, Chinese
+  Phys. B 22~(5) (2013) 050507.
+\newblock \href {http://dx.doi.org/10.1088/1674-1056/22/5/050507}
+  {\path{doi:10.1088/1674-1056/22/5/050507}}.
+
+\bibitem{Gao2013d}
+Z.-K. Gao, X.-W. Zhang, N.-D. Jin, R.~V. Donner, N.~Marwan, J.~Kurths,
+  {Recurrence networks from multivariate signals for uncovering dynamic
+  transitions of horizontal oil-water stratified flows}, EPL (Europhysics Lett.
+  103~(5) (2013) 50004.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/103/50004}
+  {\path{doi:10.1209/0295-5075/103/50004}}.
+
+\bibitem{Zhang2013b}
+X.-W. Zhang, N.-D. Jin, Z.-K. Gao, L.-S. Zhai, {Local Property of Recurrence
+  Network for Investigating Gas-Liquid Two-Phase Flow Characteristics}, Chinese
+  Phys. Lett. 30~(5) (2013) 050501.
+\newblock \href {http://dx.doi.org/10.1088/0256-307X/30/5/050501}
+  {\path{doi:10.1088/0256-307X/30/5/050501}}.
+
+\bibitem{Gao2013c}
+Z.-K. Gao, X.-W. Zhang, M.~Du, N.-D. Jin, {Recurrence network analysis of
+  experimental signals from bubbly oil-in-water flows}, Phys. Lett. A 377~(6)
+  (2013) 457--462.
+\newblock \href {http://dx.doi.org/10.1016/j.physleta.2012.12.017}
+  {\path{doi:10.1016/j.physleta.2012.12.017}}.
+
+\bibitem{Gao2010}
+Z.-K. Gao, N.-D. Jin, W.-X. Wang, Y.-C. Lai, {Motif distributions in
+  phase-space networks for characterizing experimental two-phase flow patterns
+  with chaotic features}, Phys. Rev. E 82~(1) (2010) 016210.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.82.016210}
+  {\path{doi:10.1103/PhysRevE.82.016210}}.
+
+\bibitem{Gao2015a}
+Z.-K. Gao, Y.-X. Yang, P.-C. Fang, Y.~Zou, C.-Y. Xia, M.~Du, {Multiscale
+  complex network for analyzing experimental multivariate time series}, EPL
+  (Europhysics Lett. 109~(3) (2015) 30005.
+\newblock \href {http://dx.doi.org/10.1209/0295-5075/109/30005}
+  {\path{doi:10.1209/0295-5075/109/30005}}.
+
+\bibitem{Wickramasinghe2010}
+M.~Wickramasinghe, I.~Z. Kiss, {Effect of temperature on precision of chaotic
+  oscillations in nickel electrodissolution}, Chaos 20~(2) (2010) 023125.
+\newblock \href {http://dx.doi.org/10.1063/1.3439209}
+  {\path{doi:10.1063/1.3439209}}.
+
+\bibitem{Marwan2010c}
+N.~Marwan, N.~Wessel, H.~Stepan, J.~Kurths, {Recurrence Based Complex Network
+  Analysis of Cardiovascular Variability Data to Predict Pre-Eclampsia}, in:
+  Proc. Int. Symp. Nonlinear Theory its Appl. (NOLTA2010), Krakow, 2010, pp.
+  585--588.
+
+\bibitem{Ramirez2012}
+G.~{Ramirez Avila}, A.~Gapelyuk, N.~Marwan, H.~Stepan, J.~Kurths, T.~Walther,
+  N.~Wessel, {Classifying healthy women and preeclamptic patients from
+  cardiovascular data using recurrence and complex network methods}, in: Proc.
+  7th ESGCO, Vol. 178, 2012, pp. 103--110.
+
+\bibitem{Ramirez2013}
+G.~M. {Ram{\'{i}}rez {\'{A}}vila}, A.~Gapelyuk, N.~Marwan, H.~Stepan,
+  J.~Kurths, T.~Walther, N.~Wessel, {Classifying healthy women and preeclamptic
+  patients from cardiovascular data using recurrence and complex network
+  methods}, Auton. Neurosci. Basic Clin. 178~(1-2) (2013) 103--110.
+\newblock \href {http://dx.doi.org/10.1016/j.autneu.2013.05.003}
+  {\path{doi:10.1016/j.autneu.2013.05.003}}.
+
+\bibitem{Subramaniyam2013}
+N.~P. Subramaniyam, J.~Hyttinen, {Analysis of nonlinear dynamics of healthy and
+  epileptic EEG signals using recurrence based complex network approach}, in:
+  2013 6th Int. IEEE/EMBS Conf. Neural Eng., IEEE, 2013, pp. 605--608.
+\newblock \href {http://dx.doi.org/10.1109/NER.2013.6696007}
+  {\path{doi:10.1109/NER.2013.6696007}}.
+
+\bibitem{Liu2010}
+C.~Liu, W.-X. Zhou, W.-K. Yuan, {Statistical properties of visibility graph of
+  energy dissipation rates in three-dimensional fully developed turbulence},
+  Physica A 389~(13) (2010) 2675--2681.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2010.02.043}
+  {\path{doi:10.1016/j.physa.2010.02.043}}.
+
+\bibitem{Manshour2015a}
+P.~Manshour, M.~R. {Rahimi Tabar}, J.~Peinke, {Fully developed turbulence in
+  the view of horizontal visibility graphs}, J. Stat. Mech. Theory Exp.
+  2015~(8) (2015) P08031.
+\newblock \href {http://dx.doi.org/10.1088/1742-5468/2015/08/P08031}
+  {\path{doi:10.1088/1742-5468/2015/08/P08031}}.
+
+\bibitem{Yang2009}
+Y.~Yang, J.~Wang, H.~Yang, J.~Mang, {Visibility graph approach to exchange rate
+  series}, Physica A 388~(20) (2009) 4431--4437.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2009.07.016}
+  {\path{doi:10.1016/j.physa.2009.07.016}}.
+
+\bibitem{Qian2010}
+M.-C. Qian, Z.-Q. Jiang, W.-X. Zhou, {Universal and nonuniversal allometric
+  scaling behaviors in the visibility graphs of world stock market indices}, J.
+  Phys. A Math. Theor. 43~(33) (2010) 335002.
+\newblock \href {http://arxiv.org/abs/0910.2524} {\path{arXiv:0910.2524}},
+  \href {http://dx.doi.org/10.1088/1751-8113/43/33/335002}
+  {\path{doi:10.1088/1751-8113/43/33/335002}}.
+
+\bibitem{Dong2010}
+Z.~Dong, X.~Li, {Comment on “Network analysis of human heartbeat dynamics”
+  [Appl. Phys. Lett. 96, 073703 (2010)]}, Appl. Phys. Lett. 96~(26) (2010)
+  266101.
+\newblock \href {http://dx.doi.org/10.1063/1.3458811}
+  {\path{doi:10.1063/1.3458811}}.
+
+\bibitem{Ahmadlou2010}
+M.~Ahmadlou, H.~Adeli, A.~Adeli, {New diagnostic EEG markers of the Alzheimer's
+  disease using visibility graph}, J. Neural Transm. 117~(9) (2010) 1099--1109.
+\newblock \href {http://dx.doi.org/10.1007/s00702-010-0450-3}
+  {\path{doi:10.1007/s00702-010-0450-3}}.
+
+\bibitem{Jiang2013}
+S.~Jiang, C.~Bian, X.~Ning, Q.~D.~Y. Ma, {Visibility graph analysis on
+  heartbeat dynamics of meditation training}, Appl. Phys. Lett. 102~(25) (2013)
+  253702.
+\newblock \href {http://dx.doi.org/10.1063/1.4812645}
+  {\path{doi:10.1063/1.4812645}}.
+
+\bibitem{Bhaduri2015}
+S.~Bhaduri, D.~Ghosh, {Electroencephalographic Data Analysis With Visibility
+  Graph Technique for Quantitative Assessment of Brain Dysfunction}, Clin. EEG
+  Neurosci. 46~(3) (2015) 218--223.
+\newblock \href {http://dx.doi.org/10.1177/1550059414526186}
+  {\path{doi:10.1177/1550059414526186}}.
+
+\bibitem{Liu2017a}
+H.~Liu, Q.~Meng, Q.~Zhang, Z.~Zhang, D.~Wang, {A Novel Feature Extraction
+  Method for Epileptic Seizure Detection Based on the Degree Centrality of
+  Complex Network and SVM}, in: D.-S. Huang, K.-H. Jo (Eds.), Intell. Comput.
+  Theor. Appl., Springer International Publishing, Cham, 2016, pp. 170--180.
+\newblock \href {http://dx.doi.org/10.1007/978-3-319-42294-7_14}
+  {\path{doi:10.1007/978-3-319-42294-7_14}}.
+
+\bibitem{Zhang2018}
+H.~Zhang, Q.~Meng, M.~Liu, Y.~Li, {A New Epileptic Seizure Detection Method
+  Based on Fusion Feature of Weighted Complex Network}, in: T.~Huang, J.~Lv,
+  C.~Sun, A.~V. Tuzikov (Eds.), Adv. Neural Networks -- ISNN 2018, Springer
+  International Publishing, Cham, 2018, pp. 834--841.
+
+\bibitem{Long2014}
+X.~Long, P.~Fonseca, R.~M. Aarts, R.~Haakma, J.~Foussier, {Modeling
+  cardiorespiratory interaction during human sleep with complex networks},
+  Appl. Phys. Lett. 105~(20) (2014) 203701.
+\newblock \href {http://dx.doi.org/10.1063/1.4902026}
+  {\path{doi:10.1063/1.4902026}}.
+
+\bibitem{Zhu2014}
+G.~Zhu, Y.~Li, P.~Wen, S.~Wang, {Analysis of alcoholic EEG signals based on
+  horizontal visibility graph entropy}, Brain Informatics 1~(1-4) (2014)
+  19--25.
+\newblock \href {http://dx.doi.org/10.1007/s40708-014-0003-x}
+  {\path{doi:10.1007/s40708-014-0003-x}}.
+
+\bibitem{Elsner2009}
+J.~B. Elsner, T.~H. Jagger, E.~a. Fogarty, {Visibility network of United States
+  hurricanes}, Geophys. Res. Lett. 36~(16) (2009) L16702.
+\newblock \href {http://dx.doi.org/10.1029/2009GL039129}
+  {\path{doi:10.1029/2009GL039129}}.
+
+\bibitem{Tang2010}
+Q.~Tang, J.~Liu, H.~Liu, {Comparison of different daily streamflow series in US
+  and China, under a viewpoint of complex networks}, Mod. Phys. Lett. B 24~(14)
+  (2010) 1541--1547.
+\newblock \href {http://dx.doi.org/10.1142/S0217984910023335}
+  {\path{doi:10.1142/S0217984910023335}}.
+
+\bibitem{Wang2009}
+J.~Wang, H.~Yang, {Complex network-based analysis of air temperature data in
+  china}, Mod. Phys. Lett. B 23~(14) (2009) 1781--1789.
+
+\bibitem{Wang2012}
+N.~Wang, D.~Li, Q.~Wang, {Visibility graph analysis on quarterly macroeconomic
+  series of China based on complex network theory}, Physica A 391~(24) (2012)
+  6543--6555.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2012.07.054}
+  {\path{doi:10.1016/j.physa.2012.07.054}}.
+
+\bibitem{Hloupis2017}
+G.~Hloupis, {Temporal pattern in Corinth rift seismicity revealed by visibility
+  graph analysis}, Commun. Nonlinear Sci. Numer. Simul. 51 (2017) 13--22.
+\newblock \href {http://dx.doi.org/10.1016/j.cnsns.2017.03.015}
+  {\path{doi:10.1016/j.cnsns.2017.03.015}}.
+
+\bibitem{Telesca2018b}
+L.~Telesca, {4 - Fractal, Informational and Topological Methods for the
+  Analysis of Discrete and Continuous Seismic Time Series: An Overview}, in:
+  T.~Chelidze, F.~Vallianatos, L.~Telesca (Eds.), Complex. Seism. Time Ser.,
+  Elsevier, 2018, pp. 95--139.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/B978-0-12-813138-1.00004-3}
+  {\path{doi:https://doi.org/10.1016/B978-0-12-813138-1.00004-3}}.
+
+\bibitem{Charakopoulos2014}
+A.~�. Charakopoulos, T.~E. Karakasidis, P.~N. Papanicolaou, A.~Liakopoulos,
+  {The application of complex network time series analysis in turbulent heated
+  jets}, Chaos 24~(2) (2014) 024408.
+\newblock \href {http://dx.doi.org/10.1063/1.4875040}
+  {\path{doi:10.1063/1.4875040}}.
+
+\bibitem{Tang2013}
+X.~Tang, L.~Xia, Y.~Liao, W.~Liu, Y.~Peng, T.~Gao, Y.~Zeng, {New approach to
+  epileptic diagnosis using visibility graph of high-frequency signal}, Clin.
+  EEG Neurosci. 44~(2) (2013) 150--156.
+\newblock \href {http://dx.doi.org/10.1177/1550059412464449}
+  {\path{doi:10.1177/1550059412464449}}.
+
+\bibitem{Liu2018}
+H.~Liu, X.~Zhang, X.~Zhang, {Exploring dynamic evolution and fluctuation
+  characteristics of air traffic flow volume time series: A single waypoint
+  case}, Physica A 503 (2018) 560--571.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2018.02.030}
+  {\path{doi:10.1016/j.physa.2018.02.030}}.
+
+\bibitem{CHARAKOPOULOS2018}
+A.~Charakopoulos, G.~Katsouli, T.~Karakasidis, {Dynamics and causalities of
+  atmospheric and oceanic data identified by complex networks and Granger
+  causality analysis}, Physica A 495 (2018) 436--453.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2017.12.027}
+  {\path{doi:10.1016/j.physa.2017.12.027}}.
+
+\bibitem{Zhang2018b}
+H.~Zhang, D.~Xu, Y.~Wu, {Predicting catastrophes of non-autonomous networks
+  with visibility graphs and horizontal visibility}, Mech. Syst. Signal
+  Process. 104 (2018) 494--502.
+\newblock \href {http://dx.doi.org/10.1016/j.ymssp.2017.11.020}
+  {\path{doi:10.1016/j.ymssp.2017.11.020}}.
+
+\bibitem{Mali2018}
+P.~Mali, S.~Manna, A.~Mukhopadhyay, P.~Haldar, G.~Singh, {Multifractal analysis
+  of multiparticle emission data in the framework of visibility graph and
+  sandbox algorithm}, Physica A 493 (2018) 253--266.
+\newblock \href {http://dx.doi.org/10.1016/j.physa.2017.10.015}
+  {\path{doi:10.1016/j.physa.2017.10.015}}.
+
+\bibitem{Nunez2013}
+{\'{A}}.~M. N{\'{u}}{\~{n}}ez, B.~Luque, L.~Lacasa, J.~P. G{\'{o}}mez,
+  A.~Robledo, {Horizontal visibility graphs generated by type-I intermittency},
+  Phys. Rev. E 87~(5) (2013) 052801.
+\newblock \href {http://arxiv.org/abs/1310.0690} {\path{arXiv:1310.0690}},
+  \href {http://dx.doi.org/10.1103/PhysRevE.87.052801}
+  {\path{doi:10.1103/PhysRevE.87.052801}}.
+
+\bibitem{Nunez2014}
+{\'{A}}.~M. N{\'{u}}{\~{n}}ez, L.~Lacasa, J.~P. G{\'{o}}mez, {Horizontal
+  Visibility graphs generated by type-II intermittency}, J. Phys. A Math.
+  Theor. 47~(3).
+\newblock \href {http://arxiv.org/abs/1310.0690} {\path{arXiv:1310.0690}},
+  \href {http://dx.doi.org/10.1088/1751-8113/47/3/035102}
+  {\path{doi:10.1088/1751-8113/47/3/035102}}.
+
+\bibitem{sidcDataBelgium}
+{SIDC-team}, {The International Sunspot Number \& Sunspot Area Data}, Monthly
+  Report on the International Sunspot Number, {{\url
+  {http://www.sidc.be/sunspot-data/}}}, Royal Observatory Greenwich, {{\url
+  {http://solarscience.msfc.nasa.gov/greenwch.shtml/}}}.
+
+\bibitem{Newton1955}
+H.~Newton, A.~Milsom, {Note on the observed differences in spottedness of the
+  Sun's northern and southern hemispheres}, Mon. Not. R. Astron. Soc. 115
+  (1955) 398--404.
+
+\bibitem{Carbonell1993}
+M.~Carbonell, R.~Oliver, J.~L. Ballester, {On the asymmetry of solar activity},
+  Astron. Astrophys. 274 (1993) 497.
+
+\bibitem{zolotova2006}
+N.~V. Zolotova, D.~I. Ponyavin, {Phase asynchrony of the north-south sunspot
+  activity}, Astron. Astrophys. 449~(1) (2006) L1--L4.
+\newblock \href {http://dx.doi.org/10.1051/0004-6361:200600013}
+  {\path{doi:10.1051/0004-6361:200600013}}.
+
+\bibitem{donner2007}
+R.~V. Donner, M.~Thiel, {Scale-resolved phase coherence analysis of hemispheric
+  sunspot activity: a new look at the north-south asymmetry}, Astron.
+  Astrophys. 475~(3) (2007) L33--L36.
+\newblock \href {http://dx.doi.org/10.1051/0004-6361:20078672}
+  {\path{doi:10.1051/0004-6361:20078672}}.
+
+\bibitem{donner2008a}
+R.~V. Donner, {Phase Coherence Analysis of Decadal-Scale Sunspot Activity on
+  Both Solar Hemispheres}, in: Nonlinear Time Ser. Anal. Geosci., Vol. 112,
+  Springer Berlin Heidelberg, Berlin, Heidelberg, 2008, pp. 355--385.
+\newblock \href {http://dx.doi.org/10.1007/978-3-540-78938-3_16}
+  {\path{doi:10.1007/978-3-540-78938-3_16}}.
+
+\bibitem{Li2008MNRAS}
+K.~J. Li, P.~X. Gao, L.~S. Zhan, X.~J. Shi, W.~W. Zhu, {On the asynchronization
+  of hemispheric high-latitude solar activity}, Mon. Not. R. Astron. Soc.
+  391~(1) (2008) L34--L38.
+\newblock \href {http://dx.doi.org/10.1111/j.1745-3933.2008.00551.x}
+  {\path{doi:10.1111/j.1745-3933.2008.00551.x}}.
+
+\bibitem{li2008a}
+Q.~Li, {Periodicity and Hemispheric Phase Relationship in High-Latitude Solar
+  Activity}, Sol. Phys. 249~(1) (2008) 135--145.
+\newblock \href {http://dx.doi.org/10.1007/s11207-008-9147-2}
+  {\path{doi:10.1007/s11207-008-9147-2}}.
+
+\bibitem{zolotova2009}
+N.~V. Zolotova, D.~I. Ponyavin, N.~Marwan, J.~Kurths, {Long-term asymmetry in
+  the wings of the butterfly diagram}, Astron. Astrophys. 503~(1) (2009)
+  197--201.
+\newblock \href {http://dx.doi.org/10.1051/0004-6361/200811430}
+  {\path{doi:10.1051/0004-6361/200811430}}.
+
+\bibitem{Subramaniyam2015}
+N.~P. Subramaniyam, J.~F. Donges, J.~Hyttinen, {Signatures of chaotic and
+  stochastic dynamics uncovered with $\epsilon$ -recurrence networks}, Proc. R.
+  Soc. A Math. Phys. Eng. Sci. 471~(2183) (2015) 20150349.
+\newblock \href {http://dx.doi.org/10.1098/rspa.2015.0349}
+  {\path{doi:10.1098/rspa.2015.0349}}.
+
+\bibitem{Holme2012}
+P.~Holme, J.~Saram{\"{a}}ki, {Temporal networks}, Phys. Rep. 519~(3) (2012)
+  97--125.
+\newblock \href {http://arxiv.org/abs/1108.1780} {\path{arXiv:1108.1780}},
+  \href {http://dx.doi.org/10.1016/j.physrep.2012.03.001}
+  {\path{doi:10.1016/j.physrep.2012.03.001}}.
 
 \end{thebibliography}
