@@ -6,6 +6,7 @@
 \usepackage{color}
 \usepackage{todonotes,hyperref,url}
 
+
 \journal{Physics Reports}
 
 %% `Elsevier LaTeX' style
@@ -18,15 +19,15 @@
 
 \title{Complex network approaches to nonlinear time series analysis}
 
+\author[ECNU]{Yong Zou\corref{corrauthor}}
+\ead{yzou@phy.ecnu.edu.cn}
+\address[ECNU]{Department of Physics, East China Normal University, Shanghai 200062, China}
+
 \author[PIK]{Reik V. Donner\corref{corrauthor}}
 \cortext[corrauthor]{Corresponding author}
 \ead{reik.donner@pik-potsdam.de}
 \address[PIK]{Potsdam Institute for Climate Impact Research, P.\,O.~Box
 60\,12\,03, 14412 Potsdam, Germany}
-
-\author[ECNU]{Yong Zou\corref{corrauthor}}
-\ead{yzou@phy.ecnu.edu.cn}
-\address[ECNU]{Department of Physics, East China Normal University, Shanghai 200062, China}
 
 \author[PIK]{Norbert Marwan}
 \ead{marwan@pik-potsdam.de}
@@ -101,27 +102,25 @@ concepts that exist so far.
 
 \input{Chapter05_TransitionNt/Chapter05_TransitionNt.tex}
 
-\input{Chapter06_OtherMethods/Chapter06_OtherMethods.tex}
+% \input{Chapter06_OtherMethods/Chapter06_OtherMethods.tex}
 
 \input{Chapter07_Applications/Chapter07_Applications.tex}
+% \input{Chapter07_Applications/Chapter07_ApplicationsNM.tex}
 
 
 \input{Chapter08_Software/Chapter08_Software.tex}
 
-
 \input{Chapter09_Discussion/Chapter09_Discussion.tex}
 
-
-\input{Chapter10_Summary/Chapter10_Summary.tex}
-
+% \input{Chapter10_Summary/Chapter10_Summary.tex}
 
 \section*{Acknowledgements}
 
-The reported development of the recurrence network framework has been a community effort. Among other colleagues, we particularly acknowledge important contributions by Jobst Heitzig, Jan Feldhoff, Michael Small and \textcolor{red}{xxxxx}. Financial support of this work has been granted by the German Research Association via the IRTG 1740 ``Dynamical phenomena in complex networks'', the German Federal Ministry for Education and Research (Young Investigators Group CoSy-CC$^2$, grant no.~01LN1306A), \textcolor{red}{xxxxxxxx}. Numerical codes used for estimating recurrence network properties can be found in the software package \texttt{pyunicorn} \cite{donges2013advanced}, which is available at \url{http://tocsy.pik-potsdam.de/pyunicorn.php}.
+The reported development of the recurrence network framework has been a community effort. Among other colleagues, we particularly acknowledge important contributions and discussions by Jobst Heitzig, Michael Small, Zonghua Liu, Shuguang Guan, Henk A. Dijkstra, Kira Rehfeld, Nora Molkenthin, Hanna C.H. Schultz, Alraune Zech, Jan H. Feldhoff, Aljoscha Rheinwalt, Hannes Kutza, Alexander Radebach, Alexej Gluschkow, Paul Schultz, Stefan Schinkel, Wolfram Barfuss, Marc Wiedermann, Jakob Runge, Qing Yi Feng, Liubov Tupikina, Veronika Stolbova, and \textcolor{red}{xxxxx}. Financial support of this work has been granted by  the Natural Science Foundation of Shanghai (Grant No. 17ZR1444800), the German Research Association via the IRTG 1740 ``Dynamical phenomena in complex networks'', the German Federal Ministry for Education and Research (Young Investigators Group CoSy-CC$^2$, grant no.~01LN1306A), \textcolor{red}{xxxxxxxx}. Numerical codes used for estimating recurrence network properties can be found in the software package \texttt{pyunicorn} \cite{Donges2015}, which is available at \url{http://tocsy.pik-potsdam.de/pyunicorn.php}. The distribution includes an extensive online documentation system with the detailed API documentation also being available in the PDF format~\cite{Supplement}. The software description in this article as well as in the supplemental material~\cite{Supplement} are based on the \texttt{pyunicorn} release version 0.5.0.
 
-\bibliography{references}
-
-
+%\bibliography{references}
+%\bibliography{PhysRep2018}
+\bibliography{/Users/yongzou/Downloads/PhysRepTimeSeriesNetworks/PhysRep2018N,refBooks,/Users/yongzou/Downloads/PhysRepTimeSeriesNetworks/rpN}
 
 
 \end{document}
